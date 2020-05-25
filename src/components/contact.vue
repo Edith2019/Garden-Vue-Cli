@@ -1,19 +1,19 @@
 <template>
-    <div class="events-container"></div>
+    <div class="contact-container"></div>
 </template>
 
 <script>
 export default {
-    name: "events",
+    name: "contact",
     props: {},
 };
 </script>
 
 <style scoped>
-.events-container {
+.contact-container {
     height: 500px;
     margin-top: 200px;
-    background-color: #37bc61;
+    background-color: white;
     opacity: 95%;
 }
 </style>

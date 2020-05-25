@@ -10,21 +10,23 @@
                 height="55px"
                 background="none"
             />
-            <a class="Intro-a">About</a>
-            <a class="Intro-a">Community</a>
-            <a class="Intro-a">What we do</a>
-            <a class="Intro-a">Partners</a>
-            <a class="Intro-a">Events</a>
-            <a class="Intro-a">Contacts</a>
+            <a class="Intro-a" href="#about">About</a>
+            <a class="Intro-a" href="#community">Community</a>
+            <a class="Intro-a" href="#whatwedo">What we do</a>
+            <a class="Intro-a" href="#partners">Partners</a>
+            <a class="Intro-a" href="#events">Events</a>
+            <a class="Intro-a" href="#contact">Contact</a>
         </div>
         <intro />
-        <about />
-        <community />
+        <about id="about" />
+        <community id="community" />
         <div class="whatwedo-App">
-            <whatwedo />
+            <whatwedo id="whatwedo" />
             <slider />
         </div>
-        <partners />
+        <partners id="partners" />
+        <events id="events" />
+        <contact id="contact" />
         <div class="footer"></div>
     </div>
 </template>
@@ -38,6 +40,8 @@ import community from "./components/community.vue";
 import whatwedo from "./components/whatwedo.vue";
 import slider from "./components/slider.vue";
 import partners from "./components/partners.vue";
+import events from "./components/events.vue";
+import contact from "./components/contact.vue";
 
 export default {
     name: "App",
@@ -50,6 +54,8 @@ export default {
         whatwedo,
         slider,
         partners,
+        events,
+        contact,
     },
 };
 </script>
@@ -85,7 +91,16 @@ img {
     opacity: 95%;
     z-index: 10;
 }
-
+.Intro-a {
+    cursor: pointer;
+    transition: 0.2s;
+    outline: none;
+    color: white;
+    text-decoration: none;
+}
+.Intro-a:hover {
+    transform: scale(1.3);
+}
 .whatwedo-App {
     background-color: white;
     padding-left: 10%;

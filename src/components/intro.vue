@@ -25,13 +25,6 @@ export default {
 </script>
 
 <style scoped>
-.Intro-a {
-    cursor: pointer;
-    transition: 0.2s;
-}
-.Intro-a:hover {
-    transform: scale(1.3);
-}
 .Intro-container {
     height: 100vh;
     padding-top: 3.5em;
