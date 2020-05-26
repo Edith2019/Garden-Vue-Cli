@@ -31,8 +31,8 @@ export default {
 <style scoped>
 .WhatWeDo-container {
     padding-top: 5%;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 8%;
+    padding-right: 8%;
     /* margin-left: 5%;
     margin-right: 5%; */
     background-color: white;

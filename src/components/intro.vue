@@ -10,8 +10,8 @@
             <img
                 class="Intro-picture"
                 src="@/assets/container.jpg"
-                width="400px"
-                height="200px"
+                width="800px"
+                height="400px"
             />
         </div>
     </div>
@@ -32,6 +32,7 @@ export default {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 200px;
 }
 .Intro-picture {
     border: solid white 5px;

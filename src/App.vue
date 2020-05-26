@@ -27,7 +27,29 @@
         <partners id="partners" />
         <events id="events" />
         <contact id="contact" />
-        <div class="footer"></div>
+        <div class="map-app">
+            <div class="text-app">
+                <p>Info</p>
+                <p>
+                    ver since the 1500s, when an unknown printer took a galley
+                    of type and scrambled it to make a type specimen book. It
+                    has survived not only five centu
+                </p>
+            </div>
+            <mapgarden
+                id="map"
+                appId="VZVNlOiZeKiSnbYoPX6V"
+                appCode="APP-CODE-HERE"
+                lat="52.479657"
+                lng="13.431890"
+                width="400px"
+                height="300px"
+            />
+        </div>
+        <div class="footer">
+            <p>© VGG</p>
+            <p>TandC</p>
+        </div>
     </div>
 </template>
 
@@ -42,12 +64,11 @@ import slider from "./components/slider.vue";
 import partners from "./components/partners.vue";
 import events from "./components/events.vue";
 import contact from "./components/contact.vue";
+import mapgarden from "./components/mapgarden.vue";
 
 export default {
     name: "App",
     components: {
-        // HelloWorld,
-        // test,
         intro,
         about,
         community,
@@ -56,6 +77,7 @@ export default {
         partners,
         events,
         contact,
+        mapgarden,
     },
 };
 </script>
@@ -107,11 +129,31 @@ img {
     padding-right: 10%;
     padding-bottom: 5%;
 }
+.text-app {
+    width: 390px;
+    height: 290px;
+    border: solid white 0.5px;
+    padding: 5px;
+    font-size: 12px;
+}
 
+.map-app {
+    margin-top: 200px;
+    height: 350px;
+    background-color: #282828;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
 .footer {
     margin-top: 100px;
     height: 3.5em;
     border: white solid 3px;
     background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 }
 </style>
