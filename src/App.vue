@@ -17,6 +17,25 @@
             <a class="Intro-a" href="#events">Events</a>
             <a class="Intro-a" href="#contact">Contact</a>
         </div>
+        <div class="social-media">
+            <img
+                class="fb-social"
+                src="@/assets/instaproute.png"
+                width="30px"
+                height="30px"
+            />
+            <a
+                href="https://www.facebook.com/VollguterGemeinschaftsgarten/"
+                target="_blank"
+            >
+                <img
+                    class="fb-social"
+                    src="@/assets/fproute.png"
+                    width="30px"
+                    height="30px"
+                />
+            </a>
+        </div>
         <intro />
         <about id="about" />
         <community id="community" />
@@ -115,6 +134,24 @@ img {
     opacity: 95%;
     z-index: 10;
 }
+
+.social-media {
+    width: 12%;
+    height: 70px;
+    position: fixed;
+    margin-top: 170px;
+    margin-left: -2%;
+    background-color: white;
+    border: solid #37bc61 1px;
+    z-index: 500;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 10px;
+    padding-left: 5px;
+}
+
 .Intro-a {
     cursor: pointer;
     transition: 0.2s;
@@ -138,12 +175,13 @@ img {
     width: 390px;
     height: 290px;
     border: solid white 0.5px;
-    padding: 5px;
+    padding: 10px;
     font-size: 12px;
 }
 
 .map-app {
     margin-top: 200px;
+    padding: 2%;
     height: 400px;
     background-color: #282828;
     display: flex;

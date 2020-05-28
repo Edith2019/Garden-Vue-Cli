@@ -49,7 +49,7 @@ export default {
             this.$refs.map,
             this.platform.createDefaultLayers().normal.map,
             {
-                zoom: 15,
+                zoom: 12,
                 center: { lng: this.lng, lat: this.lat },
                 // pixelRatio: window.devicePixelRatio || 1,
             }

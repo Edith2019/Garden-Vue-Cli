@@ -35,8 +35,8 @@ export default {
     margin-bottom: 200px;
 }
 .Intro-picture {
-    border: solid white 5px;
-    border-radius: 10px;
+    border: solid rgba(255, 255, 255, 0.8) 10px;
+    /* border-radius: 10px; */
 }
 .Intro-title {
     color: white;
