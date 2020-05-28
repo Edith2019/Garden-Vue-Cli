@@ -30,7 +30,6 @@ export default {
         lng: String,
         width: String,
         height: String,
-        mapEvent: String,
     },
     created() {
         this.platform = new H.service.Platform({
@@ -44,14 +43,17 @@ export default {
         );
     },
     mounted() {
-        this.defaultLayers = this.platform.createDefaultLayers();
         console.log(" this.defaultLayers", this.defaultLayers);
 
-        this.map = new H.Map(this.$refs.map, this.defaultLayers.normal.map, {
-            zoom: 15,
-            center: { lng: this.lng, lat: this.lat },
-            // pixelRatio: window.devicePixelRatio || 1,
-        });
+        this.map = new H.Map(
+            this.$refs.map,
+            this.platform.createDefaultLayers().normal.map,
+            {
+                zoom: 15,
+                center: { lng: this.lng, lat: this.lat },
+                // pixelRatio: window.devicePixelRatio || 1,
+            }
+        );
         console.log("this.map", this.map);
         this.icon = new H.map.Icon(`${require("@/assets/Logo.png")}`, {
             size: { w: 40, h: 40 },
@@ -66,7 +68,7 @@ export default {
         this.behavior = new H.mapevents.Behavior(
             new H.mapevents.MapEvents(this.map)
         );
-        this.map.addObject(this.behavior);
+        // this.map.addObject(this.map);
         this.ui = new H.ui.UI.createDefault(this.map, this.defaultLayers);
     },
 };
