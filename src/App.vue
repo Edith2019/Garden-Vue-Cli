@@ -42,8 +42,8 @@
                 appCode="APP-CODE-HERE"
                 lat="52.479657"
                 lng="13.431890"
-                width="400px"
-                height="300px"
+                width="400"
+                height="300"
             />
         </div>
         <div class="footer">
@@ -128,7 +128,10 @@ img {
     padding-left: 10%;
     padding-right: 10%;
     padding-bottom: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
 }
+
 .text-app {
     width: 390px;
     height: 290px;
@@ -139,13 +142,14 @@ img {
 
 .map-app {
     margin-top: 200px;
-    height: 350px;
+    height: 400px;
     background-color: #282828;
     display: flex;
     justify-content: space-around;
     align-items: center;
     color: white;
 }
+
 .footer {
     margin-top: 100px;
     height: 3.5em;

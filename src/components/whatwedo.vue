@@ -31,11 +31,12 @@ export default {
 <style scoped>
 .WhatWeDo-container {
     padding-top: 5%;
-    padding-left: 8%;
-    padding-right: 8%;
+    /* padding-left: 8%;
+    padding-right: 8%; */
     /* margin-left: 5%;
     margin-right: 5%; */
     background-color: white;
     padding-bottom: 50px;
+    margin-top: 200px;
 }
 </style>

@@ -35,7 +35,7 @@ export default {
     margin-right: 5%;
     background-color: white;
     height: 300px;
-    margin-bottom: 200px;
+    margin-top: 200px;
     opacity: 93%;
 }
 </style>

@@ -11,9 +11,14 @@ export default {
 
 <style scoped>
 .events-container {
-    height: 500px;
-    margin-top: 200px;
+    padding-top: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
     background-color: #37bc61;
-    opacity: 95%;
+    height: 300px;
+    margin-top: 200px;
+    opacity: 93%;
 }
 </style>

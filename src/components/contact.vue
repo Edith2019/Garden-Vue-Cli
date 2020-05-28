@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div id="contact">
         <div class="contact-container">
             <h1>Contact</h1>
             <br />
@@ -79,7 +79,7 @@ input {
 
 textarea {
     width: 40%;
-    height: 50%;
+    height: 54%;
     background-color: white;
     outline: none;
     border: none;
