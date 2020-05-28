@@ -30,24 +30,29 @@ export default {
         lng: String,
         width: String,
         height: String,
+        mapEvent: String,
     },
     created() {
         this.platform = new H.service.Platform({
             app_id: this.appId,
             app_code: this.appCode,
         });
-        console.log("platform", this.platform);
+        this.pixelRatio = window.devicePixelRatio || 1;
+        console.log("pixelRatio", this.pixelRatio);
+        window.addEventListener("resize", () =>
+            this.paltform.getViewPort().resize()
+        );
     },
     mounted() {
-        this.map = new H.Map(
-            this.$refs.map,
-            this.platform.createDefaultLayers().normal.map,
-            {
-                zoom: 15,
-                center: { lng: this.lng, lat: this.lat },
-            }
-        );
+        this.defaultLayers = this.platform.createDefaultLayers();
+        console.log(" this.defaultLayers", this.defaultLayers);
 
+        this.map = new H.Map(this.$refs.map, this.defaultLayers.normal.map, {
+            zoom: 15,
+            center: { lng: this.lng, lat: this.lat },
+            // pixelRatio: window.devicePixelRatio || 1,
+        });
+        console.log("this.map", this.map);
         this.icon = new H.map.Icon(`${require("@/assets/Logo.png")}`, {
             size: { w: 40, h: 40 },
         });
@@ -57,6 +62,12 @@ export default {
         );
         this.map.addObject(this.marker);
         console.log("icon", this.icon);
+
+        this.behavior = new H.mapevents.Behavior(
+            new H.mapevents.MapEvents(this.map)
+        );
+        this.map.addObject(this.behavior);
+        this.ui = new H.ui.UI.createDefault(this.map, this.defaultLayers);
     },
 };
 </script>

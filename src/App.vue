@@ -36,6 +36,7 @@
                     has survived not only five centu
                 </p>
             </div>
+
             <mapgarden
                 id="map"
                 appId="VZVNlOiZeKiSnbYoPX6V"
@@ -44,6 +45,7 @@
                 lng="13.431890"
                 width="400"
                 height="300"
+                mapEvent=""
             />
         </div>
         <div class="footer">
