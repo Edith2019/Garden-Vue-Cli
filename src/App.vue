@@ -56,7 +56,7 @@
                 </p>
             </div>
 
-            <!-- <mapgarden
+            <mapgarden
                 id="map"
                 appId="VZVNlOiZeKiSnbYoPX6V"
                 appCode="o3H4M8n2E7ucAsW128Z3"
@@ -67,7 +67,7 @@
                 mapEvent=""
                 w="40"
                 h="40"
-            /> -->
+            />
         </div>
         <div class="footer">
             <p>© VGG</p>
@@ -87,7 +87,7 @@ import slider from "./components/slider.vue";
 import partners from "./components/partners.vue";
 import events from "./components/events.vue";
 import contact from "./components/contact.vue";
-// import mapgarden from "./components/mapgarden.vue";
+import mapgarden from "./components/mapgarden.vue";
 
 export default {
     name: "App",
@@ -100,7 +100,7 @@ export default {
         partners,
         events,
         contact,
-        // mapgarden,
+        mapgarden,
     },
 };
 </script>

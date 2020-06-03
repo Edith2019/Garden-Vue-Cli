@@ -48,6 +48,9 @@ app.post("/submit", (req, res) => {
                         success: true
                     });
                     console.log("it works weell");
+                }).catch(err => {
+                    console.log("there was an error in message", err);
+                    res.json({ error: true });
                 });
         }
         const data = result.rows[0];
