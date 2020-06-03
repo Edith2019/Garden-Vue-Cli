@@ -31,9 +31,12 @@
                                 type="checkbox"
                                 id="checkbox"
                             />
-                            <p>I agree with the terms and conditions</p>
-                            <div id="gdpr" ref="gdpr" v-if="gdpr">
-                                Please agree with the terms and conditions
+                            <div class="conditionsgdpr">
+                                <p>I agree with the terms and conditions</p>
+                                <br />
+                                <div id="gdpr" ref="gdpr" v-if="gdpr">
+                                    Please agree with the terms and conditions
+                                </div>
                             </div>
                         </div>
                         <button v-on:click="handleClick" class="button">
@@ -132,10 +135,26 @@ input {
     font-size: 15px;
     border-bottom: solid #37bc61 3px;
     padding-left: 30px;
+    margin-bottom: 15px;
 }
 
 #checkbox {
     width: 20px;
+    margin-top: -50px;
+}
+
+#gdpr {
+    color: red;
+}
+
+.conditionsgdpr {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    width: 320px;
+    position: absolute;
+    margin-left: 40px;
+    height: 90px;
 }
 .tandc {
     width: 300px;
@@ -143,10 +162,11 @@ input {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    height: 100px;
 }
 
 textarea {
-    width: 40%;
+    width: 60%;
     height: 54%;
     background-color: white;
     outline: none;
