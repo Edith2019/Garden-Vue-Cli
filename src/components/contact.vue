@@ -72,19 +72,21 @@ export default {
             e.preventDefault();
             // var self = this;
             console.log("this in handle", this);
-            var formData = new FormData();
-            console.log("formData", formData);
-            formData.append("first", this.first);
-            formData.append("last", this.last);
-            formData.append("email", this.email);
-            formData.append("message", this.message);
-            console.log("this checkbox", this.checkbox);
-            console.log("this.first", this.first);
+
+            this.first;
+            this.last;
+            this.email;
+            this.message;
 
             if (this.checkbox === true) {
-                axios.post("/submit", formData).then(function(results) {
-                    console.log("results", results);
-                });
+                axios
+                    .post("http://localhost:4000/submit", {
+                        first: this.first,
+                        last: this.last,
+                    })
+                    .then(function(results) {
+                        console.log("results", results);
+                    });
             }
         },
     },

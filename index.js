@@ -2,11 +2,11 @@ const express = require('express');
 const cors = require('cors');
 console.log("cors", cors);
 const bodyParser = require('body-parser');
-const morgan = require('morgan');
+// const morgan = require('morgan');
 
 const app = express();
 
-app.use(morgan('tiny'));
+// app.use(morgan('tiny'));
 app.use(cors());
 app.use(bodyParser.json());
 
@@ -17,9 +17,10 @@ app.use(bodyParser.json());
 // });
 
 
-app.post("/submit", (req, res) => {
+app.post("http://localhost:4000/submit", (req, res) => {
     console.log("made it to post route");
     console.log("req.header", req.headers)
+
 })
 
 const port = process.env.PORT || 4000;
