@@ -32,6 +32,9 @@
                                 id="checkbox"
                             />
                             <p>I agree with the terms and conditions</p>
+                            <div id="gdpr" ref="gdpr" v-if="gdpr">
+                                Please agree with the terms and conditions
+                            </div>
                         </div>
                         <button v-on:click="handleClick" class="button">
                             submit
@@ -60,6 +63,7 @@ export default {
             email: "",
             message: "",
             checkbox: false,
+            gdpr: false,
         };
     },
     mounted() {
@@ -73,20 +77,19 @@ export default {
             // var self = this;
             console.log("this in handle", this);
 
-            this.first;
-            this.last;
-            this.email;
-            this.message;
-
             if (this.checkbox === true) {
                 axios
                     .post("http://localhost:4000/submit", {
                         first: this.first,
                         last: this.last,
+                        email: this.email,
+                        message: this.message,
                     })
                     .then(function(results) {
                         console.log("results", results);
                     });
+            } else {
+                this.gdpr = !this.gdpr;
             }
         },
     },
