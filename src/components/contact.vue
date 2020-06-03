@@ -6,25 +6,90 @@
             <p>Questions? Ideas? Contributions? Reach out any time!</p>
             <div class="contact-container-input">
                 <div class="inputs-element">
-                    <input type="text" name="first" placeholder="First Name" />
-                    <input type="text" name="last" placeholder="Last Name" />
-                    <input type="email" name="email" placeholder="Email" />
-                    <div class="tandc">
-                        <input type="checkbox" id="checkbox" />
-                        <p>I agree with the terms and conditions</p>
-                    </div>
-                    <button>submit</button>
+                    <form>
+                        <input
+                            v-model="first"
+                            type="text"
+                            name="first"
+                            placeholder="First Name"
+                        />
+                        <input
+                            v-model="last"
+                            type="text"
+                            name="last"
+                            placeholder="Last Name"
+                        />
+                        <input
+                            v-model="email"
+                            type="email"
+                            name="email"
+                            placeholder="Email"
+                        />
+                        <div class="tandc">
+                            <input
+                                v-model="checkbox"
+                                type="checkbox"
+                                id="checkbox"
+                            />
+                            <p>I agree with the terms and conditions</p>
+                        </div>
+                        <button v-on:click="handleClick" class="button">
+                            submit
+                        </button>
+                    </form>
                 </div>
-                <textarea name="textarea" placeholder="You message"> </textarea>
+                <textarea
+                    v-model="message"
+                    name="message"
+                    placeholder="You message"
+                >
+                </textarea>
             </div>
         </div>
     </div>
 </template>
 
 <script>
+import axios from "axios";
 export default {
     name: "contact",
-    props: {},
+    data() {
+        return {
+            first: "",
+            last: "",
+            email: "",
+            message: "",
+            checkbox: false,
+        };
+    },
+    mounted() {
+        console.log("somethin in mounted in contact");
+        window.axios = require("axios");
+    },
+    methods: {
+        handleClick: function(e) {
+            console.log("function");
+            e.preventDefault();
+            // var self = this;
+            console.log("this in handle", this);
+            var formData = new FormData();
+            console.log("formData", formData);
+            formData.append("first", this.first);
+            formData.append("last", this.last);
+            formData.append("email", this.email);
+            formData.append("message", this.message);
+            console.log("this checkbox", this.checkbox);
+            console.log("this.first", this.first);
+
+            if (this.checkbox === true) {
+                axios
+                    .post("http://localhost:8080/submit", formData)
+                    .then(function(results) {
+                        console.log("results", results);
+                    });
+            }
+        },
+    },
 };
 </script>
 

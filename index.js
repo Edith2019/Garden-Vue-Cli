@@ -1,56 +1,28 @@
 const express = require('express');
-const request = require('request');
+const cors = require('cors');
+console.log("cors", cors);
+const bodyParser = require('body-parser');
+const morgan = require('morgan');
 
 const app = express();
 
-app.use((req, res, next) => {
-    res.header('Access-Control-Allow-Origin', '*');
-    next();
-});
+app.use(morgan('tiny'));
+app.use(cors());
+app.use(bodyParser.json());
 
-app.get('/jokes/random', (req, res) => {
-    request(
-        { url: 'https://joke-api-strict-cors.appspot.com/jokes/random' },
-        (error, response, body) => {
-            if (error || response.statusCode !== 200) {
-                return res.status(500).json({ type: 'error', message: err.message });
-            }
-
-            res.json(JSON.parse(body));
-        }
-    )
-});
-
-// // const server = require('http').Server(app);
-// // const port = process.env.PORT || 8080;
-// const db = require('./utils/db');
-// const csurf = require('csurf');
-
-// app.use(express.static('./public'));
-
-// app.use(express.json());
-// const ses = require('./utils/ses');
-// const request = require('request');
-
-// app.use((req, res, next) => {
-//     res.header('Access-Control-Allow-Origin', '*');
-//     next();
+// app.get('/', (req, res) => {
+//     res.json({
+//         message: 'Behold The MEVN Stack!'
+//     });
 // });
 
-// app.get('/jokes/random', (req, res) => {
-//     request(
-//         { url: 'https://joke-api-strict-cors.appspot.com/jokes/random' },
-//         (error, response, body) => {
-//             if (error || response.statusCode !== 200) {
-//                 return res.status(500).json({ type: 'error', message: err.message });
-//             }
 
-//             res.json(JSON.parse(body));
-//         }
-//     )
-// });
+app.post("http://localhost:8080/submit", (req, res) => {
+    console.log("made it to post route");
+    console.log("req.header", req.headers)
+})
 
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => console.log(`listening on ${PORT}`));
-
-
+const port = process.env.PORT || 4000;
+app.listen(port, () => {
+    console.log(`listening on ${port}`);
+});

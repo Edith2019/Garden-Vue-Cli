@@ -7,9 +7,7 @@
         <div
             class="marker"
             ref="icon"
-            v-bind:style="{ icon: icon }"
-            width="40px"
-            height="40px"
+            v-bind:style="{ w: this.w, h: this.h }"
         ></div>
     </div>
 </template>
@@ -19,8 +17,9 @@ export default {
     name: "mapgarden",
     data() {
         return {
-            map: {},
             platform: {},
+            map: {},
+            geocoder: {},
         };
     },
     props: {
@@ -30,36 +29,41 @@ export default {
         lng: String,
         width: String,
         height: String,
+        w: String,
+        h: String,
+        location: String,
     },
     created() {
+        this.pixelRatio = window.devicePixelRatio || 1;
+        console.log("pixelRatio", this.pixelRatio);
+        window.addEventListener("resize", () =>
+            this.platform.getViewPort().resize()
+        );
         this.platform = new H.service.Platform({
             app_id: this.appId,
             app_code: this.appCode,
         });
-        this.pixelRatio = window.devicePixelRatio || 1;
-        console.log("pixelRatio", this.pixelRatio);
-        window.addEventListener("resize", () =>
-            this.paltform.getViewPort().resize()
-        );
     },
-    mounted() {
-        console.log(" this.defaultLayers", this.defaultLayers);
-
+    mounted: function() {
+        console.log(
+            "this.platform.createDefaultLayers().normal",
+            this.platform.createDefaultLayers().normal
+        );
         this.map = new H.Map(
             this.$refs.map,
             this.platform.createDefaultLayers().normal.map,
             {
                 zoom: 12,
                 center: { lng: this.lng, lat: this.lat },
-                // pixelRatio: window.devicePixelRatio || 1,
             }
         );
         console.log("this.map", this.map);
+
         this.icon = new H.map.Icon(`${require("@/assets/Logo.png")}`, {
-            size: { w: 40, h: 40 },
+            size: { w: this.w, h: this.h },
         });
         this.marker = new H.map.Marker(
-            { lat: 52.479657, lng: 13.43189 },
+            { lat: this.lat, lng: this.lng },
             { icon: this.icon }
         );
         this.map.addObject(this.marker);

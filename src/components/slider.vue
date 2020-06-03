@@ -20,7 +20,7 @@
 // import slider components
 import { slider, slideritem } from "vue-concise-slider";
 export default {
-    el: "#app",
+    name: "sliderApp",
     data() {
         return {
             //data list [array]
