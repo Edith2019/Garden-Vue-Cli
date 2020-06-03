@@ -82,11 +82,9 @@ export default {
             console.log("this.first", this.first);
 
             if (this.checkbox === true) {
-                axios
-                    .post("http://localhost:8080/submit", formData)
-                    .then(function(results) {
-                        console.log("results", results);
-                    });
+                axios.post("/submit", formData).then(function(results) {
+                    console.log("results", results);
+                });
             }
         },
     },

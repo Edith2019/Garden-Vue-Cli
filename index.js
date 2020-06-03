@@ -17,7 +17,7 @@ app.use(bodyParser.json());
 // });
 
 
-app.post("http://localhost:8080/submit", (req, res) => {
+app.post("/submit", (req, res) => {
     console.log("made it to post route");
     console.log("req.header", req.headers)
 })
