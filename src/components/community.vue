@@ -15,6 +15,34 @@
                 Lorem Ipsum.
             </p>
         </div>
+
+        <div class="testtest">
+            <img
+                src="../assets/pasta.jpg"
+                class="rounded float-left"
+                alt="..."
+            />
+            <img
+                src="../assets/House.jpg"
+                class="rounded float-right"
+                alt="..."
+            />
+            <img
+                src="../assets/gardenGreen.jpg"
+                class="rounded float-left"
+                alt="..."
+            />
+            <img
+                src="../assets/House.jpg"
+                class="rounded float-right"
+                alt="..."
+            />
+            <img
+                src="../assets/House.jpg"
+                class="rounded float-left"
+                alt="..."
+            />
+        </div>
     </div>
 </template>
 
@@ -27,8 +55,12 @@ export default {
 
 <style scoped>
 .Community {
-    height: 300px;
+    height: auto;
     width: 90%;
     margin: 200px auto;
+}
+
+img {
+    width: 25%;
 }
 </style>
