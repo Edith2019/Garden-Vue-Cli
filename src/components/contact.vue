@@ -39,7 +39,7 @@
                                 </div>
                             </div>
                         </div>
-                        <button v-on:click="handleClick" class="button">
+                        <button @click.prevent="handleClick" class="button">
                             submit
                         </button>
                     </form>
@@ -52,13 +52,64 @@
                 </textarea>
             </div>
         </div>
+
+        <div class="map-app">
+            <div class="text-app">
+                <p>Info</p>
+                <p>
+                    ver since the 1500s, when an unknown printer took a galley
+                    of type and scrambled it to make a type specimen book. It
+                    has survived not only five centu
+                </p>
+            </div>
+
+            <googlemap />
+        </div>
+
+        <div class="modal fade" id="contactModal" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">
+                            Response
+                        </h5>
+                        <button
+                            type="button"
+                            class="close"
+                            data-dismiss="modal"
+                            aria-label="Close"
+                        >
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        {{ result }}
+                    </div>
+                    <div class="modal-footer">
+                        <button
+                            type="button"
+                            class="btn btn-secondary"
+                            data-dismiss="modal"
+                        >
+                            Close
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </template>
 
 <script>
 import axios from "axios";
+import googlemap from "./googlemap.vue";
+import * as $ from "jquery";
+
 export default {
     name: "contact",
+    components: {
+        googlemap,
+    },
     data() {
         return {
             first: "",
@@ -67,6 +118,7 @@ export default {
             message: "",
             checkbox: false,
             gdpr: false,
+            result: "",
         };
     },
     mounted() {
@@ -74,23 +126,30 @@ export default {
         window.axios = require("axios");
     },
     methods: {
-        handleClick: function(e) {
-            console.log("function");
-            e.preventDefault();
-            // var self = this;
-            console.log("this in handle", this);
-
+        reset: function() {
+            this.first = "";
+            this.email = "";
+            this.message = "";
+            this.checkbox = false;
+            this.last = "";
+        },
+        handleClick: async function() {
             if (this.checkbox === true) {
-                axios
-                    .post("http://localhost:4000/submit", {
+                const results = await axios.post(
+                    "http://localhost:4000/contact/submit",
+                    {
                         first: this.first,
                         last: this.last,
                         email: this.email,
                         message: this.message,
-                    })
-                    .then(function(results) {
-                        console.log("results", results);
-                    });
+                    }
+                );
+                if (results.data) {
+                    this.reset();
+                    console.log(results);
+                    this.result = results.data.first;
+                    $("#contactModal").modal();
+                }
             } else {
                 this.gdpr = !this.gdpr;
             }

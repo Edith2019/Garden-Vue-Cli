@@ -1,65 +1,57 @@
 <template>
     <div id="app">
-        <!-- <img alt="Vue logo" src="./assets/logo.png" />
-        <HelloWorld msg="Welcome to Your Vue.js App" /> -->
-        <!-- <test msg="Testing component" /> -->
-        <div class="menu">
-            <img
-                src="@/assets/Logo.jpg"
-                width="55px"
-                height="55px"
-                background="none"
-            />
-            <a class="Intro-a" href="#about">About</a>
-            <a class="Intro-a" href="#community">Community</a>
-            <a class="Intro-a" href="#whatwedo">What we do</a>
-            <a class="Intro-a" href="#partners">Partners</a>
-            <a class="Intro-a" href="#events">Events</a>
-            <a class="Intro-a" href="#contact">Contact</a>
-        </div>
-        <div class="social-media">
-            <img
-                class="fb-social"
-                src="@/assets/instaproute.png"
-                width="30px"
-                height="30px"
-            />
-            <a
-                href="https://www.facebook.com/VollguterGemeinschaftsgarten/"
-                target="_blank"
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <router-link class="navbar-brand" to="/">VGG</router-link>
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
             >
-                <img
-                    class="fb-social"
-                    src="@/assets/fproute.png"
-                    width="30px"
-                    height="30px"
-                />
-            </a>
-        </div>
-        <intro />
-        <about id="about" />
-        <community id="community" />
-        <div class="whatwedo-App">
-            <whatwedo id="whatwedo" />
-            <slider />
-            <br />
-            <p class="findmore">Find more here...</p>
-        </div>
-        <partners id="partners" />
-        <events id="events" />
-        <contact id="contact" />
-        <div class="map-app">
-            <div class="text-app">
-                <p>Info</p>
-                <p>
-                    ver since the 1500s, when an unknown printer took a galley
-                    of type and scrambled it to make a type specimen book. It
-                    has survived not only five centu
-                </p>
-            </div>
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-            <googlemap />
-        </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <router-link class="nav-link" to="/about">
+                            About
+                        </router-link>
+                    </li>
+                    <li class="nav-item active">
+                        <router-link class="nav-link" to="/community">
+                            Community
+                        </router-link>
+                    </li>
+                    <li class="nav-item">
+                        <router-link class="nav-link" to="/whatwedo">
+                            What we do
+                        </router-link>
+                    </li>
+                    <li class="nav-item">
+                        <router-link class="nav-link" to="/partners">
+                            Partners
+                        </router-link>
+                    </li>
+                    <li class="nav-item">
+                        <router-link class="nav-link" to="/events">
+                            Events
+                        </router-link>
+                    </li>
+                    <li class="nav-item">
+                        <router-link class="nav-link" to="/contact">
+                            Contact
+                        </router-link>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <router-view></router-view>
+
         <div class="footer">
             <p>Copyright © 2020 VGG</p>
             <p v-on:click="togglemodal" class="tandcApp">TandC</p>
@@ -69,32 +61,11 @@
 </template>
 
 <script>
-// import HelloWorld from "./components/HelloWorld.vue";
-// import test from "./components/test.vue";
-import intro from "./components/intro.vue";
-import about from "./components/about.vue";
-import community from "./components/community.vue";
-import whatwedo from "./components/whatwedo.vue";
-import slider from "./components/slider.vue";
-import partners from "./components/partners.vue";
-import events from "./components/events.vue";
-import contact from "./components/contact.vue";
-import googlemap from "./components/googlemap.vue";
 import tandc from "./components/tandc.vue";
 
 export default {
     name: "App",
     components: {
-        intro,
-        about,
-        community,
-        whatwedo,
-        slider,
-        partners,
-        events,
-        contact,
-        // mapgarden,
-        googlemap,
         tandc,
     },
     data() {

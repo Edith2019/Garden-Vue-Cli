@@ -1,9 +1,8 @@
 <template>
-    <div class="Community-container">
-        <div class="Community">
-            <h1>Community</h1>
-            <br />
-            <p>
+    <div class="card Community">
+        <div class="card-body">
+            <h1 class="card-title">Community</h1>
+            <p class="card-text">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry's standard dummy
                 text ever since the 1500s, when an unknown printer took a galley
@@ -28,14 +27,8 @@ export default {
 
 <style scoped>
 .Community {
-    padding-top: 5%;
-    padding-left: 10%;
-    padding-right: 10%;
-    margin-left: 5%;
-    margin-right: 5%;
-    background-color: white;
     height: 300px;
-    margin-top: 200px;
-    opacity: 93%;
+    width: 90%;
+    margin: 200px auto;
 }
 </style>

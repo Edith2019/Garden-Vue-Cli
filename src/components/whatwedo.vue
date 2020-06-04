@@ -1,8 +1,8 @@
 <template>
-    <div class="WhatWeDo-container">
-        <div class="WhatWeDo">
-            <h1>What We Do</h1>
-            <br />
+    <div class="card WhatWeDo-container">
+        <div class="card-body">
+            <h1 class="card-title">What we do ?</h1>
+            <p class="card-text"></p>
             <p>
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry's standard dummy
@@ -30,13 +30,8 @@ export default {
 
 <style scoped>
 .WhatWeDo-container {
-    padding-top: 5%;
-    /* padding-left: 8%;
-    padding-right: 8%; */
-    /* margin-left: 5%;
-    margin-right: 5%; */
-    background-color: white;
-    padding-bottom: 50px;
-    margin-top: 200px;
+    height: 300px;
+    width: 90%;
+    margin: 200px auto;
 }
 </style>
