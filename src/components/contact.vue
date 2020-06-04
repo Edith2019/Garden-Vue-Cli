@@ -47,7 +47,7 @@
                 <textarea
                     v-model="message"
                     name="message"
-                    placeholder="You message"
+                    placeholder="Your message"
                 >
                 </textarea>
             </div>
@@ -166,7 +166,7 @@ input {
 }
 
 textarea {
-    width: 60%;
+    width: 100%;
     height: 54%;
     background-color: white;
     outline: none;

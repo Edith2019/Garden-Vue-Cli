@@ -42,6 +42,8 @@
         <div class="whatwedo-App">
             <whatwedo id="whatwedo" />
             <slider />
+            <br />
+            <p class="findmore">Find more here...</p>
         </div>
         <partners id="partners" />
         <events id="events" />
@@ -56,22 +58,12 @@
                 </p>
             </div>
 
-            <mapgarden
-                id="map"
-                appId="VZVNlOiZeKiSnbYoPX6V"
-                appCode="o3H4M8n2E7ucAsW128Z3"
-                lat="52.479657"
-                lng="13.431890"
-                width="400"
-                height="300"
-                mapEvent=""
-                w="40"
-                h="40"
-            />
+            <googlemap />
         </div>
         <div class="footer">
-            <p>© VGG</p>
-            <p>TandC</p>
+            <p>Copyright © 2020 VGG</p>
+            <p v-on:click="togglemodal" class="tandcApp">TandC</p>
+            <tandc v-if="tandcmodal" />
         </div>
     </div>
 </template>
@@ -87,7 +79,8 @@ import slider from "./components/slider.vue";
 import partners from "./components/partners.vue";
 import events from "./components/events.vue";
 import contact from "./components/contact.vue";
-import mapgarden from "./components/mapgarden.vue";
+import googlemap from "./components/googlemap.vue";
+import tandc from "./components/tandc.vue";
 
 export default {
     name: "App",
@@ -100,7 +93,19 @@ export default {
         partners,
         events,
         contact,
-        mapgarden,
+        // mapgarden,
+        googlemap,
+        tandc,
+    },
+    data() {
+        return {
+            tandcmodal: false,
+        };
+    },
+    methods: {
+        togglemodal: function() {
+            this.tandcmodal = !this.tandcmodal;
+        },
     },
 };
 </script>
@@ -174,9 +179,13 @@ img {
     margin-right: 5%;
 }
 
+.findmore {
+    text-align: right;
+    cursor: pointer;
+}
 .text-app {
-    width: 390px;
-    height: 290px;
+    width: 378px;
+    height: 278px;
     border: solid white 0.5px;
     padding: 10px;
     font-size: 12px;
@@ -202,5 +211,9 @@ img {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+}
+
+.tandcApp {
+    cursor: pointer;
 }
 </style>

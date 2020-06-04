@@ -16,6 +16,7 @@
         "cors": "^2.8.5",
         "csurf": "^1.9.0",
         "express": "^4.17.1",
+        "here-js-api": "^2.0.0",
         "mongodb": "^3.5.8",
         "morgan": "^1.10.0",
         "spiced-pg": "^1.0.0",
