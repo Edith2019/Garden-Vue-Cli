@@ -55,14 +55,14 @@
         <div class="footer">
             <p>Copyright © 2020 VGG</p>
             <p v-on:click="togglemodal" class="tandcApp">TandC</p>
-            <tandc v-if="tandcmodal" />
+            <tandc id="tandcModal" />
         </div>
     </div>
 </template>
 
 <script>
 import tandc from "./components/tandc.vue";
-
+import * as $ from "jquery";
 export default {
     name: "App",
     components: {
@@ -70,12 +70,13 @@ export default {
     },
     data() {
         return {
-            tandcmodal: false,
+            // tandcmodal: false,
         };
     },
     methods: {
         togglemodal: function() {
-            this.tandcmodal = !this.tandcmodal;
+            // this.tandcmodal = !this.tandcmodal;
+            $("#tandcModal").modal();
         },
     },
 };

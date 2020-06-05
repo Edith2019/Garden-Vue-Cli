@@ -7,24 +7,55 @@
             <div class="contact-container-input">
                 <div class="inputs-element">
                     <form>
-                        <input
-                            v-model="first"
-                            type="text"
-                            name="first"
-                            placeholder="First Name"
-                        />
-                        <input
-                            v-model="last"
-                            type="text"
-                            name="last"
-                            placeholder="Last Name"
-                        />
-                        <input
-                            v-model="email"
-                            type="email"
-                            name="email"
-                            placeholder="Email"
-                        />
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span
+                                    class="input-group-text"
+                                    id="inputGroup-sizing-default"
+                                    >First Name</span
+                                >
+                            </div>
+                            <input
+                                type="text"
+                                class="form-control"
+                                aria-label="Sizing example input"
+                                aria-describedby="inputGroup-sizing-default"
+                                v-model="first"
+                            />
+                        </div>
+
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span
+                                    class="input-group-text"
+                                    id="inputGroup-sizing-default"
+                                    >Last Name</span
+                                >
+                            </div>
+                            <input
+                                type="text"
+                                class="form-control"
+                                aria-label="Sizing example input"
+                                aria-describedby="inputGroup-sizing-default"
+                                v-model="last"
+                            />
+                        </div>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span
+                                    class="input-group-text"
+                                    id="inputGroup-sizing-default"
+                                    >Email</span
+                                >
+                            </div>
+                            <input
+                                type="text"
+                                class="form-control"
+                                aria-label="Sizing example input"
+                                aria-describedby="inputGroup-sizing-default"
+                                v-model="email"
+                            />
+                        </div>
                         <div class="tandc">
                             <input
                                 v-model="checkbox"
@@ -33,14 +64,18 @@
                             />
                             <div class="conditionsgdpr">
                                 <p>I agree with the terms and conditions</p>
-                                <br />
+
                                 <div id="gdpr" ref="gdpr" v-if="gdpr">
                                     Please agree with the terms and conditions
                                 </div>
                             </div>
                         </div>
-                        <button @click.prevent="handleClick" class="button">
-                            submit
+                        <button
+                            type="button"
+                            class="btn btn-outline-secondary"
+                            @click.prevent="handleClick"
+                        >
+                            Submit
                         </button>
                     </form>
                 </div>
@@ -48,13 +83,14 @@
                     v-model="message"
                     name="message"
                     placeholder="Your message"
+                    class="form-control"
                 >
                 </textarea>
             </div>
         </div>
 
-        <div class="map-app">
-            <div class="text-app">
+        <!-- <div class="row mx-md-n5">
+            <div class=" card-body">
                 <p>Info</p>
                 <p>
                     ver since the 1500s, when an unknown printer took a galley
@@ -63,15 +99,43 @@
                 </p>
             </div>
 
-            <googlemap />
+           
+        </div> -->
+        <div class="card-deck">
+            <div id="location" class="card">
+                <!-- <img src="..." class="card-img-top" alt="..." /> -->
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                        This is a longer card with supporting text below as a
+                        natural lead-in to additional content. This content is a
+                        little bit longer.
+                    </p>
+                    <p class="card-text">
+                        <small class="text-muted"
+                            >Last updated 3 mins ago</small
+                        >
+                    </p>
+                </div>
+            </div>
+            <div id="location" class="card right">
+                <!-- <img src="..." class="card-img-top" alt="..." /> -->
+                <div class="card-body">
+                    <googlemap class="mx-auto" />
+                </div>
+            </div>
         </div>
+
+        <!-- <div class="col px-md-5">
+                <div class="p-3 border bg-light"><googlemap /></div>
+            </div> -->
 
         <div class="modal fade" id="contactModal" role="dialog">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
                         <h5 class="modal-title" id="exampleModalLabel">
-                            Response
+                            Thank you!
                         </h5>
                         <button
                             type="button"
@@ -83,7 +147,8 @@
                         </button>
                     </div>
                     <div class="modal-body">
-                        {{ result }}
+                        Thank you {{ result }} for reaching out to us. We will
+                        come back to you as soon as possible!
                     </div>
                     <div class="modal-footer">
                         <button
@@ -148,7 +213,7 @@ export default {
                     this.reset();
                     console.log(results);
                     this.result = results.data.first;
-                    $("#contactModal").modal();
+                    $("#contactModal").modal(); //reason why jquery has been imported * as $
                 }
             } else {
                 this.gdpr = !this.gdpr;
@@ -168,6 +233,7 @@ export default {
     margin-right: 5%;
     padding-bottom: 5%;
     background-color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 50px;
 }
 
 .contact-container-input {
@@ -185,36 +251,16 @@ export default {
     justify-content: space-between;
 }
 
-input {
-    width: 300px;
-    height: 50px;
-    background-color: white;
-    outline: none;
-    border: none;
-    font-size: 15px;
-    border-bottom: solid #37bc61 3px;
-    padding-left: 30px;
-    margin-bottom: 15px;
-}
-
 #checkbox {
     width: 20px;
-    margin-top: -50px;
+    margin-top: -70px;
 }
 
 #gdpr {
     color: red;
+    font-size: 12px;
 }
 
-.conditionsgdpr {
-    display: flex;
-    flex-direction: column;
-    padding-left: 10px;
-    width: 320px;
-    position: absolute;
-    margin-left: 40px;
-    height: 90px;
-}
 .tandc {
     width: 300px;
     display: flex;
@@ -225,15 +271,22 @@ input {
 }
 
 textarea {
-    width: 100%;
-    height: 54%;
-    background-color: white;
-    outline: none;
-    border: none;
-    border-bottom: #37bc61 solid 4px;
-    font-size: 15px;
-    padding-left: 30px;
-    padding-top: 30px;
+    width: 90%;
     color: black;
+    margin-left: 5%;
+}
+
+.card-deck {
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 0px;
+}
+
+#location {
+    margin: 0px;
+}
+
+.right {
+    margin-left: 10% !important;
 }
 </style>
