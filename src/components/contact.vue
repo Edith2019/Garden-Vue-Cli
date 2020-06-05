@@ -1,92 +1,96 @@
 <template>
     <div id="contact">
-        <div class="contact-container">
-            <h1>Contact</h1>
-            <br />
-            <p>Questions? Ideas? Contributions? Reach out any time!</p>
-            <div class="contact-container-input">
-                <div class="inputs-element">
-                    <form>
-                        <div class="input-group mb-3">
-                            <div class="input-group-prepend">
-                                <span
-                                    class="input-group-text"
-                                    id="inputGroup-sizing-default"
-                                    >First Name</span
-                                >
-                            </div>
-                            <input
-                                type="text"
-                                class="form-control"
-                                aria-label="Sizing example input"
-                                aria-describedby="inputGroup-sizing-default"
-                                v-model="first"
-                            />
-                        </div>
-
-                        <div class="input-group mb-3">
-                            <div class="input-group-prepend">
-                                <span
-                                    class="input-group-text"
-                                    id="inputGroup-sizing-default"
-                                    >Last Name</span
-                                >
-                            </div>
-                            <input
-                                type="text"
-                                class="form-control"
-                                aria-label="Sizing example input"
-                                aria-describedby="inputGroup-sizing-default"
-                                v-model="last"
-                            />
-                        </div>
-                        <div class="input-group mb-3">
-                            <div class="input-group-prepend">
-                                <span
-                                    class="input-group-text"
-                                    id="inputGroup-sizing-default"
-                                    >Email</span
-                                >
-                            </div>
-                            <input
-                                type="text"
-                                class="form-control"
-                                aria-label="Sizing example input"
-                                aria-describedby="inputGroup-sizing-default"
-                                v-model="email"
-                            />
-                        </div>
-                        <div class="tandc">
-                            <input
-                                v-model="checkbox"
-                                type="checkbox"
-                                id="checkbox"
-                            />
-                            <div class="conditionsgdpr">
-                                <p>I agree with the terms and conditions</p>
-
-                                <div id="gdpr" ref="gdpr" v-if="gdpr">
-                                    Please agree with the terms and conditions
-                                </div>
-                            </div>
-                        </div>
-                        <button
-                            type="button"
-                            class="btn btn-outline-secondary"
-                            @click.prevent="handleClick"
-                        >
-                            Submit
-                        </button>
-                    </form>
-                </div>
-                <textarea
-                    v-model="message"
-                    name="message"
-                    placeholder="Your message"
-                    class="form-control"
-                >
-                </textarea>
+        <div class="card contact-container">
+            <div class="card-body">
+                <h1>Contact</h1>
+                <p>Questions? Ideas? Contributions? Reach out any time!</p>
             </div>
+        </div>
+        <div id="inputdata" class="card contact-container-input">
+            <div class="inputs-element">
+                <form>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span
+                                class="input-group-text"
+                                id="inputGroup-sizing-default"
+                                >First Name</span
+                            >
+                        </div>
+                        <input
+                            type="text"
+                            class="form-control"
+                            aria-label="Sizing example input"
+                            aria-describedby="inputGroup-sizing-default"
+                            v-model="first"
+                        />
+                    </div>
+
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span
+                                class="input-group-text"
+                                id="inputGroup-sizing-default"
+                                >Last Name</span
+                            >
+                        </div>
+                        <input
+                            type="text"
+                            class="form-control"
+                            aria-label="Sizing example input"
+                            aria-describedby="inputGroup-sizing-default"
+                            v-model="last"
+                        />
+                    </div>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span
+                                class="input-group-text"
+                                id="inputGroup-sizing-default"
+                                >Email</span
+                            >
+                        </div>
+                        <input
+                            type="text"
+                            class="form-control"
+                            aria-label="Sizing example input"
+                            aria-describedby="inputGroup-sizing-default"
+                            v-model="email"
+                        />
+                    </div>
+                    <div class="tandc">
+                        <input
+                            v-model="checkbox"
+                            type="checkbox"
+                            id="checkbox"
+                        />
+                        <div class="conditionsgdpr">
+                            <p id="tandcI">
+                                I agree with the terms and conditions
+                            </p>
+
+                            <div id="gdpr" ref="gdpr" v-if="gdpr">
+                                Please agree with the terms and conditions
+                            </div>
+                        </div>
+                    </div>
+                    <button
+                        id="submit"
+                        type="button"
+                        class="btn btn-outline-secondary"
+                        @click.prevent="handleClick"
+                    >
+                        Submit
+                    </button>
+                </form>
+            </div>
+            <textarea
+                v-model="message"
+                name="message"
+                placeholder="Your message"
+                class="form-control"
+            >
+            </textarea>
         </div>
 
         <!-- <div class="row mx-md-n5">
@@ -225,17 +229,27 @@ export default {
 
 <style scoped>
 .contact-container {
-    margin-top: 200px;
-    padding-top: 5%;
-    padding-left: 10%;
-    padding-right: 10%;
-    margin-left: 5%;
-    margin-right: 5%;
-    padding-bottom: 5%;
-    background-color: rgba(255, 255, 255, 0.8);
-    margin-bottom: 50px;
+    width: 90%;
+    margin: 200px auto;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
 }
 
+.card {
+    width: 90%;
+    margin: 200px auto;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+#inputdata {
+    background: none;
+    padding: 5%;
+    margin-bottom: 5%;
+    margin-top: 0px;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.8);
+}
 .contact-container-input {
     height: 300px;
     margin-top: 50px;
@@ -253,12 +267,15 @@ export default {
 
 #checkbox {
     width: 20px;
-    margin-top: -70px;
+    margin-top: -30px;
 }
-
+.conditionsgdpr {
+    padding-top: 0px;
+}
 #gdpr {
     color: red;
     font-size: 12px;
+    margin-top: 5px;
 }
 
 .tandc {
@@ -269,7 +286,10 @@ export default {
     justify-content: space-between;
     height: 100px;
 }
-
+#tandcI {
+    margin-top: 0px;
+    margin-bottom: 15px;
+}
 textarea {
     width: 90%;
     color: black;

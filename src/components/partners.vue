@@ -154,7 +154,7 @@ export default {
 .card-deck {
     margin-left: 5%;
     margin-right: 5%;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: none;
     padding-top: 5%;
     padding-bottom: 5%;
 }
@@ -162,8 +162,13 @@ export default {
 .row {
     margin-left: 5%;
     margin-right: 5%;
-    background-color: rgba(91, 173, 91, 0.568);
+    background-color: none;
     padding-top: 5%;
     padding-bottom: 5%;
+}
+
+.col-sm {
+    margin-left: 3%;
+    margin-right: 3%;
 }
 </style>

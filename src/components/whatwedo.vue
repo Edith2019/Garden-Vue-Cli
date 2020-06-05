@@ -16,76 +16,74 @@
                     passages, and more recently with desktop publishing software
                     like Aldus PageMaker including versions of Lorem Ipsum.
                 </p>
-                <br />
-                <br />
             </div>
-        </div>
 
-        <div class="row row-cols-1 row-cols-md-2">
-            <div class="col mb-4">
-                <div class="card">
-                    <img
-                        src="../assets/pasta.jpg"
-                        class="card-img-top"
-                        alt="..."
-                    />
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">
-                            This is a longer card with supporting text below as
-                            a natural lead-in to additional content. This
-                            content is a little bit longer.
-                        </p>
+            <div class="row row-cols-1 row-cols-md-2">
+                <div class="col mb-4">
+                    <div class="card">
+                        <img
+                            src="../assets/knowhow.png"
+                            class="card-img-top"
+                            alt="..."
+                        />
+                        <div class="card-body">
+                            <h5 class="card-title">Gardening knowledge</h5>
+                            <p class="card-text">
+                                This is a longer card with supporting text below
+                                as a natural lead-in to additional content. This
+                                content is a little bit longer.
+                            </p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col mb-4">
-                <div class="card">
-                    <img
-                        src="../assets/House.jpg"
-                        class="card-img-top"
-                        alt="..."
-                    />
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">
-                            This is a longer card with supporting text below as
-                            a natural lead-in to additional content. This
-                            content is a little bit longer.
-                        </p>
+                <div class="col mb-4">
+                    <div class="card">
+                        <img
+                            src="../assets/train.jpg"
+                            class="card-img-top"
+                            alt="..."
+                        />
+                        <div class="card-body">
+                            <h5 class="card-title">Projects</h5>
+                            <p class="card-text">
+                                This is a longer card with supporting text below
+                                as a natural lead-in to additional content. This
+                                content is a little bit longer.
+                            </p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col mb-4">
-                <div class="card">
-                    <img
-                        src="../assets/gardenGreen.jpg"
-                        class="card-img-top"
-                        alt="..."
-                    />
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">
-                            This is a longer card with supporting text below as
-                            a natural lead-in to additional content.
-                        </p>
+                <div class="col mb-4">
+                    <div class="card">
+                        <img
+                            src="../assets/eventhouse.png"
+                            class="card-img-top"
+                            alt="..."
+                        />
+                        <div class="card-body">
+                            <h5 class="card-title">Events</h5>
+                            <p class="card-text">
+                                This is a longer card with supporting text below
+                                as a natural lead-in to additional content.
+                            </p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col mb-4">
-                <div class="card">
-                    <img
-                        src="../assets/House.jpg"
-                        class="card-img-top"
-                        alt="..."
-                    />
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">
-                            This is a longer card with supporting text below as
-                            a natural lead-in to additional content. This
-                            content is a little bit longer.
-                        </p>
+                <div class="col mb-4">
+                    <div class="card">
+                        <img
+                            src="../assets/couture.jpg"
+                            class="card-img-top"
+                            alt="..."
+                        />
+                        <div class="card-body">
+                            <h5 class="card-title">Workshops</h5>
+                            <p class="card-text">
+                                This is a longer card with supporting text below
+                                as a natural lead-in to additional content. This
+                                content is a little bit longer.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -102,15 +100,20 @@ export default {
 
 <style scoped>
 .WhatWeDo-container {
-    height: 300px;
+    /* height: 300px; */
     width: 90%;
     margin: 200px auto;
     margin-bottom: 0px;
+    padding-bottom: 0px;
 }
 
 .row.row-cols-1.row-cols-md-2 {
-    padding: 5%;
-    padding-top: 25px;
-    margin-top: 0px;
+    padding: 2%;
+    padding-top: 0px;
+}
+.card-body {
+}
+img {
+    height: 400px;
 }
 </style>

@@ -121,4 +121,8 @@ export default {
     width: 90%;
     margin: 200px auto;
 }
+
+img {
+    height: 500px !important;
+}
 </style>
