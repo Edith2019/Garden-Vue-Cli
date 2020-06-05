@@ -53,7 +53,7 @@
                 </div>
                 <div class="carousel-item">
                     <img
-                        src="../assets/Logo.jpg"
+                        src="../assets/Pano.png"
                         class="d-block w-100"
                         alt="..."
                     />

@@ -23,22 +23,70 @@
                 alt="..."
             />
             <img
-                src="../assets/House.jpg"
-                class="rounded float-right"
-                alt="..."
-            />
-            <img
                 src="../assets/gardenGreen.jpg"
                 class="rounded float-left"
                 alt="..."
             />
             <img
-                src="../assets/House.jpg"
+                src="../assets/housePaint.jpg"
+                class="rounded float-left"
+                alt="..."
+            />
+            <img
+                src="../assets/flowers.jpg"
+                class="rounded float-right"
+                alt="..."
+            />
+
+            <img
+                src="../assets/sun.jpg"
                 class="rounded float-right"
                 alt="..."
             />
             <img
-                src="../assets/House.jpg"
+                src="../assets/green.jpg"
+                class="rounded float-left"
+                alt="..."
+            />
+            <img
+                src="../assets/12633.jpg"
+                class="rounded float-left"
+                alt="..."
+            />
+            <img
+                src="../assets/pink.jpg"
+                class="rounded float-left"
+                alt="..."
+            />
+            <img
+                src="../assets/couture.jpg"
+                class="rounded float-left"
+                alt="..."
+            />
+            <img
+                src="../assets/fuego.jpg"
+                class="rounded float-left"
+                alt="..."
+            />
+            <img
+                src="../assets/sits.jpg"
+                class="rounded float-left"
+                alt="..."
+            />
+            <img
+                src="../assets/cooking.png"
+                class="rounded float-left"
+                alt="..."
+            />
+            <img src="../assets/red.jpg" class="rounded float-left" alt="..." />
+
+            <img
+                src="../assets/painting.png"
+                class="rounded float-left"
+                alt="..."
+            />
+            <img
+                src="../assets/leaves.jpg"
                 class="rounded float-left"
                 alt="..."
             />
@@ -61,6 +109,8 @@ export default {
 }
 
 img {
-    width: 25%;
+    width: 33%;
+    height: 250px;
+    margin: 0.15%;
 }
 </style>
