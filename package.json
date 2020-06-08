@@ -8,6 +8,7 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "@lawcket/websocket": "^0.1.5",
     "aws-sdk": "^2.476.0",
     "axios": "^0.19.2",
     "body-parser": "^1.19.0",
@@ -25,7 +26,8 @@
     "spiced-pg": "^1.0.0",
     "vue": "^2.6.11",
     "vue-event-calendar": "^1.5.2",
-    "vue-router": "^3.3.2"
+    "vue-router": "^3.3.2",
+    "websocket-extensions": "^0.1.4"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.3.0",
@@ -36,6 +38,7 @@
     "eslint": "^6.8.0",
     "eslint-loader": "^4.0.2",
     "eslint-plugin-vue": "^6.2.2",
+    "serverless-websockets-plugin": "^1.0.0",
     "vue-concise-slider": "^3.4.4",
     "vue-template-compiler": "^2.6.11"
   },
