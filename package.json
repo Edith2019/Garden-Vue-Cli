@@ -41,7 +41,8 @@
     "eslint-plugin-vue": "^6.2.2",
     "serverless-websockets-plugin": "^1.0.0",
     "vue-concise-slider": "^3.4.4",
-    "vue-template-compiler": "^2.6.11"
+    "vue-template-compiler": "^2.6.11",
+    "vue-progressive-image":"^3.2.0"
   },
   "eslintConfig": {
     "root": true,
