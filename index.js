@@ -7,7 +7,7 @@ const app = express();
 const routes = require('./routes');
 const cookieSession = require('cookie-session');
 // const csurf = require('csurf');
-app.use(express.static('./public'));
+app.use(express.static('./dist'));
 app.use(cors());
 app.use(bodyParser.json());
 
