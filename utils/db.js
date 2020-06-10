@@ -5,7 +5,7 @@ const db = spicedPg(
     "postgres:postgres:postgres@localhost:5432/garden"
 );
 
-module.exports.postSubmit = (first, last, email, message) => {
+module.exports.postSub = (first, last, email, message) => {
     const q = ` INSERT INTO garden (first, last, email, message)
  VALUES ($1, $2, $3, $4)
     RETURNING *`;

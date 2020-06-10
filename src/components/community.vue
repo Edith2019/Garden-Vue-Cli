@@ -21,7 +21,14 @@
                 src="../assets/pasta.jpg"
                 class="rounded float-left"
                 alt="..."
+                placeholder="../assets/pasta.jpg"
             />
+            <!-- <img
+                src="../assets/pasta.jpg"
+                class="rounded float-left"
+                alt="..."
+                placeholder="../assets/pasta.jpg"
+            /> -->
             <img
                 src="../assets/gardenGreen.jpg"
                 class="rounded float-left"
@@ -97,6 +104,9 @@
 <script>
 export default {
     name: "community",
+    data() {
+        return {};
+    },
     props: {},
 };
 </script>

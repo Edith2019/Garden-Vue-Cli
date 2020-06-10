@@ -59,19 +59,19 @@
                         />
                     </div>
                     <div class="tandc">
-                        <input
-                            v-model="checkbox"
-                            type="checkbox"
-                            id="checkbox"
-                        />
-                        <div class="conditionsgdpr">
-                            <p id="tandcI">
+                        <div class="alignItems">
+                            <input
+                                v-model="checkbox"
+                                type="checkbox"
+                                id="checkbox"
+                            />
+
+                            <p class="tandcI">
                                 I agree with the terms and conditions
                             </p>
-
-                            <div id="gdpr" ref="gdpr" v-if="gdpr">
-                                Please agree with the terms and conditions
-                            </div>
+                        </div>
+                        <div id="gdpr" ref="gdpr" v-if="gdpr">
+                            Please agree with the terms and conditions
                         </div>
                     </div>
                     <button
@@ -93,21 +93,8 @@
             </textarea>
         </div>
 
-        <!-- <div class="row mx-md-n5">
-            <div class=" card-body">
-                <p>Info</p>
-                <p>
-                    ver since the 1500s, when an unknown printer took a galley
-                    of type and scrambled it to make a type specimen book. It
-                    has survived not only five centu
-                </p>
-            </div>
-
-           
-        </div> -->
         <div class="card-deck">
             <div id="location" class="card">
-                <!-- <img src="..." class="card-img-top" alt="..." /> -->
                 <div class="card-body">
                     <h5 class="card-title">Card title</h5>
                     <p class="card-text">
@@ -123,16 +110,11 @@
                 </div>
             </div>
             <div id="location" class="card right">
-                <!-- <img src="..." class="card-img-top" alt="..." /> -->
                 <div class="card-body">
                     <googlemap class="mx-auto" />
                 </div>
             </div>
         </div>
-
-        <!-- <div class="col px-md-5">
-                <div class="p-3 border bg-light"><googlemap /></div>
-            </div> -->
 
         <div class="modal fade" id="contactModal" role="dialog">
             <div class="modal-dialog">
@@ -267,29 +249,27 @@ export default {
 
 #checkbox {
     width: 20px;
-    margin-top: -30px;
+    margin-top: 5px;
 }
-.conditionsgdpr {
-    padding-top: 0px;
-}
+
 #gdpr {
     color: red;
     font-size: 12px;
     margin-top: 5px;
 }
-
-.tandc {
-    width: 300px;
+.alignItems {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
+    font-size: 12px;
+    padding-top: 4px;
+}
+
+.tandc {
     height: 100px;
 }
-#tandcI {
-    margin-top: 0px;
-    margin-bottom: 15px;
-}
+
 textarea {
     width: 90%;
     color: black;

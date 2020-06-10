@@ -26,6 +26,7 @@
     "spiced-pg": "^1.0.0",
     "vue": "^2.6.11",
     "vue-event-calendar": "^1.5.2",
+    "vue-progressive-image": "^3.2.0",
     "vue-router": "^3.3.2",
     "websocket-extensions": "^0.1.4"
   },

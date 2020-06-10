@@ -5,9 +5,15 @@ import router from './router';
 import 'vue-event-calendar/dist/style.css' //^1.1.10, CSS has been extracted as one file, so you can easily update it.
 import vueEventCalendar from 'vue-event-calendar'
 import 'bootstrap'; import 'bootstrap/dist/css/bootstrap.min.css';
+import VueProgressiveImage from "vue-progressive-image";
+
 
 Vue.use(router)
 Vue.use(vueEventCalendar, { locale: 'en' })
+Vue.use(VueProgressiveImage, {
+  cache: false,
+  delay: 2000
+})
 
 Vue.config.productionTip = false
 
@@ -16,5 +22,6 @@ Vue.config.productionTip = false
 new Vue({
   router,
   vueEventCalendar,
+  VueProgressiveImage,
   render: h => h(App),
 }).$mount('#app')
