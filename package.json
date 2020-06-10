@@ -2,11 +2,15 @@
     "name": "garden-project",
     "version": "0.1.0",
     "private": true,
+    "main": "index.js",
     "scripts": {
         "serve": "vue-cli-service serve",
         "build": "vue-cli-service build",
         "lint": "vue-cli-service lint",
         "start": "node index.js"
+    },
+    "engines": {
+        "node": "10.15.1"
     },
     "dependencies": {
         "@lawcket/websocket": "^0.1.5",
