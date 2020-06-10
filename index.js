@@ -1,6 +1,6 @@
 const express = require('express');
 const config = require('./config');
-
+const path = require('path');
 const cors = require('cors');
 const bodyParser = require('body-parser');
 
@@ -25,8 +25,10 @@ app.use(
 
 routes(app);
 
-
-
+// We have two router (Server,Client) and we need to use VUE.js Route  so we forwared the request into Client router..
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, './dist/index.html'));
+})
 
 const port = process.env.PORT || 4000;
 app.listen(port, () => {
