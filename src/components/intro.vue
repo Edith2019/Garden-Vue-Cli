@@ -1,17 +1,13 @@
 <template>
     <div class="Intro">
         <div class="Intro-container">
-            <br />
             <h1 class="Intro-title">Welcome to VGG Garden!</h1>
-            <br />
-            <br />
-            <br />
-            <br />
+
             <img
                 class="Intro-picture"
                 src="@/assets/container.jpg"
-                width="800px"
-                height="400px"
+                width="80%"
+                height="60%"
             />
         </div>
     </div>
@@ -36,7 +32,7 @@ export default {
 }
 .Intro-picture {
     border: solid rgba(255, 255, 255, 0.8) 10px;
-    /* border-radius: 10px; */
+    margin-top: 5%;
 }
 .Intro-title {
     color: white;

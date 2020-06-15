@@ -12,19 +12,29 @@
                 popularised in the 1960s with the release of Letraset sheets
             </p>
         </div>
+        <calendar></calendar>
         <div class="calendarBOx">
-            <iframe
-                class="mx-auto"
-                src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FVollguterGemeinschaftsgarten%2F&tabs=events&width=200&height=400&small_header=false&adapt_container_width=false&hide_cover=false&show_facepile=true&appId"
-                width="500"
-                height="600"
-                style="border:none;overflow:hidden"
-                scrolling="no"
-                frameborder="0"
-                allowTransparency="true"
-                allow="encrypted-media"
-            ></iframe>
-            <calendar></calendar>
+            <div
+                class="fb-page"
+                data-href="https://www.facebook.com/VollguterGemeinschaftsgarten/"
+                data-tabs="events"
+                data-width=""
+                data-height=""
+                data-small-header="false"
+                data-adapt-container-width="true"
+                data-hide-cover="false"
+                data-show-facepile="true"
+            >
+                <blockquote
+                    cite="https://www.facebook.com/VollguterGemeinschaftsgarten/"
+                    class="fb-xfbml-parse-ignore"
+                >
+                    <a
+                        href="https://www.facebook.com/VollguterGemeinschaftsgarten/"
+                        >Vollguter Gemeinschaftsgarten</a
+                    >
+                </blockquote>
+            </div>
         </div>
     </div>
 </template>
@@ -50,7 +60,9 @@ export default {
     },
     created: function() {},
 
-    mounted: function() {},
+    mounted: function() {
+        console.log("data", this.data);
+    },
 };
 </script>
 
@@ -59,21 +71,5 @@ export default {
     height: auto;
     width: 90%;
     margin: 200px auto;
-    border: solid black 3px;
 }
-
-/* .calendarborder {
-    border: solid red 4px;
-    width: 300px;
-}
-.calendar {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-.calendarBOx {
-    width: auto;
-    height: auto; */
-/* } */
 </style>
