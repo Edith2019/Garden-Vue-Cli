@@ -17,11 +17,16 @@
         </div>
 
         <div class="testtest">
-            <img
+            <progressive-img
                 src="../assets/pasta.jpg"
                 class="rounded float-left"
                 alt="..."
                 placeholder="../assets/pasta.jpg"
+                :blur="30"
+                @onLoad="onLoad"
+                @onLoadPlaceholder="onLoadPlaceholder"
+                @onError="onError"
+                @onErrorPlaceholder="onErrorPlaceholder"
             />
             <!-- <img
                 src="../assets/pasta.jpg"
@@ -29,70 +34,74 @@
                 alt="..."
                 placeholder="../assets/pasta.jpg"
             /> -->
-            <img
+            <progressive-img
                 src="../assets/gardenGreen.jpg"
                 class="rounded float-left"
                 alt="..."
             />
-            <img
+            <progressive-img
                 src="../assets/housePaint.jpg"
                 class="rounded float-left"
                 alt="..."
             />
-            <img
+            <progressive-img
                 src="../assets/flowers.jpg"
                 class="rounded float-right"
                 alt="..."
             />
 
-            <img
+            <progressive-img
                 src="../assets/sun.jpg"
                 class="rounded float-right"
                 alt="..."
             />
-            <img
+            <progressive-img
                 src="../assets/green.jpg"
                 class="rounded float-left"
                 alt="..."
             />
-            <img
+            <progressive-img
                 src="../assets/12633.jpg"
                 class="rounded float-left"
                 alt="..."
             />
-            <img
+            <progressive-img
                 src="../assets/pink.jpg"
                 class="rounded float-left"
                 alt="..."
             />
-            <img
+            <progressive-img
                 src="../assets/couture.jpg"
                 class="rounded float-left"
                 alt="..."
             />
-            <img
+            <progressive-img
                 src="../assets/fuego.jpg"
                 class="rounded float-left"
                 alt="..."
             />
-            <img
+            <progressive-img
                 src="../assets/sits.jpg"
                 class="rounded float-left"
                 alt="..."
             />
-            <img
+            <progressive-img
                 src="../assets/cooking.png"
                 class="rounded float-left"
                 alt="..."
             />
-            <img src="../assets/red.jpg" class="rounded float-left" alt="..." />
+            <progressive-img
+                src="../assets/red.jpg"
+                class="rounded float-left"
+                alt="..."
+            />
 
-            <img
+            <progressive-img
                 src="../assets/painting.png"
                 class="rounded float-left"
                 alt="..."
             />
-            <img
+            <progressive-img
                 src="../assets/leaves.jpg"
                 class="rounded float-left"
                 alt="..."
@@ -108,6 +117,21 @@ export default {
         return {};
     },
     props: {},
+
+    methods: {
+        onLoad() {
+            // main image is loaded
+        },
+        onLoadPlaceholder() {
+            // placeholder image is loaded
+        },
+        onError(error) {
+            // main image error
+        },
+        onErrorPlaceholder(error) {
+            // placeholder image error
+        },
+    },
 };
 </script>
 

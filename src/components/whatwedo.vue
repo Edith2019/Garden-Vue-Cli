@@ -21,7 +21,7 @@
             <div class="row row-cols-1 row-cols-md-2">
                 <div class="col mb-4">
                     <div class="card">
-                        <img
+                        <progressive-img
                             src="../assets/knowhow.png"
                             class="card-img-top"
                             alt="..."
@@ -38,7 +38,7 @@
                 </div>
                 <div class="col mb-4">
                     <div class="card">
-                        <img
+                        <progressive-img
                             src="../assets/train.jpg"
                             class="card-img-top"
                             alt="..."
@@ -55,7 +55,7 @@
                 </div>
                 <div class="col mb-4">
                     <div class="card">
-                        <img
+                        <progressive-img
                             src="../assets/eventhouse.png"
                             class="card-img-top"
                             alt="..."
@@ -71,7 +71,7 @@
                 </div>
                 <div class="col mb-4">
                     <div class="card">
-                        <img
+                        <progressive-img
                             src="../assets/couture.jpg"
                             class="card-img-top"
                             alt="..."

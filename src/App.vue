@@ -47,6 +47,32 @@
                         </router-link>
                     </li>
                 </ul>
+                <li class="navbar-text ">
+                    <a
+                        href="https://www.facebook.com/VollguterGemeinschaftsgarten/"
+                        target="_blank"
+                    >
+                        <img
+                            id="social"
+                            src="@/assets/fproute.png"
+                            width="30px"
+                            height="30px"
+                        />
+                    </a>
+                </li>
+                <li class="navbar-text">
+                    <a
+                        href="https://www.instagram.com/vollgutergemeinschaftsgartennk/?hl=en"
+                        target="_blank"
+                    >
+                        <img
+                            id="social"
+                            src="@/assets/instaproute.png"
+                            width="30px"
+                            height="30px"
+                        />
+                    </a>
+                </li>
             </div>
         </nav>
 
@@ -99,6 +125,9 @@ img {
     object-fit: cover;
 }
 
+#social {
+    margin-right: 20px;
+}
 .menu {
     display: flex;
     flex-direction: row;
@@ -112,24 +141,6 @@ img {
     color: white;
     opacity: 95%;
     z-index: 10;
-}
-
-.social-media {
-    width: 12%;
-    height: 70px;
-    position: fixed;
-    margin-top: 170px;
-    margin-left: -2%;
-    background-color: white;
-    border: solid #37bc61 1px;
-    border-bottom: solid 2px #37bc61;
-    z-index: 500;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    border-radius: 10px;
-    padding-left: 5px;
 }
 
 .Intro-a {
