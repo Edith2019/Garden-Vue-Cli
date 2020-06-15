@@ -4,15 +4,15 @@
             <!-- <div slot="day-popover" slot-scope="{ day, dayTitle, attributes }">
                 <div class="text-xs text-gray-300 font-semibold text-center">
                     {{ dayTitle }}
-                </div>
-                <PopoverRow
-                    v-for="attr in attributes"
-                    :key="attr.key"
-                    :attribute="attr"
-                >
-                    {{ customData.description }}
-                </PopoverRow>
-            </div> -->
+                </div> -->
+            <!-- <PopoverRow
+                v-for="attr in attributes"
+                :key="attr.key"
+                :attribute="attr"
+            >
+                {{ customData.description }}
+            </PopoverRow> -->
+            <!-- </div> -->
             <!-- <div slot="day-popover" slot-scope="{ format }">
                 {{ format(dragValue ? dragValue.start : range.start, "MMM D") }}
                 -

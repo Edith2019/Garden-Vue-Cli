@@ -1,5 +1,5 @@
-import Vue from 'vue'
-import VueRouter from 'vue-router'
+
+
 import About from '../components/about.vue'
 import Community from '../components/community.vue'
 import Partners from "../components/partners.vue";
@@ -8,7 +8,7 @@ import Events from "../components/events.vue";
 import Contact from "../components/contact.vue";
 import Home from "../components/home.vue";
 
-Vue.use(VueRouter)
+
 
 const routes = [
   {
@@ -51,10 +51,6 @@ const routes = [
 
 ]
 
-const router = new VueRouter({
-  mode: 'history',
-  base: process.env.BASE_URL,
-  routes
-})
 
-export default router
+
+export default routes

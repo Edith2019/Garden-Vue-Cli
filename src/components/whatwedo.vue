@@ -22,7 +22,8 @@
                 <div class="col mb-4">
                     <div class="card">
                         <progressive-img
-                            src="../assets/knowhow.png"
+                            id="pic"
+                            src="/knowhow.png"
                             class="card-img-top"
                             alt="..."
                         />
@@ -39,7 +40,8 @@
                 <div class="col mb-4">
                     <div class="card">
                         <progressive-img
-                            src="../assets/train.jpg"
+                            id="pic"
+                            src="/train.jpg"
                             class="card-img-top"
                             alt="..."
                         />
@@ -56,7 +58,8 @@
                 <div class="col mb-4">
                     <div class="card">
                         <progressive-img
-                            src="../assets/eventhouse.png"
+                            id="pic"
+                            src="/eventhouse.png"
                             class="card-img-top"
                             alt="..."
                         />
@@ -72,7 +75,8 @@
                 <div class="col mb-4">
                     <div class="card">
                         <progressive-img
-                            src="../assets/couture.jpg"
+                            id="pic"
+                            src="/couture.jpg"
                             class="card-img-top"
                             alt="..."
                         />
@@ -111,9 +115,8 @@ export default {
     padding: 2%;
     padding-top: 0px;
 }
-.card-body {
-}
-img {
+
+#pic {
     height: 400px;
 }
 </style>

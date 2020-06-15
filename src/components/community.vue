@@ -18,91 +18,94 @@
 
         <div class="testtest">
             <progressive-img
-                src="../assets/pasta.jpg"
-                class="rounded float-left"
-                alt="..."
-                placeholder="../assets/pasta.jpg"
-                :blur="30"
-                @onLoad="onLoad"
-                @onLoadPlaceholder="onLoadPlaceholder"
-                @onError="onError"
-                @onErrorPlaceholder="onErrorPlaceholder"
-            />
-            <!-- <img
-                src="../assets/pasta.jpg"
-                class="rounded float-left"
-                alt="..."
-                placeholder="../assets/pasta.jpg"
-            /> -->
-            <progressive-img
-                src="../assets/gardenGreen.jpg"
+                id="pic"
+                src="/pasta.jpg"
                 class="rounded float-left"
                 alt="..."
             />
             <progressive-img
-                src="../assets/housePaint.jpg"
+                id="pic"
+                src="/gardenGreen.jpg"
                 class="rounded float-left"
                 alt="..."
             />
             <progressive-img
-                src="../assets/flowers.jpg"
+                id="pic"
+                src="/housePaint.jpg"
+                class="rounded float-left"
+                alt="..."
+            />
+            <progressive-img
+                id="pic"
+                src="/flowers.jpg"
                 class="rounded float-right"
                 alt="..."
             />
 
             <progressive-img
-                src="../assets/sun.jpg"
+                id="pic"
+                src="/sun.jpg"
                 class="rounded float-right"
                 alt="..."
             />
             <progressive-img
-                src="../assets/green.jpg"
+                id="pic"
+                src="/green.jpg"
                 class="rounded float-left"
                 alt="..."
             />
             <progressive-img
-                src="../assets/12633.jpg"
+                id="pic"
+                src="/12633.jpg"
                 class="rounded float-left"
                 alt="..."
             />
             <progressive-img
-                src="../assets/pink.jpg"
+                id="pic"
+                src="/pink.jpg"
                 class="rounded float-left"
                 alt="..."
             />
             <progressive-img
-                src="../assets/couture.jpg"
+                id="pic"
+                src="/couture.jpg"
                 class="rounded float-left"
                 alt="..."
             />
             <progressive-img
-                src="../assets/fuego.jpg"
+                id="pic"
+                src="/fuego.jpg"
                 class="rounded float-left"
                 alt="..."
             />
             <progressive-img
-                src="../assets/sits.jpg"
+                id="pic"
+                src="/sits.jpg"
                 class="rounded float-left"
                 alt="..."
             />
             <progressive-img
-                src="../assets/cooking.png"
+                id="pic"
+                src="/cooking.png"
                 class="rounded float-left"
                 alt="..."
             />
             <progressive-img
-                src="../assets/red.jpg"
+                id="pic"
+                src="/red.jpg"
                 class="rounded float-left"
                 alt="..."
             />
 
             <progressive-img
-                src="../assets/painting.png"
+                id="pic"
+                src="/painting.png"
                 class="rounded float-left"
                 alt="..."
             />
             <progressive-img
-                src="../assets/leaves.jpg"
+                id="pic"
+                src="/leaves.jpg"
                 class="rounded float-left"
                 alt="..."
             />
@@ -132,6 +135,9 @@ export default {
             // placeholder image error
         },
     },
+    components: {
+        // VueProgressiveImage,
+    },
 };
 </script>
 
@@ -142,9 +148,16 @@ export default {
     margin: 200px auto;
 }
 
-img {
+#pic {
     width: 33%;
     height: 250px;
     margin: 0.15%;
+    transition: transform 0.2s;
+}
+
+#pic:hover {
+    transform: scale(1.2);
+    z-index: 100;
+    border: white solid 4px;
 }
 </style>
