@@ -171,6 +171,7 @@ export default {
     height: auto;
     width: 90%;
     margin: 200px auto;
+    padding-bottom: 50px;
 }
 
 /* .progressive-image-wrapper {
@@ -191,48 +192,4 @@ export default {
     border: white solid 4px;
     object-fit: cover;
 }
-
-/* img.progressive-image-wrapper {
-    width: 33% !important;
-    height: 200px !important;
-    object-fit: cover;
-} */
-
-/* 
-img.progressive-image-main {
-    height: 200px !important;
-    margin: 0.15%;
-    width: 33% !important;
-    transition: transform 0.2s;
-    object-fit: cover !important;
-} */
-
-/* #pic.rounded.float-left.progressive-image {
-    width: 33%;
-    height: 200px;
-    object-fit: cover;
-}
-#pic:hover {
-    transform: scale(1.2);
-    z-index: 100;
-    border: white solid 4px;
-    object-fit: cover;
-}
-
-.rounded.float-left.progressive-image {
-    object-fit: cover;
-} */
-
-/* .progressive-image-main {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 33%;
-    height: 200px;
-    z-index: 1;
-    transition-duration: 0.3s;
-    transition-property: all;
-    transition-timing-function: ease-out;
-    transform: translateZ(0);
-} */
 </style>

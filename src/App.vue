@@ -194,6 +194,11 @@ img {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    font-size: 12px;
+}
+
+p {
+    margin: 0px !important;
 }
 
 .tandcApp {

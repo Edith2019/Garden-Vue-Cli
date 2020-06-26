@@ -26,11 +26,7 @@
                         Gemeinschaftsgarten wurde erst durch den Zuhause e.V.
                         initiert.
                     </p>
-                    <p class="card-text">
-                        <small class="text-muted"
-                            >Last updated 3 mins ago</small
-                        >
-                    </p>
+                    <p class="card-text"></p>
                 </div>
             </div>
             <div id="hover" class="card">
@@ -49,11 +45,7 @@
                         ArchitekturstudentInnen geplant und befindet sich in der
                         Mitte von Vollguter Gemeinschaftsgarten.
                     </p>
-                    <p class="card-text">
-                        <small class="text-muted"
-                            >Last updated 3 mins ago</small
-                        >
-                    </p>
+                    <p class="card-text"></p>
                 </div>
             </div>
             <div id="hover" class="card">
@@ -75,11 +67,7 @@
                         Grundstücke der Spekulation, damit sie dauerhaft
                         sozialverträglich nutzen können. das VGG ....
                     </p>
-                    <p class="card-text">
-                        <small class="text-muted"
-                            >Last updated 3 mins ago</small
-                        >
-                    </p>
+                    <p class="card-text"></p>
                 </div>
             </div>
         </div>
@@ -95,8 +83,8 @@
         <div class="row rounded border ">
             <div class="col-sm">
                 <div class="card border-success mb-5" style="max-width: 18rem;">
-                    <div class="card-header">Header</div>
-                    <div class="card-body text-success">
+                    <div class="card-header text-success">Header</div>
+                    <div class="card-body ">
                         <h5 class="card-title">Success card title</h5>
                         <p class="card-text">
                             Some quick example text to build on the card title
@@ -107,8 +95,8 @@
             </div>
             <div class="col-sm">
                 <div class="card border-success mb-5" style="max-width: 18rem;">
-                    <div class="card-header">Header</div>
-                    <div class="card-body text-success">
+                    <div class="card-header text-success">Header</div>
+                    <div class="card-body ">
                         <h5 class="card-title">Success card title</h5>
                         <p class="card-text">
                             Some quick example text to build on the card title
@@ -119,8 +107,8 @@
             </div>
             <div class="col-sm">
                 <div class="card border-success mb-5" style="max-width: 18rem;">
-                    <div class="card-header">Header</div>
-                    <div class="card-body text-success">
+                    <div class="card-header text-success">Header</div>
+                    <div class="card-body ">
                         <h5 class="card-title">Success card title</h5>
                         <p class="card-text">
                             Some quick example text to build on the card title
@@ -172,5 +160,12 @@ export default {
 .col-sm {
     margin-left: 3%;
     margin-right: 3%;
+}
+
+.card-deck.rounded.border {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+.row.rounded.border {
+    background-color: rgba(255, 255, 255, 0.9);
 }
 </style>
