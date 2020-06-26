@@ -148,13 +148,18 @@ export default {
     margin: 200px auto;
 }
 
-#pic {
-    width: 33%;
-    height: 250px;
+img {
+    height: 200px !important;
     margin: 0.15%;
     transition: transform 0.2s;
+    object-fit: cover !important;
 }
 
+#pic.rounded.float-left.progressive-image {
+    width: 33%;
+    height: 200px;
+    object-fit: cover;
+}
 #pic:hover {
     transform: scale(1.2);
     z-index: 100;

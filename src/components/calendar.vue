@@ -31,9 +31,10 @@ export default {
     data() {
         const todos = [
             {
-                description: "Take Noah to basketball practice.",
+                description:
+                    "Saturday afternoon is Garden Day. We meet to garden, fix, built and hung out together",
                 isComplete: false,
-                dates: { weekdays: 6 }, // Every Friday
+                dates: { weekdays: 7 }, // Every Friday
                 color: "green",
             },
         ];
@@ -82,8 +83,6 @@ export default {
 </script>
 <style scoped>
 #calendar {
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-bottom: 5%;
+    width: 40%;
 }
 </style>

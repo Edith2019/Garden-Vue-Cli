@@ -3,37 +3,15 @@
         <div class="card-body">
             <h1>Events</h1>
             <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type specimen book. It has
-                survived not only five centuries, but also the leap into
-                electronic typesetting, remaining essentially unchanged. It was
-                popularised in the 1960s with the release of Letraset sheets
+                Every Saturday afternoon is Garden Day. We meet to garden, fix,
+                built and hung out together.
             </p>
         </div>
-        <!-- <calendar></calendar> -->
-        <div class="calendarBOx">
-            <div
-                class="fb-page"
-                data-href="https://www.facebook.com/VollguterGemeinschaftsgarten/"
-                data-tabs="events"
-                data-width=""
-                data-height=""
-                data-small-header="false"
-                data-adapt-container-width="true"
-                data-hide-cover="false"
-                data-show-facepile="true"
-            >
-                <blockquote
-                    cite="https://www.facebook.com/VollguterGemeinschaftsgarten/"
-                    class="fb-xfbml-parse-ignore"
-                >
-                    <a
-                        href="https://www.facebook.com/VollguterGemeinschaftsgarten/"
-                        >Vollguter Gemeinschaftsgarten</a
-                    >
-                </blockquote>
+        <div class="Events">
+            <calendar></calendar>
+            <div class="calendarBOx">
+           <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FVollguterGemeinschaftsgarten%2F&tabs=Events&width=340&height=214&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=202851787539015" width="340" height="214" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+                </div>
             </div>
         </div>
     </div>
@@ -71,5 +49,16 @@ export default {
     height: auto;
     width: 90%;
     margin: 200px auto;
+}
+
+.Events {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 50px;
+    align-items: center
+}
+
+.calendarBOx {
 }
 </style>

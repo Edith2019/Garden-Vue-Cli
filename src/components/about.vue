@@ -3,17 +3,28 @@
         <div class="card-body">
             <h1 class="card-title">About</h1>
             <p class="card-text">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type specimen book. It has
-                survived not only five centuries, but also the leap into
-                electronic typesetting, remaining essentially unchanged. It was
-                popularised in the 1960s with the release of Letraset sheets
-                containing Lorem Ipsum passages, and more recently with desktop
-                publishing software like Aldus PageMaker including versions of
-                Lorem Ipsum.
+                Vollguter Gemeinschaftsgarten (VGG) is a Neukölln-based
+                community project located in the heart of the ""Kindl Kiez"".
+                VGG is a Garden. VGG is a platform for Experimentation, were you
+                can explore the worlds of plants and herbs and were you can
+                build installations from recycled material. It is place to learn
+                from one another, to learn about bees, to repair your bike, to
+                weld, to prepare dumplings or learn about composting. VGG is
+                platform for artists and performers. For some, VGG is a home.
+                VGG is a place to meet and hang out. VGG is an open community of
+                people who like to work together and get their hands dirty.
             </p>
+            <p>
+                We believe in Bio- and Social diversity, We are proud of our
+                diversity and make space appreciate all living things. We
+                believe in the three permaculture ethics: earth care, people
+                care, fare share. COME AND JOIN US :)
+            </p>
+            <p>Opening Hours: the Garden is always open!</p>
+            We signed the
+            <a href="https://urbangardeningmanifest.de/"
+                >Urban Gardening Manifest</a
+            >.
         </div>
         <!-- <div class="test"> -->
         <div
@@ -44,10 +55,9 @@
                         alt="..."
                     />
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>First slide label</h5>
+                        <h5>VGG Garden</h5>
                         <p>
-                            Nulla vitae elit libero, a pharetra augue mollis
-                            interdum.
+                            Sunny and flowery times!
                         </p>
                     </div>
                 </div>
@@ -58,10 +68,9 @@
                         alt="..."
                     />
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>Second slide label</h5>
+                        <h5>Garden - Early Stage</h5>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit.
+                            This the land where everything started.
                         </p>
                     </div>
                 </div>
@@ -72,10 +81,10 @@
                         alt="..."
                     />
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>Third slide label</h5>
+                        <h5>Graden - events</h5>
                         <p>
-                            Praesent commodo cursus magna, vel scelerisque nisl
-                            consectetur.
+                            Regular meeting take place to share meals, ideas and
+                            love!
                         </p>
                     </div>
                 </div>
