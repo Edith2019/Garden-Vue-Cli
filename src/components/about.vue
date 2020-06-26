@@ -22,7 +22,7 @@
             </p>
             <p>Opening Hours: the Garden is always open!</p>
             We signed the
-            <a href="https://urbangardeningmanifest.de/"
+            <a href="https://urbangardeningmanifest.de/" target="_blank"
                 >Urban Gardening Manifest</a
             >.
         </div>

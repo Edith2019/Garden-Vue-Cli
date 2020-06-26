@@ -55,10 +55,11 @@ export default {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    padding-left: 5%;
+    padding-right: 5%;
     margin-bottom: 50px;
-    align-items: center
+    align-items: center;
 }
 
-.calendarBOx {
-}
+
 </style>
