@@ -96,17 +96,22 @@
         <div class="card-deck">
             <div id="location" class="card">
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
+                    <h5 class="card-title">General Information:</h5>
                     <p class="card-text">
-                        This is a longer card with supporting text below as a
-                        natural lead-in to additional content. This content is a
-                        little bit longer.
+                        Opening hours: we are always open
                     </p>
-                    <p class="card-text">
-                        <small class="text-muted"
-                            >Last updated 3 mins ago</small
-                        >
+                    <p>
+                        Covid-19:
                     </p>
+                    <p>
+                        - Due to the current restrictions in place, only XXX
+                        amount of people are allowed in the garden.
+                    </p>
+                    <p>
+                        - We are as well slowing down the amount of events till
+                        we get further notice from the government
+                    </p>
+                    <p class="card-text"></p>
                 </div>
             </div>
             <div id="location" class="card right">
