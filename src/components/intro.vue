@@ -28,7 +28,7 @@ export default {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 200px;
+    padding-bottom: 0px;
 }
 .Intro-picture {
     border: solid rgba(255, 255, 255, 0.8) 10px;
@@ -38,5 +38,6 @@ export default {
     color: white;
     font-size: 5em;
     text-align: center;
+    margin-top: 50px;
 }
 </style>

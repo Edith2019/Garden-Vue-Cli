@@ -1,9 +1,11 @@
 <template>
     <div id="app">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <router-link class="navbar-brand" to="/">VGG</router-link>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <!-- <router-link class="navbar-brand" to="/"> -->
+            <a href="#home" class="navbar-brand"> VGG </a>
+            <!-- </router-link> -->
             <button
-                class="navbar-toggler"
+                class="navbar-toggler "
                 type="button"
                 data-toggle="collapse"
                 data-target="#navbarSupportedContent"
@@ -17,34 +19,52 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <router-link class="nav-link" to="/about">
+                        <!-- <router-link class="nav-link" to="/about"> -->
+                        <a href="#about" class="nav-link" v-smooth-scroll>
                             About
-                        </router-link>
+                        </a>
+                        <!-- </router-link> -->
                     </li>
                     <li class="nav-item active">
-                        <router-link class="nav-link" to="/community">
+                        <!-- <router-link class="nav-link" to="/community"> -->
+                        <a href="#community" class="nav-link" v-smooth-scroll>
                             Community
-                        </router-link>
+                        </a>
+                        <!-- </router-link> -->
                     </li>
                     <li class="nav-item">
-                        <router-link class="nav-link" to="/whatwedo">
-                            What we do
-                        </router-link>
+                        <!-- <router-link class="nav-link" to="/whatwedo"> -->
+                        <a href="#whatwedo" class="nav-link" v-smooth-scroll>
+                            What we do</a
+                        >
+                        <!-- </router-link> -->
                     </li>
                     <li class="nav-item">
-                        <router-link class="nav-link" to="/partners">
+                        <!-- <router-link class="nav-link" to="/partners"> -->
+                        <a href="#partners" class="nav-link" v-smooth-scroll>
                             Partners
-                        </router-link>
+                        </a>
+                        <!-- </router-link> -->
                     </li>
                     <li class="nav-item">
-                        <router-link class="nav-link" to="/events">
+                        <!-- <router-link class="nav-link" to="/events"> -->
+                        <a href="#events" class="nav-link" v-smooth-scroll>
                             Events
-                        </router-link>
+                        </a>
+                        <!-- </router-link> -->
                     </li>
                     <li class="nav-item">
-                        <router-link class="nav-link" to="/contact">
+                        <!-- <router-link class="nav-link" to="/contact"> -->
+                        <a
+                            href="#contact"
+                            class="nav-link"
+                            v-smooth-scroll="{
+                                offset: -200,
+                            }"
+                        >
                             Contact
-                        </router-link>
+                        </a>
+                        <!-- </router-link> -->
                     </li>
                 </ul>
                 <li class="navbar-text ">
@@ -78,6 +98,13 @@
 
         <router-view></router-view>
 
+        <about id="about" />
+        <community id="community" />
+        <whatwedo id="whatwedo" />
+        <partners id="partners" />
+        <events id="events" />
+        <contact id="contact" />
+
         <div class="footer">
             <p>Copyright © 2020 VGG</p>
             <p v-on:click="togglemodal" class="tandcApp">TandC</p>
@@ -88,17 +115,31 @@
 
 <script>
 import tandc from "./components/tandc.vue";
+import about from "./components/about.vue";
+import community from "./components/community.vue";
+import whatwedo from "./components/whatwedo.vue";
+import partners from "./components/partners.vue";
+import events from "./components/events.vue";
+import contact from "./components/contact.vue";
+
 import * as $ from "jquery";
 export default {
     name: "App",
     components: {
         tandc,
+        about,
+        community,
+        whatwedo,
+        partners,
+        events,
+        contact,
     },
     data() {
         return {
             // tandcmodal: false,
         };
     },
+
     methods: {
         togglemodal: function() {
             // this.tandcmodal = !this.tandcmodal;
@@ -124,6 +165,10 @@ export default {
 img {
     object-fit: cover;
 }
+
+/* #about.card.About {
+    overflow-y: scroll;
+} */
 
 #social {
     margin-right: 20px;
