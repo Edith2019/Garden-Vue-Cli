@@ -12,7 +12,7 @@
         <div class="card-deck rounded border">
             <div id="hover" class="card">
                 <img
-                    src="../assets/zuhause.jpg"
+                    src="../assets/zuhause-min.jpg"
                     class="card-img-top"
                     alt="..."
                 />
@@ -31,7 +31,7 @@
             </div>
             <div id="hover" class="card">
                 <img
-                    src="../assets/Infozentrale.jpg"
+                    src="../assets/Infozentrale-min.jpg"
                     class="card-img-top"
                     alt="..."
                 />
@@ -50,7 +50,7 @@
             </div>
             <div id="hover" class="card">
                 <img
-                    src="../assets/Maryon.png"
+                    src="../assets/Maryon-min.png"
                     class="card-img-top"
                     alt="..."
                 />

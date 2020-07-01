@@ -1,95 +1,138 @@
 <template>
-    <div>
-        <div class="card WhatWeDo-container">
-            <div class="card-body">
-                <h1 class="card-title">What we do ?</h1>
-                <p class="card-text"></p>
-                <p>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an unknown
-                    printer took a galley of type and scrambled it to make a
-                    type specimen book. It has survived not only five centuries,
-                    but also the leap into electronic typesetting, remaining
-                    essentially unchanged. It was popularised in the 1960s with
-                    the release of Letraset sheets containing Lorem Ipsum
-                    passages, and more recently with desktop publishing software
-                    like Aldus PageMaker including versions of Lorem Ipsum.
-                </p>
-            </div>
+    <div class="card whatwedo">
+        <div class="card-body">
+            <h1 class="card-title">What we do</h1>
+            <p class="card-text">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book. It has
+                survived not only five centuries, but also the leap into
+                electronic typesetting, remaining essentially unchanged. It was
+                popularised in the 1960s with the release of Letraset sheets
+                containing Lorem Ipsum passages, and more recently with desktop
+                publishing software like Aldus PageMaker including versions of
+                Lorem Ipsum.
+            </p>
+        </div>
 
-            <div class="row row-cols-1 row-cols-md-2">
-                <div class="col mb-4">
-                    <div class="card">
-                        <progressive-img
-                            id="pic"
-                            src="/knowhow.png"
-                            class="card-img-top"
-                            alt="..."
-                        />
-                        <div class="card-body">
-                            <h5 class="card-title">Gardening knowledge</h5>
-                            <p class="card-text">
-                                This is a longer card with supporting text below
-                                as a natural lead-in to additional content. This
-                                content is a little bit longer.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col mb-4">
-                    <div class="card">
-                        <progressive-img
-                            id="pic"
-                            src="/train.jpg"
-                            class="card-img-top"
-                            alt="..."
-                        />
-                        <div class="card-body">
-                            <h5 class="card-title">Projects</h5>
-                            <p class="card-text">
-                                This is a longer card with supporting text below
-                                as a natural lead-in to additional content. This
-                                content is a little bit longer.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col mb-4">
-                    <div class="card">
-                        <progressive-img
-                            id="pic"
-                            src="/eventhouse.png"
-                            class="card-img-top"
-                            alt="..."
-                        />
-                        <div class="card-body">
-                            <h5 class="card-title">Events</h5>
-                            <p class="card-text">
-                                This is a longer card with supporting text below
-                                as a natural lead-in to additional content.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col mb-4">
-                    <div class="card">
-                        <progressive-img
-                            id="pic"
-                            src="/couture.jpg"
-                            class="card-img-top"
-                            alt="..."
-                        />
-                        <div class="card-body">
-                            <h5 class="card-title">Workshops</h5>
-                            <p class="card-text">
-                                This is a longer card with supporting text below
-                                as a natural lead-in to additional content. This
-                                content is a little bit longer.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+        <div class="container">
+            <div class="row">
+                <progressive-img
+                    id="pic"
+                    src="/pasta-min.jpg"
+                    placeholder="/pasta.jpg"
+                    class="rounded float-left col-sm img-fluid "
+                    alt="Responsive image"
+                />
+                <progressive-img
+                    id="pic"
+                    src="/gardengreen-min.jpg"
+                    placeholder="/gardenGreen.jpg"
+                    class="rounded float-left col-sm img-fluid"
+                    alt="Responsive image"
+                />
+                <progressive-img
+                    id="pic"
+                    src="/housePaint-min.jpg"
+                    placeholder="/housePaint.jpg"
+                    class="rounded float-left col-sm img-fluid"
+                    alt="Responsive image"
+                />
+            </div>
+            <div class="row">
+                <progressive-img
+                    id="pic"
+                    src="/flowers-min.jpg"
+                    placeholder="/flowers.jpg"
+                    class="rounded float-left col-sm img-fluid"
+                    alt="..."
+                />
+
+                <progressive-img
+                    id="pic"
+                    src="/sun-min.jpg"
+                    placeholder="/sun.jpg"
+                    class="rounded float-left col-sm img-fluid"
+                    alt="..."
+                />
+                <progressive-img
+                    id="pic"
+                    src="/green-min.jpg"
+                    placeholder="/green.jpg"
+                    class="rounded float-left col-sm img-fluid"
+                    alt="..."
+                />
+            </div>
+            <div class="row">
+                <progressive-img
+                    id="pic"
+                    src="/12633-min.jpg"
+                    placeholder="/12633.jpg"
+                    class="rounded float-left col-sm img-fluid "
+                    alt="..."
+                />
+                <progressive-img
+                    id="pic"
+                    src="/pink-min.jpg"
+                    placeholder="/pink.jpg"
+                    class="rounded float-left col-sm img-fluid "
+                    alt="..."
+                />
+                <progressive-img
+                    id="pic"
+                    src="/couture-min.jpg"
+                    placeholder="/couture.jpg"
+                    class="rounded float-left col-sm img-fluid "
+                    alt="..."
+                />
+            </div>
+            <div class="row">
+                <progressive-img
+                    id="pic"
+                    src="/fuego-min.jpg"
+                    placeholder="/fuego.jpg"
+                    class="rounded float-left col-sm img-fluid "
+                    alt="..."
+                />
+                <progressive-img
+                    id="pic"
+                    src="/sits-min.jpg"
+                    placeholder="/sits.jpg"
+                    class="rounded float-left col-sm img-fluid "
+                    alt="..."
+                />
+                <progressive-img
+                    id="pic"
+                    src="/cooking.png"
+                    placeholder="/cooking.png"
+                    class="rounded float-left col-sm img-fluid "
+                    alt="..."
+                />
+            </div>
+            <div class="row">
+                <progressive-img
+                    id="pic"
+                    src="/red-min.jpg"
+                    placeholder="/red.jpg"
+                    class="rounded float-left col-sm img-fluid "
+                    alt="..."
+                />
+
+                <progressive-img
+                    id="pic"
+                    src="/painting-min.png"
+                    placeholder="/painting.png"
+                    class="rounded float-left col-sm img-fluid "
+                    alt="..."
+                />
+                <progressive-img
+                    id="pic"
+                    src="/leaves-min.jpg"
+                    placeholder="/leaves.jpg"
+                    class="rounded float-left col-sm img-fluid "
+                    alt="..."
+                />
             </div>
         </div>
     </div>
@@ -98,25 +141,55 @@
 <script>
 export default {
     name: "whatwedo",
+    data() {
+        return {};
+    },
     props: {},
+
+    methods: {
+        onLoad() {
+            // main image is loaded
+        },
+        onLoadPlaceholder() {
+            // placeholder image is loaded
+        },
+        onError(error) {
+            // main image error
+        },
+        onErrorPlaceholder(error) {
+            // placeholder image error
+        },
+    },
+    components: {
+        // VueProgressiveImage,
+    },
 };
 </script>
 
 <style scoped>
-.WhatWeDo-container {
-    /* height: 300px; */
+.whatwedo {
+    height: auto;
     width: 90%;
     margin: 200px auto;
-    margin-bottom: 0px;
-    padding-bottom: 0px;
+    padding-bottom: 50px;
 }
 
-.row.row-cols-1.row-cols-md-2 {
-    padding: 2%;
-    padding-top: 0px;
+/* .progressive-image-wrapper {
+    width: 33% !important;
+} */
+
+.rounded.float-left.progressive-image {
+    min-width: 33% !important;
+    height: 200px !important;
+    object-fit: cover !important;
+    margin: 0.15%;
+    transition: transform 0.2s;
 }
 
-#pic {
-    height: 400px;
+.rounded.float-left.progressive-image:hover {
+    transform: scale(1.2);
+    z-index: 100;
+    border: white solid 4px;
+    object-fit: cover;
 }
 </style>

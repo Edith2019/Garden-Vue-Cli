@@ -1,138 +1,43 @@
 <template>
-    <div class="card Community">
-        <div class="card-body">
-            <h1 class="card-title">Community</h1>
-            <p class="card-text">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type specimen book. It has
-                survived not only five centuries, but also the leap into
-                electronic typesetting, remaining essentially unchanged. It was
-                popularised in the 1960s with the release of Letraset sheets
-                containing Lorem Ipsum passages, and more recently with desktop
-                publishing software like Aldus PageMaker including versions of
-                Lorem Ipsum.
+    <div class="community-container">
+        <div class="gardenerOfMonth">
+            <p class="h1 mx-auto text-center Gardener-title">
+                Gardener of the month
             </p>
-        </div>
-
-        <div class="container">
-            <div class="row">
+            <div class="card rounded mx-auto d-block" style="width: 30rem">
                 <progressive-img
-                    id="pic"
-                    src="/pasta.jpg"
+                    id="protrait"
+                    src="/month.jpg"
                     placeholder="/pasta.jpg"
-                    class="rounded float-left col-sm img-fluid "
                     alt="Responsive image"
                 />
-                <progressive-img
-                    id="pic"
-                    src="/gardenGreen.jpg"
-                    placeholder="/gardenGreen.jpg"
-                    class="rounded float-left col-sm img-fluid"
-                    alt="Responsive image"
-                />
-                <progressive-img
-                    id="pic"
-                    src="/housePaint.jpg"
-                    placeholder="/housePaint.jpg"
-                    class="rounded float-left col-sm img-fluid"
-                    alt="Responsive image"
-                />
+                <div class="card-body">
+                    <p class="card-text">
+                        Some quick example text to build on the card title and
+                        make up the bulk of the card's content.
+                    </p>
+                </div>
             </div>
-            <div class="row">
-                <progressive-img
-                    id="pic"
-                    src="/flowers.jpg"
-                    placeholder="/flowers.jpg"
-                    class="rounded float-left col-sm img-fluid"
-                    alt="..."
-                />
+        </div>
+        <div class="card Community">
+            <div class="card-body">
+                <h1 class="card-title">Community</h1>
+                <p class="card-text">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown
+                    printer took a galley of type and scrambled it to make a
+                    type specimen book. It has survived not only five centuries,
+                    but also the leap into electronic typesetting, remaining
+                    essentially unchanged. It was popularised in the 1960s with
+                    the release of Letraset sheets containing Lorem Ipsum
+                    passages, and more recently with desktop publishing software
+                    like Aldus PageMaker including versions of Lorem Ipsum.
+                </p>
+            </div>
 
-                <progressive-img
-                    id="pic"
-                    src="/sun.jpg"
-                    placeholder="/sun.jpg"
-                    class="rounded float-left col-sm img-fluid"
-                    alt="..."
-                />
-                <progressive-img
-                    id="pic"
-                    src="/green.jpg"
-                    placeholder="/green.jpg"
-                    class="rounded float-left col-sm img-fluid"
-                    alt="..."
-                />
-            </div>
-            <div class="row">
-                <progressive-img
-                    id="pic"
-                    src="/12633.jpg"
-                    placeholder="/12633.jpg"
-                    class="rounded float-left col-sm img-fluid "
-                    alt="..."
-                />
-                <progressive-img
-                    id="pic"
-                    src="/pink.jpg"
-                    placeholder="/pink.jpg"
-                    class="rounded float-left col-sm img-fluid "
-                    alt="..."
-                />
-                <progressive-img
-                    id="pic"
-                    src="/couture.jpg"
-                    placeholder="/couture.jpg"
-                    class="rounded float-left col-sm img-fluid "
-                    alt="..."
-                />
-            </div>
-            <div class="row">
-                <progressive-img
-                    id="pic"
-                    src="/fuego.jpg"
-                    placeholder="/fuego.jpg"
-                    class="rounded float-left col-sm img-fluid "
-                    alt="..."
-                />
-                <progressive-img
-                    id="pic"
-                    src="/sits.jpg"
-                    placeholder="/sits.jpg"
-                    class="rounded float-left col-sm img-fluid "
-                    alt="..."
-                />
-                <progressive-img
-                    id="pic"
-                    src="/cooking.png"
-                    placeholder="/cooking.png"
-                    class="rounded float-left col-sm img-fluid "
-                    alt="..."
-                />
-            </div>
-            <div class="row">
-                <progressive-img
-                    id="pic"
-                    src="/red.jpg"
-                    placeholder="/red.jpg"
-                    class="rounded float-left col-sm img-fluid "
-                    alt="..."
-                />
-
-                <progressive-img
-                    id="pic"
-                    src="/painting.png"
-                    placeholder="/painting.png"
-                    class="rounded float-left col-sm img-fluid "
-                    alt="..."
-                />
-                <progressive-img
-                    id="pic"
-                    src="/leaves.jpg"
-                    placeholder="/leaves.jpg"
-                    class="rounded float-left col-sm img-fluid "
-                    alt="..."
-                />
+            <div class="container">
+                <div class="row"></div>
             </div>
         </div>
     </div>
@@ -167,6 +72,11 @@ export default {
 </script>
 
 <style scoped>
+.community-container {
+    margin-top: 200px;
+    padding-top: 70px;
+}
+
 .Community {
     height: auto;
     width: 90%;
@@ -174,22 +84,17 @@ export default {
     padding-bottom: 50px;
 }
 
+.card.rounded.mx-auto.d-block {
+    margin-top: 2rem;
+}
 /* .progressive-image-wrapper {
     width: 33% !important;
 } */
 
-.rounded.float-left.progressive-image {
-    min-width: 33% !important;
-    height: 200px !important;
-    object-fit: cover !important;
-    margin: 0.15%;
-    transition: transform 0.2s;
-}
-
-.rounded.float-left.progressive-image:hover {
-    transform: scale(1.2);
-    z-index: 100;
-    border: white solid 4px;
-    object-fit: cover;
+.Gardener-title {
+    color: white;
+    border: solid 5px white;
+    padding: 20px;
+    width: 30rem;
 }
 </style>

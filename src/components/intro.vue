@@ -5,7 +5,7 @@
 
             <img
                 class="Intro-picture"
-                src="@/assets/container.jpg"
+                src="@/assets/container-min.jpg"
                 width="80%"
                 height="60%"
             />

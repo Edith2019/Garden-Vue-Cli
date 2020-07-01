@@ -74,7 +74,7 @@
                     >
                         <img
                             id="social"
-                            src="@/assets/fproute.png"
+                            src="@/assets/fproute-min.png"
                             width="30px"
                             height="30px"
                         />
@@ -87,7 +87,7 @@
                     >
                         <img
                             id="social"
-                            src="@/assets/instaproute.png"
+                            src="@/assets/instaproute-min.png"
                             width="30px"
                             height="30px"
                         />
@@ -154,7 +154,7 @@ export default {
     height: auto;
     width: 100%;
     background-size: cover;
-    background: url("./assets/House.jpg") no-repeat center center fixed;
+    background: url("./assets/House-min.jpg") no-repeat center center fixed;
 }
 
 * {
