@@ -217,7 +217,7 @@ export default {
 <style scoped>
 .contact-container {
     width: 90%;
-    margin: 200px auto;
+    margin: 100px auto;
     margin-bottom: 0px;
     padding-bottom: 0px;
 }

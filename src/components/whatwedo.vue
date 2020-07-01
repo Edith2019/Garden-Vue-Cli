@@ -276,6 +276,7 @@ img.progressive-image-main {
 
 .whatwedo-container {
     padding-top: 50px;
+    margin-bottom: 100px;
 }
 
 .middle {

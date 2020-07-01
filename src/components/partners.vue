@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="partner-container">
         <div class="card Partner">
             <div class="card-body">
                 <h1 class="card-title">Partners</h1>
@@ -132,7 +132,7 @@ export default {
 .Partner {
     height: auto;
     width: 90%;
-    margin: 200px auto;
+    margin: 100px auto;
     margin-bottom: -5px;
 }
 #hover {
@@ -167,5 +167,10 @@ export default {
 }
 .row.rounded.border {
     background-color: rgba(255, 255, 255, 0.9);
+}
+
+.partner-container {
+    padding-top: 50px;
+    margin-bottom: 100px;
 }
 </style>
