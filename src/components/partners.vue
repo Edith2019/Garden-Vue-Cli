@@ -71,7 +71,7 @@
                 </div>
             </div>
         </div>
-        <div class="card Partner ">
+        <div id="friends" class="card Partner ">
             <div class="card-body">
                 <h1 class="card-title">Friends</h1>
                 <p class="card-text">
@@ -132,8 +132,8 @@ export default {
 .Partner {
     height: auto;
     width: 90%;
-    margin: 100px auto;
     margin-bottom: -5px;
+    margin: auto;
 }
 #hover {
     transition: all 0.2s ease-in-out;
@@ -169,8 +169,12 @@ export default {
     background-color: rgba(255, 255, 255, 0.9);
 }
 
+#friends {
+    margin-top: 100px;
+}
+
 .partner-container {
-    padding-top: 50px;
-    margin-bottom: 100px;
+    padding-top: 100px;
+    margin: 200px auto;
 }
 </style>

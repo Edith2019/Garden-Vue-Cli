@@ -238,14 +238,11 @@ export default {
 
 <style scoped>
 .whatwedo {
-    height: auto;
-    width: 90%;
-    margin: 100px auto;
-    padding-bottom: 50px;
+    /* padding-bottom: 50px; */
 }
 
 #pic {
-    height: 200px !important;
+    max-height: 200px !important;
 
     opacity: 1;
     display: block;
@@ -275,8 +272,10 @@ img.progressive-image-main {
 } */
 
 .whatwedo-container {
-    padding-top: 50px;
-    margin-bottom: 100px;
+    height: auto;
+    width: 90%;
+    margin: 200px auto;
+    padding-top: 100px;
 }
 
 .middle {
@@ -301,6 +300,6 @@ img.progressive-image-main {
 .text {
     color: black;
     font-size: 16px;
-    padding: 16px 32px;
+    text-align: center;
 }
 </style>

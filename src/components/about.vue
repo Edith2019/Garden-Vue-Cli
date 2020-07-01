@@ -1,5 +1,5 @@
 <template>
-    <div class="margin-top">
+    <div class="about-container">
         <div class="card About">
             <div class="card-body">
                 <h1 class="card-title">About</h1>
@@ -128,15 +128,13 @@ export default {
 </script>
 
 <style scoped>
-.About {
+.about-container {
     height: auto;
     width: 90%;
-    margin: 100px auto;
+    margin: 200px auto;
+    padding-top: 100px;
 }
 
-.margin-top {
-    padding-top: 50px;
-}
 img {
     height: 500px !important;
 }

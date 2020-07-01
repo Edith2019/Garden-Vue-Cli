@@ -1,10 +1,10 @@
 <template>
     <div class="community-container">
-        <div class="gardenerOfMonth">
-            <p class="h1 mx-auto text-center Gardener-title">
+        <div class="gardenerOfMonth mx-auto ">
+            <p class="h1 mx-auto  Gardener-title col">
                 Gardener of the month
             </p>
-            <div class="card rounded mx-auto d-block" style="width: 30rem">
+            <div class="card rounded mx-auto d-block col" style="width: 30rem">
                 <progressive-img
                     id="protrait"
                     src="/month.jpg"
@@ -99,8 +99,6 @@
                             </p>
                         </div>
                     </div>
-
-                    <!-- <div class="row"> -->
                     <div class="col-6 col-md-4" style="width: 18rem;">
                         <progressive-img
                             class="card-img-top"
@@ -186,17 +184,19 @@ export default {
 
 <style scoped>
 .community-container {
-    margin-top: 200px;
+    margin-top: 100px;
     padding-top: 70px;
 }
 
 .Community {
     height: auto;
     width: 90%;
-    margin: 200px auto;
+    margin: 100px auto;
     padding-bottom: 50px;
 }
-
+.gardenerOfMonth {
+    width: 90%;
+}
 .card.rounded.mx-auto.d-block {
     margin-top: 2rem;
 }

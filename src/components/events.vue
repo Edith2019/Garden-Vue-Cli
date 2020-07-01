@@ -8,19 +8,26 @@
                     fix, built and hung out together.
                 </p>
             </div>
-            <div class="Events">
-                <calendar></calendar>
-                <div class="calendarBOx">
-                    <iframe
-                        src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FVollguterGemeinschaftsgarten%2F&tabs=Events&width=340&height=214&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=202851787539015"
-                        width="340"
-                        height="214"
-                        style="border:none;overflow:hidden"
-                        scrolling="no"
-                        frameborder="0"
-                        allowTransparency="true"
-                        allow="encrypted-media"
-                    ></iframe>
+            <div class="container">
+                <div class="row justify-content-md-center">
+                    <div class="col col-md-auto mx-auto ">
+                        <calendar></calendar>
+                    </div>
+                    <div class="col col-md-auto mx-auto ">
+                        <!-- <div class="calendarBOx "> -->
+                        <!-- <iframe
+                            src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FVollguterGemeinschaftsgarten%2F&tabs=Events&width=340&height=214&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=202851787539015"
+                            width="340"
+                            height="214"
+                            style="border:none;overflow:hidden"
+                            scrolling="no"
+                            frameborder="0"
+                            allowTransparency="true"
+                            allow="encrypted-media"
+                            class="embed-responsive-item"
+                        ></iframe> -->
+                        <!-- </div> -->
+                    </div>
                 </div>
             </div>
         </div>
@@ -55,23 +62,16 @@ export default {
 </script>
 
 <style scoped>
-.events-container {
-    height: auto;
-    width: 90%;
-    margin: 100px auto;
-}
-
-.Events {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding-left: 5%;
-    padding-right: 5%;
-    margin-bottom: 50px;
+.row.justify-content-md-center {
+    padding-top: 30px;
     align-items: center;
+    padding-bottom: 40px;
 }
 
 .container-Events {
-    padding-top: 50px;
+    height: auto;
+    width: 90%;
+    margin: 200px auto;
+    padding-top: 100px;
 }
 </style>

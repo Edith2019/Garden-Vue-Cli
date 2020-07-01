@@ -1,6 +1,6 @@
 <template>
-    <div id="contact">
-        <div class="card contact-container">
+    <div class="contact-container">
+        <div class="card ">
             <div class="card-body">
                 <h1>Contact</h1>
                 <p>Questions? Ideas? Contributions? Reach out any time!</p>
@@ -93,30 +93,40 @@
             </textarea>
         </div>
 
-        <div class="card-deck">
-            <div id="location" class="card">
-                <div class="card-body">
-                    <h5 class="card-title">General Information:</h5>
-                    <p class="card-text">
-                        Opening hours: we are always open
-                    </p>
-                    <p>
-                        Covid-19:
-                    </p>
-                    <p>
-                        - Due to the current restrictions in place, only XXX
-                        amount of people are allowed in the garden.
-                    </p>
-                    <p>
-                        - We are as well slowing down the amount of events till
-                        we get further notice from the government
-                    </p>
-                    <p class="card-text"></p>
+        <div class="container">
+            <div class="row">
+                <div
+                    id="location"
+                    class="card col-md-auto"
+                    style="width: 25rem;"
+                >
+                    <div class="card-body">
+                        <h5 class="card-title">General Information:</h5>
+                        <p class="card-text">
+                            Opening hours: we are always open
+                        </p>
+                        <p>
+                            Covid-19:
+                        </p>
+                        <p>
+                            - Due to the current restrictions in place, only XXX
+                            amount of people are allowed in the garden.
+                        </p>
+                        <p>
+                            - We are as well slowing down the amount of events
+                            till we get further notice from the government
+                        </p>
+                        <p class="card-text"></p>
+                    </div>
                 </div>
-            </div>
-            <div id="location" class="card right">
-                <div class="card-body">
-                    <googlemap class="mx-auto" />
+                <div
+                    id="location"
+                    class="card col-md-6 ml-auto"
+                    style="width: 25rem;"
+                >
+                    <div class="card-body">
+                        <googlemap class="mx-auto" />
+                    </div>
                 </div>
             </div>
         </div>
@@ -217,18 +227,18 @@ export default {
 <style scoped>
 .contact-container {
     width: 90%;
-    margin: 100px auto;
-    margin-bottom: 0px;
-    padding-bottom: 0px;
+    margin: 200px auto;
+    padding-bottom: 50px;
 }
 
 .card {
-    width: 90%;
-    margin: 200px auto;
     margin-bottom: 0px;
     padding-bottom: 0px;
 }
 
+/* #contact {
+    padding-top: 50px;
+} */
 #inputdata {
     background: none;
     padding: 5%;
@@ -281,17 +291,12 @@ textarea {
     margin-left: 5%;
 }
 
-.card-deck {
-    margin-left: 5%;
-    margin-right: 5%;
-    padding: 0px;
-}
-
 #location {
     margin: 0px;
+    margin-bottom: 50px;
 }
 
-.right {
+/* .right {
     margin-left: 10% !important;
-}
+} */
 </style>
