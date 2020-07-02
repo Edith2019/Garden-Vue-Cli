@@ -65,6 +65,7 @@ export default {
     height: auto;
     width: 90%;
     margin-top: 200px;
+
     padding-top: 100px;
 }
 .row.justify-content-md-center {

@@ -90,7 +90,7 @@
             </div>
         </nav>
 
-        <router-view></router-view>
+        <!-- <router-view></router-view> -->
         <intro id="intro" />
         <about id="about" />
         <community id="community" />
@@ -108,7 +108,7 @@
 </template>
 
 <script>
-import intro from "./components/home.vue";
+import intro from "./components/intro.vue";
 import tandc from "./components/tandc.vue";
 import about from "./components/about.vue";
 import community from "./components/community.vue";
@@ -168,7 +168,7 @@ img {
 #social {
     margin-right: 20px;
 }
-.menu {
+/* .menu {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -181,7 +181,7 @@ img {
     color: white;
     opacity: 95%;
     z-index: 10;
-}
+} */
 
 .Intro-a {
     cursor: pointer;
@@ -193,14 +193,14 @@ img {
 .Intro-a:hover {
     transform: scale(1.3);
 }
-.whatwedo-App {
+/* .whatwedo-App {
     background-color: white;
     padding-left: 10%;
     padding-right: 10%;
     padding-bottom: 5%;
     margin-left: 5%;
     margin-right: 5%;
-}
+} */
 
 .findmore {
     text-align: right;
