@@ -175,6 +175,6 @@ export default {
 
 .partner-container {
     padding-top: 100px;
-    margin: 200px auto;
+    margin-top: 200px auto;
 }
 </style>

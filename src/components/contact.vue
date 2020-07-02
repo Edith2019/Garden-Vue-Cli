@@ -1,5 +1,5 @@
 <template>
-    <div class="contact-container">
+    <div class="contact-container mx-auto">
         <div class="card ">
             <div class="card-body">
                 <h1>Contact</h1>
@@ -109,12 +109,11 @@
                             Covid-19:
                         </p>
                         <p>
-                            - Due to the current restrictions in place, only XXX
-                            amount of people are allowed in the garden.
-                        </p>
-                        <p>
-                            - We are as well slowing down the amount of events
-                            till we get further notice from the government
+                            You must keep a minimum of 1.5 meters (roughly 5
+                            feet) away from others not living with you when out
+                            in public. When sitting in parks or other green
+                            spaces, you must keep a 5-meter distance (that’s
+                            roughly 16.5 feet) from others.
                         </p>
                         <p class="card-text"></p>
                     </div>
@@ -227,18 +226,15 @@ export default {
 <style scoped>
 .contact-container {
     width: 90%;
-    margin: 200px auto;
-    padding-bottom: 50px;
-}
 
+    padding-top: 100px;
+    margin: 200px auto;
+}
 .card {
     margin-bottom: 0px;
     padding-bottom: 0px;
 }
 
-/* #contact {
-    padding-top: 50px;
-} */
 #inputdata {
     background: none;
     padding: 5%;
@@ -295,8 +291,4 @@ textarea {
     margin: 0px;
     margin-bottom: 50px;
 }
-
-/* .right {
-    margin-left: 10% !important;
-} */
 </style>

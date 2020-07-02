@@ -55,13 +55,7 @@
                     </li>
                     <li class="nav-item">
                         <!-- <router-link class="nav-link" to="/contact"> -->
-                        <a
-                            href="#contact"
-                            class="nav-link"
-                            v-smooth-scroll="{
-                                offset: -200,
-                            }"
-                        >
+                        <a href="#contact" class="nav-link" v-smooth-scroll>
                             Contact
                         </a>
                         <!-- </router-link> -->
@@ -142,7 +136,6 @@ export default {
 
     methods: {
         togglemodal: function() {
-            // this.tandcmodal = !this.tandcmodal;
             $("#tandcModal").modal();
         },
     },

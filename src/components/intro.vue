@@ -2,7 +2,11 @@
     <div class="Intro">
         <div class="Intro-container">
             <h1 class="Intro-title">Welcome to VGG Garden!</h1>
-
+            <a class="manifest" href="http://www.urban-gardening-manifest.de"
+                ><img
+                    src="https://urbangardeningmanifest.de/pulsepro/data/img/uploads/garden-manifest-button-200x200.png"
+                    alt="Die Stadt ist unser Garten"
+            /></a>
             <img
                 class="Intro-picture"
                 src="@/assets/container-min.jpg"
@@ -40,5 +44,11 @@ export default {
     font-size: 5em;
     text-align: center;
     margin-top: 50px;
+}
+
+.manifest {
+    margin-bottom: -15%;
+    margin-left: 70%;
+    z-index: 100;
 }
 </style>

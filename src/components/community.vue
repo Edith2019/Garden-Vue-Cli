@@ -23,16 +23,11 @@
             <div class="card-body">
                 <h1 class="card-title">Community</h1>
                 <p class="card-text">
-                    VGG garden is composed of a wide variety of people and bees
-                    where everyone is welcome. We are gardeners, builders, party
-                    bees with different background, culture, colors, gender,
-                    talents.
+                    VGG garden is composed of a wide variety of people and where
+                    everyone is welcome. We are gardeners, builders, party bees
+                    with different background, culture, colors, gender, talents.
                 </p>
             </div>
-
-            <!-- <div class="container">
-                <div class="row"></div>
-            </div> -->
             <div class="container">
                 <div class="row">
                     <div class="col-6 col-md-4" style="width: 18rem;">
@@ -184,10 +179,12 @@ export default {
 
 <style scoped>
 .community-container {
-    margin-top: 100px;
+    margin-top: 200px;
     padding-top: 70px;
 }
-
+.card.Community {
+    margin-bottom: 0px !important;
+}
 .Community {
     height: auto;
     width: 90%;
@@ -200,9 +197,6 @@ export default {
 .card.rounded.mx-auto.d-block {
     margin-top: 2rem;
 }
-/* .progressive-image-wrapper {
-    width: 33% !important;
-} */
 
 .Gardener-title {
     color: white;

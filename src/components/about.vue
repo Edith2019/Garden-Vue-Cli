@@ -28,7 +28,6 @@
                     >Urban Gardening Manifest</a
                 >.
             </div>
-            <!-- <div class="test"> -->
             <div
                 id="carouselExampleCaptions"
                 class="carousel slide"

@@ -91,7 +91,6 @@
                             <div class="text">Pastatafel - Aout 2019</div>
                         </div>
                     </div>
-                    <!-- <div class="row"> -->
                     <div class="col-6 col-md-4" style="width: 18rem;">
                         <progressive-img
                             id="pic"
@@ -128,7 +127,6 @@
                             <div class="text">Pastatafel - Aout 2019</div>
                         </div>
                     </div>
-                    <!-- <div class="row"> -->
                     <div class="col-6 col-md-4" style="width: 18rem;">
                         <progressive-img
                             id="pic"
@@ -165,7 +163,6 @@
                             <div class="text">Pastatafel - Aout 2019</div>
                         </div>
                     </div>
-                    <!-- <div class="row"> -->
                     <div class="col-6 col-md-4" style="width: 18rem;">
                         <progressive-img
                             id="pic"
@@ -237,13 +234,8 @@ export default {
 </script>
 
 <style scoped>
-.whatwedo {
-    /* padding-bottom: 50px; */
-}
-
 #pic {
     max-height: 200px !important;
-
     opacity: 1;
     display: block;
     width: 100%;
@@ -251,25 +243,15 @@ export default {
     transition: 0.5s ease;
     backface-visibility: hidden;
 }
+
 img.progressive-image-main {
     height: 200px !important;
 }
 .card-img-top {
-    /* min-width: 33% !important; */
-    /* height: 200px !important; */
-    /* width: 100% \9; */
-    /* object-fit: cover !important; */
     margin: 0.15%;
     transition: transform 0.2s;
     margin-bottom: 10px;
 }
-
-/* .rounded.float-left.progressive-image:hover {
-    transform: scale(1.2);
-    z-index: 100;
-    border: white solid 4px;
-    object-fit: cover;
-} */
 
 .whatwedo-container {
     height: auto;
