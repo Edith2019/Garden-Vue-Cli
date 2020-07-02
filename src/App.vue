@@ -2,7 +2,7 @@
     <div id="app">
         <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
             <!-- <router-link class="navbar-brand" to="/"> -->
-            <a href="#home" class="navbar-brand"> VGG </a>
+            <a href="#intro" class="navbar-brand" v-smooth-scroll> VGG </a>
             <!-- </router-link> -->
             <button
                 class="navbar-toggler "
@@ -91,7 +91,7 @@
         </nav>
 
         <router-view></router-view>
-
+        <intro id="intro" />
         <about id="about" />
         <community id="community" />
         <whatwedo id="whatwedo" />
@@ -108,6 +108,7 @@
 </template>
 
 <script>
+import intro from "./components/home.vue";
 import tandc from "./components/tandc.vue";
 import about from "./components/about.vue";
 import community from "./components/community.vue";
@@ -120,6 +121,7 @@ import * as $ from "jquery";
 export default {
     name: "App",
     components: {
+        intro,
         tandc,
         about,
         community,

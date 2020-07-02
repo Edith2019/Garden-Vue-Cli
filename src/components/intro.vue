@@ -26,7 +26,7 @@ export default {
 
 <style scoped>
 .Intro-container {
-    height: 100vh;
+    height: auto;
     padding-top: 3.5em;
     background: none;
     display: flex;
