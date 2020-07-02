@@ -1,6 +1,6 @@
 <template>
     <div class="container-Events mx-auto">
-        <div class="card ">
+        <div class="card">
             <div class="card-body">
                 <h1>Events</h1>
                 <p>
@@ -8,25 +8,32 @@
                     fix, built and hung out together.
                 </p>
             </div>
-            <div class="container">
-                <div class="row justify-content-md-center">
-                    <div class="col col-md-auto mx-auto ">
+            <div class="container ">
+                <div class="row">
+                    <div class="col-sm padding">
                         <calendar></calendar>
                     </div>
-                    <div class="col col-md-auto mx-auto ">
-                        <div class="calendarBOx ">
-                            -->
-                            <iframe
-                                src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FVollguterGemeinschaftsgarten%2F&tabs=Events&width=340&height=214&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=202851787539015"
-                                width="340"
-                                height="214"
-                                style="border:none;overflow:hidden"
-                                scrolling="no"
-                                frameborder="0"
-                                allowTransparency="true"
-                                allow="encrypted-media"
-                                class="embed-responsive-item"
-                            ></iframe>
+                    <div class="col-sm d-flex align-items-center ">
+                        <div
+                            class="fb-page "
+                            data-href="https://www.facebook.com/VollguterGemeinschaftsgarten/"
+                            data-tabs="Events"
+                            data-width=""
+                            data-height=""
+                            data-small-header="false"
+                            data-adapt-container-width="true"
+                            data-hide-cover="false"
+                            data-show-facepile="true"
+                        >
+                            <blockquote
+                                cite="https://www.facebook.com/VollguterGemeinschaftsgarten/"
+                                class="fb-xfbml-parse-ignore"
+                            >
+                                <a
+                                    href="https://www.facebook.com/VollguterGemeinschaftsgarten/"
+                                    >Vollguter Gemeinschaftsgarten</a
+                                >
+                            </blockquote>
                         </div>
                     </div>
                 </div>
@@ -65,12 +72,14 @@ export default {
     height: auto;
     width: 90%;
     margin-top: 200px;
-
     padding-top: 100px;
 }
-.row.justify-content-md-center {
-    padding-top: 30px;
-    align-items: center;
-    padding-bottom: 40px;
+
+.card {
+    padding-bottom: 50px;
+}
+
+.padding {
+    padding-bottom: 20px;
 }
 </style>

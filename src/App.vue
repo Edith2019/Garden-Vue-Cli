@@ -90,7 +90,7 @@
             </div>
         </nav>
 
-        <!-- <router-view></router-view> -->
+        <router-view></router-view>
         <intro id="intro" />
         <about id="about" />
         <community id="community" />
