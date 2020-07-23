@@ -24,10 +24,17 @@ const messages = {
     Desc2: "Sunny and flowery times!",  
     Title3: "VGG Garden",
     Desc3: "Sunny and flowery times!",  
-                    
-                    
-                    
-                    
+    GardenerMonth: "Gardener of the month",
+    GardenerDesc: "Some quick example text to build on the card title and make up the bulk of the card's content.",
+    CommDesc: "VGG garden is composed of a wide variety of people and where everyone is welcome.We are gardeners, builders, party bees with different background, culture, colors, gender, talents.",
+    CommP1: "Some quick example text to build on the card title and make up the bulk of the card's content.",
+    CommP2: "Some quick example text to build on the card title and make up the bulk of the card's content.",         
+    CommP3: "Some quick example text to build on the card title and make up the bulk of the card's content.",           
+    CommP4: "Some quick example text to build on the card title and make up the bulk of the card's content.",              
+    CommP5: "Some quick example text to build on the card title and make up the bulk of the card's content.",
+    CommP6: "Some quick example text to build on the card title and make up the bulk of the card's content.",
+    CommP7: "Some quick example text to build on the card title and make up the bulk of the card's content.",
+    CommP8: "Some quick example text to build on the card title and make up the bulk of the card's content.",
                     
     }, 
     'de': {

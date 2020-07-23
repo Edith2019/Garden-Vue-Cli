@@ -2,7 +2,7 @@
     <div class="community-container">
         <div class="gardenerOfMonth mx-auto ">
             <p class="h1 mx-auto  Gardener-title col">
-                Gardener of the month
+                {{ $t("GardenerMonth")}}
             </p>
             <div class="card rounded mx-auto d-block col" style="width: 30rem">
                 <progressive-img
@@ -13,19 +13,17 @@
                 />
                 <div class="card-body">
                     <p class="card-text">
-                        Some quick example text to build on the card title and
-                        make up the bulk of the card's content.
+                        {{ $t("GardenerDesc")}}
+                        
                     </p>
                 </div>
             </div>
         </div>
         <div class="card Community">
             <div class="card-body">
-                <h1 class="card-title">Community</h1>
+                <h1 class="card-title"> {{$t("Community")}}</h1>
                 <p class="card-text">
-                    VGG garden is composed of a wide variety of people and where
-                    everyone is welcome. We are gardeners, builders, party bees
-                    with different background, culture, colors, gender, talents.
+                    {{$t("CommDesc")}}
                 </p>
             </div>
             <div class="container">
@@ -40,9 +38,7 @@
                         />
                         <div class="card-body">
                             <p class="card-text">
-                                Some quick example text to build on the card
-                                title and make up the bulk of the card's
-                                content.
+                             {{$t("CommP1")}}
                             </p>
                         </div>
                     </div>
@@ -56,9 +52,8 @@
                         />
                         <div class="card-body">
                             <p class="card-text">
-                                Some quick example text to build on the card
-                                title and make up the bulk of the card's
-                                content.
+                           {{$t("CommP2")}}
+
                             </p>
                         </div>
                     </div>
@@ -72,9 +67,8 @@
                         />
                         <div class="card-body">
                             <p class="card-text">
-                                Some quick example text to build on the card
-                                title and make up the bulk of the card's
-                                content.
+                        {{$t("CommP3")}}
+
                             </p>
                         </div>
                     </div>
@@ -88,9 +82,8 @@
                         />
                         <div class="card-body">
                             <p class="card-text">
-                                Some quick example text to build on the card
-                                title and make up the bulk of the card's
-                                content.
+                         {{$t("CommP4")}}
+
                             </p>
                         </div>
                     </div>
@@ -104,9 +97,8 @@
                         />
                         <div class="card-body">
                             <p class="card-text">
-                                Some quick example text to build on the card
-                                title and make up the bulk of the card's
-                                content.
+                            {{$t("CommP5")}}
+
                             </p>
                         </div>
                     </div>
@@ -120,9 +112,8 @@
                         />
                         <div class="card-body">
                             <p class="card-text">
-                                Some quick example text to build on the card
-                                title and make up the bulk of the card's
-                                content.
+                          {{$t("CommP6")}}
+
                             </p>
                         </div>
                     </div>
@@ -136,9 +127,8 @@
                         />
                         <div class="card-body">
                             <p class="card-text">
-                                Some quick example text to build on the card
-                                title and make up the bulk of the card's
-                                content.
+                           {{$t("CommP7")}}
+
                             </p>
                         </div>
                     </div>
