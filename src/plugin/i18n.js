@@ -34,8 +34,19 @@ const messages = {
     CommP5: "Some quick example text to build on the card title and make up the bulk of the card's content.",
     CommP6: "Some quick example text to build on the card title and make up the bulk of the card's content.",
     CommP7: "Some quick example text to build on the card title and make up the bulk of the card's content.",
-    CommP8: "Some quick example text to build on the card title and make up the bulk of the card's content.",
-                    
+    WWDDesc: "Our activities in the garden are very varied. We cultivate the entire area ourselves: we make sure that beds are built and maintained, we plant flowers, herbs, fruit and vegetables, we make sure that we water regularly and that the garden stays clean. Through our activities we offer workshops, for example: Soap workshop, bicycle repair workshop, clothing exchange, seed exchange etc. We also organize events e.g.garden parties, garden- cinema, flea market and much more. The garden is also a meeting point for many neighbours* and should invite you to stay without the pressure of consumption.",
+    PartnerDesc: "Vollguter Gemeinschaftsgarten hat einige Partner mit denen wir zusammen arbeiten und die uns unterstützen:",
+    ZH: "Zuhause- Zuhause e.V. ist ein vielfältiges Künstler*innen Kollektiv.Der Vollguter Gemeinschaftsgarten wurde erst durch den Zuhause e.V.initiert.",
+    IZ: "Infozentrale- Die Infozentrale auf dem Vollgut wurde als DesignBuild Projekt des Natural Building Labs von 36 ArchitekturstudentInnen geplant und befindet sich in der Mitte von Vollguter Gemeinschaftsgarten.",
+    Stif: "Edyth Marion- Die Stiftung Edith Maryon entzieht Grundstücke der Spekulation, damit sie dauerhaft sozialverträglich nutzen können.das VGG ....",
+    FriendsDesc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's",
+    FriendsTitle1: "Title",
+    FriendsDec1:"Description",
+    FriendsTitle2: "Title",
+    FriendsDec2: "Description",
+    FriendsTitle3: "Title",
+    FriendsDec3: "Description",
+
     }, 
     'de': {
         About: "Uber",
@@ -49,6 +60,13 @@ const messages = {
         OpeningHours: "Öffnungszeiten: Der Garten ist immer geöffnet!",
         WeSigned: "Wir unterzeichneten die  ",
         Urban:"Manifest zur städtischen Gartenarbeit",
+        WWDDesc: "Unsere Aktivitäten im Garten sind sehr vielfältig. Wir bewirtschaften die komplette Fläche selbst: wir sorgen dafür dass Beete gebaut und in Stand gehalten werden, wir bepflanzen sie mit Blumen, Kräuter, Obst und Gemüse, stellen sicher, dass wir regelmäßig gießen und dass der Garten sauber bleibt. Über unsere Aktionen bieten wir Workshops an z.B.: Seifen- Workshop, Fahrrad Repair- Workshop, Kleidertausch, Samen-Tausch etc. Wir veranstalten auch Events z.B.Gartenfeste, Garten - Kino, Flohmarkt u.v.m. Der Garten ist zudem Treffpunkt für viele Nachbar * innen und soll zum Verweilen einladen ohne Konsumzwang. ",
+        PartnerDesc:"Vollguter Gemeinschaftsgarten hat einige Partner mit denen wir zusammen arbeiten und die uns unterstützen:",
+        ZH: "Zuhause- Zuhause e.V. ist ein vielfältiges Künstler*innen Kollektiv.Der Vollguter Gemeinschaftsgarten wurde erst durch den Zuhause e.V.initiert.",
+        IZ: "Infozentrale- Die Infozentrale auf dem Vollgut wurde als DesignBuild Projekt des Natural Building Labs von 36 ArchitekturstudentInnen geplant und befindet sich in der Mitte von Vollguter Gemeinschaftsgarten.",
+        Stif: "Edyth Marion- Die Stiftung Edith Maryon entzieht Grundstücke der Spekulation, damit sie dauerhaft sozialverträglich nutzen können.das VGG ...."
+    
+    
     }, 
     'tr': {
         About: "hakkında",

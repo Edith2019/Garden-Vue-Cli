@@ -2,10 +2,9 @@
     <div class="partner-container">
         <div class="card Partner">
             <div class="card-body">
-                <h1 class="card-title">Partners</h1>
+                <h1 class="card-title">{{$t("Partners")}}</h1>
                 <p class="card-text">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
+                 {{ $t("PartnerDesc")}}
                 </p>
             </div>
         </div>
@@ -21,10 +20,8 @@
                         <h5 class="card-title">Zuhause e.V.</h5>
                     </a>
                     <p class="card-text">
-                        Zuhause- Zuhause e.V. ist ein vielfältiges
-                        Künstler*innen Kollektiv. Der Vollguter
-                        Gemeinschaftsgarten wurde erst durch den Zuhause e.V.
-                        initiert.
+                                       {{ $t("ZH")}}
+
                     </p>
                     <p class="card-text"></p>
                 </div>
@@ -40,10 +37,7 @@
                         <h5 class="card-title">Infozentrale</h5>
                     </a>
                     <p class="card-text">
-                        Infozentrale- Die Infozentrale auf dem Vollgut wurde als
-                        DesignBuild Projekt des Natural Building Labs von 36
-                        ArchitekturstudentInnen geplant und befindet sich in der
-                        Mitte von Vollguter Gemeinschaftsgarten.
+                          {{ $t("IZ")}}
                     </p>
                     <p class="card-text"></p>
                 </div>
@@ -63,9 +57,8 @@
                         <h5 class="card-title">Stiftung Edith Maryon</h5>
                     </a>
                     <p class="card-text">
-                        Edyth Marion- Die Stiftung Edith Maryon entzieht
-                        Grundstücke der Spekulation, damit sie dauerhaft
-                        sozialverträglich nutzen können. das VGG ....
+                       
+                         {{ $t("Stif")}}
                     </p>
                     <p class="card-text"></p>
                 </div>
@@ -75,8 +68,7 @@
             <div class="card-body">
                 <h1 class="card-title">Friends</h1>
                 <p class="card-text">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
+                    {{ $t("FriendsDesc")}}
                 </p>
             </div>
         </div>
@@ -85,10 +77,9 @@
                 <div class="card border-success mb-5" style="max-width: 18rem;">
                     <div class="card-header text-success">Header</div>
                     <div class="card-body ">
-                        <h5 class="card-title">Success card title</h5>
+                        <h5 class="card-title"> {{ $t("FriendsTitle1")}}</h5>
                         <p class="card-text">
-                            Some quick example text to build on the card title
-                            and make up the bulk of the card's content.
+                         {{ $t("FriendDesc1")}}
                         </p>
                     </div>
                 </div>
@@ -97,10 +88,9 @@
                 <div class="card border-success mb-5" style="max-width: 18rem;">
                     <div class="card-header text-success">Header</div>
                     <div class="card-body ">
-                        <h5 class="card-title">Success card title</h5>
+                        <h5 class="card-title">{{ $t("FriendsTitle2")}}</h5>
                         <p class="card-text">
-                            Some quick example text to build on the card title
-                            and make up the bulk of the card's content.
+                            {{ $t("FriendDesc2")}}
                         </p>
                     </div>
                 </div>
@@ -109,10 +99,9 @@
                 <div class="card border-success mb-5" style="max-width: 18rem;">
                     <div class="card-header text-success">Header</div>
                     <div class="card-body ">
-                        <h5 class="card-title">Success card title</h5>
+                        <h5 class="card-title">{{ $t("FriendsTitle3")}}</h5>
                         <p class="card-text">
-                            Some quick example text to build on the card title
-                            and make up the bulk of the card's content.
+                        {{ $t("FriendDesc3")}}
                         </p>
                     </div>
                 </div>
