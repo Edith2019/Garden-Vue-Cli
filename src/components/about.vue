@@ -2,30 +2,20 @@
     <div class="about-container">
         <div class="card About">
             <div class="card-body">
-                <h1 class="card-title">About</h1>
+                <h1 class="card-title">{{ $t("About")}}</h1>
                 <p class="card-text">
-                    Vollguter Gemeinschaftsgarten (VGG) is a Neukölln-based
-                    community project located in the heart of the ""Kindl
-                    Kiez"". VGG is a Garden. VGG is a platform for
-                    Experimentation, were you can explore the worlds of plants
-                    and herbs and were you can build installations from recycled
-                    material. It is place to learn from one another, to learn
-                    about bees, to repair your bike, to weld, to prepare
-                    dumplings or learn about composting. VGG is platform for
-                    artists and performers. For some, VGG is a home. VGG is a
-                    place to meet and hang out. VGG is an open community of
-                    people who like to work together and get their hands dirty.
+                    {{ $t("GardenDef")}}
                 </p>
                 <p>
-                    We believe in Bio- and Social diversity, We are proud of our
+                    <!-- We believe in Bio- and Social diversity, We are proud of our
                     diversity and make space appreciate all living things. We
                     believe in the three permaculture ethics: earth care, people
-                    care, fare share. COME AND JOIN US :)
+                    care, fare share. COME AND JOIN US :) -->
                 </p>
-                <p>Opening Hours: the Garden is always open!</p>
-                We signed the
+                <p>{{ $t("OpeningHours")}}</p>
+                {{ $t("WeSigned")}}
                 <a href="https://urbangardeningmanifest.de/" target="_blank"
-                    >Urban Gardening Manifest</a
+                    > {{ $t("Urban")}}</a
                 >.
             </div>
             <div
@@ -56,9 +46,9 @@
                             alt="..."
                         />
                         <div class="carousel-caption d-none d-md-block">
-                            <h5>VGG Garden</h5>
+                            <h5>{{ $t("Title1")}}</h5>
                             <p>
-                                Sunny and flowery times!
+                                {{ $t("Desc1")}}
                             </p>
                         </div>
                     </div>
@@ -69,9 +59,9 @@
                             alt="..."
                         />
                         <div class="carousel-caption d-none d-md-block">
-                            <h5>Garden - Early Stage</h5>
+                            <h5>{{ $t("Title2")}}</h5>
                             <p>
-                                This the land where everything started.
+                                {{ $t("Desc2")}}
                             </p>
                         </div>
                     </div>
@@ -82,10 +72,9 @@
                             alt="..."
                         />
                         <div class="carousel-caption d-none d-md-block">
-                            <h5>Graden - events</h5>
+                               <h5>{{ $t("Title3")}}</h5>
                             <p>
-                                Regular meeting take place to share meals, ideas
-                                and love!
+                                {{ $t("Desc3")}}
                             </p>
                         </div>
                     </div>

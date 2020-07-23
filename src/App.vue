@@ -1,7 +1,6 @@
 <template>
     <div id="app">
-        <!-- <router-view></router-view> -->
-        <navbar />
+        <navbar id="navbar"/>
         <intro id="intro" />
         <about id="about" />
         <community id="community" />
@@ -9,6 +8,7 @@
         <partners id="partners" />
         <events id="events" />
         <contact id="contact" />
+        <footer/>
 
         <div class="footer">
             <p>Copyright © 2020 VGG</p>
@@ -29,6 +29,8 @@ import partners from "./components/partners.vue";
 import events from "./components/events.vue";
 import contact from "./components/contact.vue";
 
+
+
 import * as $ from "jquery";
 export default {
     name: "App",
@@ -42,11 +44,7 @@ export default {
         partners,
         events,
         contact,
-    },
-    data() {
-        return {
-            // tandcmodal: false,
-        };
+      
     },
 
     methods: {
@@ -58,6 +56,11 @@ export default {
 </script>
 
 <style>
+
+
+#translation {
+    margin-top: 200px;
+}
 #app {
     height: auto;
     width: 100%;
@@ -114,7 +117,7 @@ img {
 
 .footer {
     margin-top: 100px;
-    height: 3.5em;
+    height: 4.5em;
     border: white solid 3px;
     background-color: white;
     display: flex;

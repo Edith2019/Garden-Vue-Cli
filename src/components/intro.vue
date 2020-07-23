@@ -1,7 +1,7 @@
 <template>
     <div class="Intro">
         <div class="Intro-container">
-            <h1 class="Intro-title">Welcome to VGG Garden!</h1>
+            <h1 class="Intro-title">{{ $t("Welcome") }}</h1>
 
             <a class="manifest " href="http://www.urban-gardening-manifest.de"
                 ><img id="badge"
@@ -20,9 +20,11 @@
 </template>
 
 <script>
+
 export default {
     name: "intro",
     props: {},
+
 };
 </script>
 

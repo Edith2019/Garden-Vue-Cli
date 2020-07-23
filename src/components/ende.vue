@@ -1,0 +1,50 @@
+<template>    
+        <div class="ende">
+            <button v-for="entry in languages" :key="entry.title" @click="changeLocale(entry.language)">
+                <flag :iso="entry.flag" v-bind:squared=false /> {{entry.title}}
+            </button>
+        </div>
+        
+</template>
+
+<script>
+import i18n from '../plugin/i18n';
+export default {
+name:"languages",
+data() {
+            return {
+                languages: [
+                    { flag: 'us', language: 'en', title: 'English' },
+                    { flag: 'de', language: 'de', title: 'Deutsch' },
+                    { flag: 'tr', language: 'tr', title: 'Türk' },
+                    { flag: 'ar', language: 'ar', title: 'عربى' },
+                ]
+            };
+        },
+        methods: {
+            changeLocale(locale) {
+                i18n.locale = locale;
+            }
+        }
+}
+</script>
+
+<style>
+
+.ende {
+ position: absolute;
+border: solid 4px blue;
+
+
+}
+
+button {
+    border: none;
+    background: none;
+    margin-left: 50px;
+    padding-top: 8px;
+border: solid 4px pink;
+
+}
+
+</style>

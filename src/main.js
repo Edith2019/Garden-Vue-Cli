@@ -11,13 +11,9 @@ import 'bootstrap'; import 'bootstrap/dist/css/bootstrap.min.css';
 import VueProgressiveImage from "vue-progressive-image";
 import VueSmoothScroll from 'vue2-smooth-scroll'
 import VueDOMPurifyHTML from 'vue-dompurify-html'
+import i18n from './plugin/i18n';
 
-
-// import VCalendar from 'v-calendar';
-// Vue.use(VCalendar, {
-//   componentPrefix: 'vc',  // Use <vc-calendar /> instead of <v-calendar />
-//   // ...,                // ...other defaults
-// });
+Vue.config.productionTip = false
 
 
 Vue.config.productionTip = false
@@ -31,7 +27,6 @@ Vue.use(VueProgressiveImage, {
 Vue.use(VueSmoothScroll)
 
 Vue.use(VueDOMPurifyHTML)
-
 const router = new VueRouter({
   mode: 'history',
   base: process.env.BASE_URL,
@@ -45,6 +40,7 @@ new Vue({
   data: {
     rawHtml: '<span style="color: red">This should be red.</span>'
   },
+  i18n,
   render: h => h(App),
   router
 

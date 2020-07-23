@@ -20,45 +20,48 @@
                 <li class="nav-item active">
                     <!-- <router-link class="nav-link" to="/about"> -->
                     <a href="#about" class="nav-link" v-smooth-scroll>
-                        About
+                        {{ $t("About") }}
                     </a>
                     <!-- </router-link> -->
                 </li>
                 <li class="nav-item active">
                     <!-- <router-link class="nav-link" to="/community"> -->
                     <a href="#community" class="nav-link" v-smooth-scroll>
-                        Community
+                         {{ $t("Community") }}
                     </a>
                     <!-- </router-link> -->
                 </li>
                 <li class="nav-item">
                     <!-- <router-link class="nav-link" to="/whatwedo"> -->
                     <a href="#whatwedo" class="nav-link" v-smooth-scroll>
-                        What we do</a
+                        {{$t( "WhatWeDo")}}</a
                     >
                     <!-- </router-link> -->
                 </li>
                 <li class="nav-item">
                     <!-- <router-link class="nav-link" to="/partners"> -->
                     <a href="#partners" class="nav-link" v-smooth-scroll>
-                        Partners
+                       {{$t("Partners")}}
                     </a>
                     <!-- </router-link> -->
                 </li>
                 <li class="nav-item">
                     <!-- <router-link class="nav-link" to="/events"> -->
                     <a href="#events" class="nav-link" v-smooth-scroll>
-                        Events
+                        {{$t("Events")}}
                     </a>
                     <!-- </router-link> -->
                 </li>
                 <li class="nav-item">
                     <!-- <router-link class="nav-link" to="/contact"> -->
                     <a href="#contact" class="nav-link" v-smooth-scroll>
-                        Contact
+                        {{$t( "Contact")}}
                     </a>
                     <!-- </router-link> -->
                 </li>
+                <li>
+                    <languages/>
+                    </li>
             </ul>
             <li class="navbar-text ">
                 <a
@@ -91,7 +94,12 @@
 </template>
 
 <script>
+
+import languages from  "./ende.vue"
 export default {
     name: "navbar",
+    components:{
+        languages,
+    }
 };
 </script>
