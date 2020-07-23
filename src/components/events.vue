@@ -2,10 +2,9 @@
     <div class="events-container mx-auto">
         <div class="card">
             <div class="card-body">
-                <h1>Events</h1>
+                <h1>{{ $t("Events")}}</h1>
                 <p>
-                    Every Saturday afternoon is Garden Day. We meet to garden,
-                    fix, built and hung out together.
+                    {{ $t("EventDesc")}}
                 </p>
             </div>
             <div class="container ">

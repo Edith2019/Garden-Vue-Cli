@@ -46,7 +46,28 @@ const messages = {
     FriendsDec2: "Description",
     FriendsTitle3: "Title",
     FriendsDec3: "Description",
-
+    EventDesc: "Every Saturday afternoon is Garden Day. We meet to garden, fix, built and hung out together.",
+    ContactDesc: "Questions? Ideas? Contributions? Reach out any time!",
+    FN:"First Name",
+    LN:"Last Name ",
+    Email:"Email",
+    tandCagree: "I agree with the terms and conditions",
+    PtandCagree:"Please agree with the terms and conditions",
+    Submit: "Submit",
+    YourMessage: "Your message",
+    GeneralInfo: "General Information:",
+    Covid: "Covid-19",
+    GeneralInfoDesc: "You must keep a minimum of 1.5 meters away from others not living with you when out in public.When sitting in parks or other green spaces, you must keep a 5-meter distance (that’s roughly 16.5 feet) from others.",
+    ThankYou: "Thank you!",
+    Thank: "Thank you",
+    ThankMessage: "for reaching out to us. We will come back to you as soon as possible!",
+    Close: "Close",
+    
+    
+    
+    
+    
+    tandC: "TandC",
     }, 
     'de': {
         About: "Uber",

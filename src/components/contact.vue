@@ -4,8 +4,8 @@
 
         <div class="card ">
             <div class="card-body">
-                <h1>Contact</h1>
-                <p>Questions? Ideas? Contributions? Reach out any time!</p>
+                <h1>{{ $t("Contact")}}</h1>
+                <p>{{ $t("ContactDesc")}}</p>
             </div>
         </div>
         <div id="inputdata" class="card contact-container-input">
@@ -16,8 +16,9 @@
                             <span
                                 class="input-group-text"
                                 id="inputGroup-sizing-default"
-                                >First Name</span
-                            >
+                                >
+                                {{ $t("FN")}}
+                                </span>
                         </div>
                         <input
                             type="text"
@@ -32,7 +33,7 @@
                             <span
                                 class="input-group-text"
                                 id="inputGroup-sizing-default"
-                                >Last Name</span
+                                >{{ $t("LN")}}</span
                             >
                         </div>
                         <input
@@ -48,7 +49,7 @@
                             <span
                                 class="input-group-text"
                                 id="inputGroup-sizing-default"
-                                >Email</span
+                                >{{ $t("Email")}}</span
                             >
                         </div>
                         <input
@@ -68,11 +69,12 @@
                             />
 
                             <p class="tandcI">
-                                I agree with the terms and conditions
+                                {{ $t("tandCagree")}}
                             </p>
                         </div>
                         <div id="gdpr" ref="gdpr" v-if="gdpr">
-                            Please agree with the terms and conditions
+                            
+                             {{ $t("PtandCagree")}}
                         </div>
                     </div>
                     <button
@@ -81,14 +83,14 @@
                         class="btn btn-outline-secondary"
                         @click.prevent="handleClick"
                     >
-                        Submit
+                          {{ $t("Submit")}}
                     </button>
                 </form>
             </div>
             <textarea
                 v-model="message"
                 name="message"
-                placeholder="Your message"
+                placeholder= "your message"
                 class="form-control"
             >
             </textarea>
@@ -102,19 +104,15 @@
                     style="width: 25rem;"
                 >
                     <div class="card-body">
-                        <h5 class="card-title">General Information:</h5>
+                        <h5 class="card-title">{{ $t("GeneralInfo")}}</h5>
                         <p class="card-text">
-                            Opening hours: we are always open
+                            {{ $t("OpeningHours")}}
                         </p>
                         <p>
-                            Covid-19:
+                            {{ $t("Covid")}}:
                         </p>
                         <p>
-                            You must keep a minimum of 1.5 meters (roughly 5
-                            feet) away from others not living with you when out
-                            in public. When sitting in parks or other green
-                            spaces, you must keep a 5-meter distance (that’s
-                            roughly 16.5 feet) from others.
+                           {{ $t("GeneralInfoDesc")}}:
                         </p>
                         <p class="card-text"></p>
                     </div>
@@ -136,7 +134,7 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <h5 class="modal-title" id="exampleModalLabel">
-                            Thank you!
+                            {{ $t("ThankYou")}}
                         </h5>
                         <button
                             type="button"
@@ -148,8 +146,7 @@
                         </button>
                     </div>
                     <div class="modal-body">
-                        Thank you {{ result }} for reaching out to us. We will
-                        come back to you as soon as possible!
+                         {{ $t("Thank")}} {{ result }} {{ $t("ThankMessage")}}
                     </div>
                     <div class="modal-footer">
                         <button
@@ -157,7 +154,7 @@
                             class="btn btn-secondary"
                             data-dismiss="modal"
                         >
-                            Close
+                            {{ $t("Close")}}
                         </button>
                     </div>
                 </div>
