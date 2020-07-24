@@ -28,10 +28,6 @@ import whatwedo from "./components/whatwedo.vue";
 import partners from "./components/partners.vue";
 import events from "./components/events.vue";
 import contact from "./components/contact.vue";
-// import "./fontsource-dm-serif-display/cyrillic-ext-400.css"
- 
-
-
 
 import * as $ from "jquery";
 export default {
@@ -59,10 +55,11 @@ export default {
 
 <style>
 
-
+@import url('https://fonts.googleapis.com/css?family=DM+Serif+Display');
 #translation {
     margin-top: 200px;
 }
+
 #app {
     height: auto;
     width: 100%;
@@ -72,8 +69,8 @@ export default {
 
 * {
     margin: 0px;
-    font-family: serif;
-/* font-family: "DM Serif Display"; */
+    font-family: "DM Serif Display";
+
 }
 
 img {
@@ -99,6 +96,7 @@ img {
     text-align: right;
     cursor: pointer;
 }
+
 .text-app {
     width: 378px;
     height: 278px;
