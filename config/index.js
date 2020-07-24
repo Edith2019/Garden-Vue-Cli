@@ -5,7 +5,7 @@ module.exports = {
             "secret": "@#$@%$#^%5"
         },
         "AWS_KEY": process.env.AWS_KEY,
-        "AWS_SECRET": process.env.AWS_SECRET,
+        "AWS_SECRET": process.env.AWS_SECRET
     },
     development: {
         "cookieSession": {
