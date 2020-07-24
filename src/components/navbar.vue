@@ -137,6 +137,7 @@ export default {
 max-width: 100vw !important;
 
     }
+    
 }
 
 

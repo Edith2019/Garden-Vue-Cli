@@ -47,4 +47,15 @@ button {
 
 }
 
+@media only screen and (max-width: 500px) {
+.ende {
+    max-width: 300px;
+
+}
+button {
+        padding-left: 0px;
+padding-right: 30px;
+}
+
+}
 </style>
