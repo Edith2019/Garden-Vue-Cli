@@ -28,6 +28,8 @@ import whatwedo from "./components/whatwedo.vue";
 import partners from "./components/partners.vue";
 import events from "./components/events.vue";
 import contact from "./components/contact.vue";
+// import "./fontsource-dm-serif-display/cyrillic-ext-400.css"
+ 
 
 
 
@@ -70,7 +72,8 @@ export default {
 
 * {
     margin: 0px;
-    font-family: sans-serif;
+    font-family: serif;
+/* font-family: "DM Serif Display"; */
 }
 
 img {

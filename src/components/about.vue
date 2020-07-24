@@ -16,7 +16,7 @@
                 {{ $t("WeSigned")}}
                 <a href="https://urbangardeningmanifest.de/" target="_blank"
                     > {{ $t("Urban")}}</a
-                >.
+                >
             </div>
             <div
                 id="carouselExampleCaptions"

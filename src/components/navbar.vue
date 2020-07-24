@@ -16,6 +16,8 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+         
+            <div class="items-nav">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
                     <!-- <router-link class="nav-link" to="/about"> -->
@@ -52,18 +54,23 @@
                     </a>
                     <!-- </router-link> -->
                 </li>
-                <li class="nav-item">
+                <li class="nav-item ">
                     <!-- <router-link class="nav-link" to="/contact"> -->
                     <a href="#contact" class="nav-link" v-smooth-scroll>
                         {{$t( "Contact")}}
                     </a>
                     <!-- </router-link> -->
                 </li>
-                <li>
-                    <languages/>
-                    </li>
             </ul>
-            <li class="navbar-text ">
+            </div>
+ 
+                <div class="collapse navbar-collapse nav-item" id="navbarSupportedContent">
+                     <languages/>
+                    </div>
+                    
+
+<div id="navbar-small-sm">
+            <li class="navbar-text " >
                 <a
                     href="https://www.facebook.com/VollguterGemeinschaftsgarten/"
                     target="_blank"
@@ -89,6 +96,7 @@
                     />
                 </a>
             </li>
+            </div>
         </div>
     </nav>
 </template>
@@ -103,3 +111,33 @@ export default {
     }
 };
 </script>
+
+<style scoped>
+.items-nav{
+   width: 60%;
+ 
+}
+
+
+@media only screen and (max-width: 500px) {
+.whatwedo-container {
+       width: 70%;
+    }
+    #navbar-small-sm {
+        margin-top: 50px;
+        max-width: 340px !important;
+    }
+
+    #navbarSupportedContent.navbar-collapse.collapse.show {
+        max-width: 340px !important;
+    }
+
+    #navbar.navbar.navbar-expand-lg.navbar-light.bg-light.fixed-top {
+
+max-width: 100vw !important;
+
+    }
+}
+
+
+</style>

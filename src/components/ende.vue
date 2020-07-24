@@ -33,7 +33,7 @@ data() {
 
 .ende {
  position: absolute;
-border: solid 4px blue;
+
 
 
 }
@@ -43,7 +43,7 @@ button {
     background: none;
     margin-left: 50px;
     padding-top: 8px;
-border: solid 4px pink;
+
 
 }
 

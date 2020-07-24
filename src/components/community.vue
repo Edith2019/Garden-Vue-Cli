@@ -67,7 +67,7 @@
                         />
                         <div class="card-body">
                             <p class="card-text">
-                        {{$t("CommP3")}}
+                        {{ $t("CommP3")}}
 
                             </p>
                         </div>
