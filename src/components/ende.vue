@@ -55,6 +55,7 @@ button {
 button {
         padding-left: 0px;
 padding-right: 30px;
+margin-left: 0px;
 }
 
 }

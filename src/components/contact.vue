@@ -199,7 +199,7 @@ export default {
         handleClick: async function() {
             if (this.checkbox === true) {
                 const results = await axios.post(
-                    "https://vgg-nkln.herokuapp.com//contact/submit",
+                    "https://vgg-nkln.herokuapp.com/contact/submit",
                     {
                         first: this.first,
                         last: this.last,
