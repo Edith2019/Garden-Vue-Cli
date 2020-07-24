@@ -37,8 +37,7 @@ export default {
     flex-direction: column;
     align-items: center;
     padding-bottom: 0px;
-    margin-bottom: 100px;
-    padding: 5%;
+
 }
 .Intro-picture {
     border: solid rgba(255, 255, 255, 0.8) 10px;

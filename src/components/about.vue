@@ -6,12 +6,6 @@
                 <p class="card-text">
                     {{ $t("GardenDef")}}
                 </p>
-                <p>
-                    <!-- We believe in Bio- and Social diversity, We are proud of our
-                    diversity and make space appreciate all living things. We
-                    believe in the three permaculture ethics: earth care, people
-                    care, fare share. COME AND JOIN US :) -->
-                </p>
                 <p>{{ $t("OpeningHours")}}</p>
                 {{ $t("WeSigned")}}
                 <a href="https://urbangardeningmanifest.de/" target="_blank"

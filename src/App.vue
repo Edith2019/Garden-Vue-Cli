@@ -135,4 +135,16 @@ p {
 .tandcApp {
     cursor: pointer;
 }
+
+#intro {
+    border: solid red 4px;
+}
+
+#about {
+       border: solid blue 4px;
+}
+
+#community {
+    border: solid 4px pink;
+}
 </style>
