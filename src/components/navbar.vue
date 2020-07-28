@@ -63,11 +63,10 @@
                 </li>
             </ul>
             </div>
- 
-                <div class="collapse navbar-collapse nav-item" id="navbarSupportedContent">
+                <div class="collapse navbar-collapse nav-item sm" id="navbarSupportedContent">
                      <languages/>
                     </div>
-                    
+                  
 
 <div id="navbar-small-sm">
             <li class="navbar-text " >
@@ -119,12 +118,11 @@ export default {
 }
 
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 400px) {
 .whatwedo-container {
        width: 70%;
     }
     #navbar-small-sm {
-        margin-top: 50px;
         max-width: 340px !important;
     }
 
@@ -139,6 +137,16 @@ max-width: 100vw !important;
     }
     
 }
+
+@media only screen and (max-width: 900px) {
+
+   #navbar-small-sm {
+        margin-top: 50px;
+     
+    }
+}
+
+
 
 
 </style>
