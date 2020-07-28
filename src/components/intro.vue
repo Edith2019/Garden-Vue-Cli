@@ -1,30 +1,29 @@
-<template >
-    <div class="Intro" >
-        <div class="Intro-container" >
-            <h1 class="Intro-title" >{{ $t("Welcome") }}</h1 >
+<template>
+    <div class="Intro">
+        <div class="Intro-container">
+            <h1 class="Intro-title">{{ $t("Welcome") }}</h1>
 
             <a class="manifest " href="http://www.urban-gardening-manifest.de"
-                ><img id="badge"
+                ><img
+                    id="badge"
                     src="https://urbangardeningmanifest.de/pulsepro/data/img/uploads/garden-manifest-button-200x200.png"
                     alt="Die Stadt ist unser Garten"
-            /></a >
+            /></a>
 
             <img
                 class="Intro-picture"
                 src="@/assets/container-min.jpg"
-                 width="80%"
+                width="80%"
                 height="50%"
             />
-        </div >
-    </div >
-</template >
+        </div>
+    </div>
+</template>
 
 <script>
-
 export default {
     name: "intro",
     props: {}
-
 };
 </script>
 
@@ -37,12 +36,10 @@ export default {
     flex-direction: column;
     align-items: center;
     padding-bottom: 0px;
-
 }
 .Intro-picture {
     border: solid rgba(255, 255, 255, 0.8) 10px;
     margin-top: 5%;
-
 }
 h1.Intro-title {
     color: white;
@@ -68,24 +65,21 @@ h1.Intro-title {
 
     img#badge {
         width: 90%;
-        height:auto;
+        height: auto;
         margin-top: 50px;
     }
-
 }
 
 @media only screen and (min-width: 1300px) {
-.manifest {
+    .manifest {
         margin-bottom: -13%;
         margin-left: 78%;
         z-index: 100;
-
     }
 
     img.Intro-picture {
-         width: 80%;
-        height:20% !important;
+        width: 80%;
+        height: 20% !important;
     }
 }
-
 </style>

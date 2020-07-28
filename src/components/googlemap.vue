@@ -1,5 +1,5 @@
-<template >
-    <div class="googlemap-container" >
+<template>
+    <div class="googlemap-container">
         <iframe
             width="100%"
             height="300px"
@@ -9,9 +9,9 @@
             scrolling="no"
             marginheight="0"
             marginwidth="0"
-        ></iframe >
-    </div >
-</template >
+        ></iframe>
+    </div>
+</template>
 
 <script>
 export default {
@@ -22,4 +22,3 @@ export default {
     props: {}
 };
 </script>
-

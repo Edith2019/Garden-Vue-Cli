@@ -1,8 +1,6 @@
-<template >
-    <!-- <div id="calendar "> -->
-        <Calendar :attributes="attributes" > </Calendar >
-    <!-- </div> -->
-</template >
+<template>
+    <Calendar :attributes="attributes"> </Calendar>
+</template>
 <script>
 import Calendar from "v-calendar/lib/components/calendar.umd";
 
@@ -14,7 +12,7 @@ export default {
                 isComplete: false,
                 dates: { weekdays: 7 }, // Every Friday
                 color: "green"
-            }
+            },
         ];
         return {
             incId: todos.length,
@@ -45,6 +43,4 @@ export default {
     }
 };
 </script>
-<style scoped>
 
-</style>

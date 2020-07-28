@@ -1,8 +1,6 @@
 <template>
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-        <!-- <router-link class="navbar-brand" to="/"> -->
         <a href="#intro" class="navbar-brand" v-smooth-scroll> VGG </a>
-        <!-- </router-link> -->
         <button
             class="navbar-toggler "
             type="button"
@@ -19,46 +17,34 @@
             <div class="items-nav">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <!-- <router-link class="nav-link" to="/about"> -->
                         <a href="#about" class="nav-link" v-smooth-scroll>
                             {{ $t("About") }}
                         </a>
-                        <!-- </router-link> -->
                     </li>
                     <li class="nav-item active">
-                        <!-- <router-link class="nav-link" to="/community"> -->
                         <a href="#community" class="nav-link" v-smooth-scroll>
                             {{ $t("Community") }}
                         </a>
-                        <!-- </router-link> -->
                     </li>
                     <li class="nav-item">
-                        <!-- <router-link class="nav-link" to="/whatwedo"> -->
                         <a href="#whatwedo" class="nav-link" v-smooth-scroll>
                             {{ $t("WhatWeDo") }}</a
                         >
-                        <!-- </router-link> -->
                     </li>
                     <li class="nav-item">
-                        <!-- <router-link class="nav-link" to="/partners"> -->
                         <a href="#partners" class="nav-link" v-smooth-scroll>
                             {{ $t("Partners") }}
                         </a>
-                        <!-- </router-link> -->
                     </li>
                     <li class="nav-item">
-                        <!-- <router-link class="nav-link" to="/events"> -->
                         <a href="#events" class="nav-link" v-smooth-scroll>
                             {{ $t("Events") }}
                         </a>
-                        <!-- </router-link> -->
                     </li>
                     <li class="nav-item ">
-                        <!-- <router-link class="nav-link" to="/contact"> -->
                         <a href="#contact" class="nav-link" v-smooth-scroll>
                             {{ $t("Contact") }}
                         </a>
-                        <!-- </router-link> -->
                     </li>
                 </ul>
             </div>
@@ -106,8 +92,8 @@ import languages from "./ende.vue";
 export default {
     name: "navbar",
     components: {
-        languages,
-    },
+        languages
+    }
 };
 </script>
 
@@ -123,16 +109,13 @@ export default {
     #navbar-small-sm {
         max-width: 340px !important;
     }
-
     #navbarSupportedContent.navbar-collapse.collapse.show {
         max-width: 340px !important;
     }
-
     #navbar.navbar.navbar-expand-lg.navbar-light.bg-light.fixed-top {
         max-width: 100vw !important;
     }
 }
-
 @media only screen and (max-width: 900px) {
     #navbar-small-sm {
         margin-top: 50px;

@@ -1,11 +1,11 @@
-<template >
-    <div >
+<template>
+    <div>
         <intro />
-    </div >
-</template >
+    </div>
+</template>
 
 <script>
-import intro from "./intro";
+import intro from "./intro.vue";
 export default {
     components: {
         intro
