@@ -110,8 +110,7 @@
 
 <script>
 export default {
-    name: "partners",
-    props: {}
+    name: "partners"
 };
 </script>
 

@@ -159,7 +159,6 @@ export default {
 .card.rounded.mx-auto.d-block {
     margin-top: 2rem;
 }
-
 .Gardener-title {
     color: white;
     border: solid 5px white;

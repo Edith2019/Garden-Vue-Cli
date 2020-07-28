@@ -12,7 +12,6 @@
         >
             <span class="navbar-toggler-icon"></span>
         </button>
-
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <div class="items-nav">
                 <ul class="navbar-nav mr-auto">
@@ -54,7 +53,6 @@
             >
                 <languages />
             </div>
-
             <div id="navbar-small-sm">
                 <li class="navbar-text ">
                     <a
