@@ -39,8 +39,8 @@
                 </div>
                 <div class="modal-footer">
                     <button
-                        type="button"
-                        class="btn btn-secondary"
+                        type="button "
+                        class="btn btn-secondary btn-success"
                         data-dismiss="modal"
                     >
                         {{ $t("Close")}}
