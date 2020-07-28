@@ -1,6 +1,6 @@
-<template>
-    <div class="people"></div>
-</template>
+<template >
+    <div class="people" ></div >
+</template >
 
 <script>
 export default {};

@@ -1,18 +1,18 @@
-<template>
-    <div class="events-container mx-auto">
-        <div class="card">
-            <div class="card-body">
-                <h1>{{ $t("Events")}}</h1>
-                <p>
+<template >
+    <div class="events-container mx-auto" >
+        <div class="card" >
+            <div class="card-body" >
+                <h1 >{{ $t("Events")}}</h1 >
+                <p >
                     {{ $t("EventDesc")}}
-                </p>
-            </div>
-            <div class="container ">
-                <div class="row ">
-                    <div class="col-sm d-flex justify-content-center padding" id="calendar-event">
-                        <calendar></calendar>
-                    </div>
-                    <div class="col-sm text-center">
+                </p >
+            </div >
+            <div class="container " >
+                <div class="row " >
+                    <div class="col-sm d-flex justify-content-center padding" id="calendar-event" >
+                        <calendar ></calendar >
+                    </div >
+                    <div class="col-sm text-center" >
                         <div
                             class="fb-page rounded border"
                             data-href="https://www.facebook.com/VollguterGemeinschaftsgarten/"
@@ -32,14 +32,14 @@
                                     href="https://www.facebook.com/VollguterGemeinschaftsgarten/"
                                     >Vollguter Gemeinschaftsgarten</a
                                 >
-                            </blockquote>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</template>
+                            </blockquote >
+                        </div >
+                    </div >
+                </div >
+            </div >
+        </div >
+    </div >
+</template >
 
 <script>
 import calendar from "./calendar.vue";
@@ -49,20 +49,20 @@ export default {
         return {
             mode: "single",
             selectedDate: null,
-            date: new Date(),
+            date: new Date()
         };
     },
     props: {
-        value: {},
+        value: {}
     },
     components: {
-        calendar,
+        calendar
     },
-    created: function() {},
+    created: function () {},
 
-    mounted: function() {
+    mounted: function () {
         console.log("data", this.data);
-    },
+    }
 };
 </script>
 
@@ -81,8 +81,6 @@ export default {
 .padding {
     padding-bottom: 20px;
 }
-
-
 
 @media only screen and (min-width: 1300px) {
 .events-container {

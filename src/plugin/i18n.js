@@ -1,77 +1,75 @@
-import Vue from 'vue'; 
-import VueI18n from 'vue-i18n'; 
+import Vue from "vue";
+import VueI18n from "vue-i18n";
 
 Vue.use(VueI18n);
 
+const messages = {
+    "en": {
+        About: "About",
+        Community: "Community",
+        WhatWeDo: "What we do",
+        Partners: "Partners",
+        Events: "Events",
+        Contact: "Contact",
+        Welcome: "Welcome to VGG Garden!",
+        GardenDef: "Vollguter Gemeinschaftsgarten (VGG) is a Neukölln-based community project located in the heart of the Kindl Kiez. VGG is a garden. VGG is a platform for experimentation, where you can explore the worlds of plants and herbs and where you can build installations from recycled material. It is a place to learn from each other, to lern about bees, how to repair your bike, how to weld, how to prepare dumplings for a large community or discover all about composting. VGG is platform for artists and performers. For some, VGG is a home. VGG is a place to meet and hang out. VGG is an open community of people who like to create ideas, cook and build things together and get their hands dirty. Everyone is welcome, we take care of all beds and plants jointly. Simply being there and participating makes you part of VGG. We believe in bio- and social diversity. We do not tolerate racism, sexism and any other for of discrimination. We are proud of our diversity and make space to appreciate all living things. We believe in the three permaculture ethics: earth care, people care, fair share. COME AND JOIN US!",
+        OpeningHours: "Opening Hours: the Garden is always open for you! Your fellow gardeners often meet on Saturday afternoons.Contact us(Link: (https://vgg-nkln.herokuapp.com/#contact) and come around!",
+        WeSigned: "We signed the ",
+        Urban: "Urban Gardening Manifest",
+        Title1: "VGG Garden",
+        Desc1: "Sunny and flowery times!",
+        Title2: "VGG Garden",
+        Desc2: "Before everything started...",
+        Title3: "VGG Garden",
+        Desc3: "Weekly meeting where we share food and love <3",
+        GardenerMonth: "Our awsome gardener of this month is ... Olivia",
+        GardenerDesc: "This month, mother nature has chosen Olivia as the gardener of the month. Oli is one of the fundation of the garden and her knowledge together with her shinny spirit make her an incredible asset for the garden!",
+        CommDesc: "VGG garden is composed of a wide variety of people where everyone is welcome. We are gardeners, builders, party bees with different background, culture, colors, gender and talents",
+        CommP1: "Some quick example text to build on the card title and make up the bulk of the card's content.",
+        CommP2: "Some quick example text to build on the card title and make up the bulk of the card's content.",
+        CommP3: "Some quick example text to build on the card title and make up the bulk of the card's content.",
+        CommP4: "Some quick example text to build on the card title and make up the bulk of the card's content.",
+        CommP5: "Some quick example text to build on the card title and make up the bulk of the card's content.",
+        CommP6: "Some quick example text to build on the card title and make up the bulk of the card's content.",
+        CommP7: "Some quick example text to build on the card title and make up the bulk of the card's content.",
+        WWDDesc: "Our activities in the garden vary to a great extent. We cultivate the entire area ourselves making sure that beds are built and maintained, we plant flowers, herbs, fruit and vegetables, we make sure that we water the plants regularly and that the garden stays clean. Through our activities we offer workshops, for example soap workshop, bicycle repair workshop, clothing exchanges, seed exchange etc. We also organize events e.g. garden parties, garden-cinema, flea markets and much more. The garden is also a meeting point for many neighbours* and should invite you to stay without the pressure of consumption.",
+        PartnerDesc: "VGG has great partners with whom we work together and who support us: ",
+        ZH: "Zuhause - Zuhause e.V. is a diverse collective of artists. The Vollguter Gemeinschaftsgarten was initiated in 2017 by Zuhause e.V. ",
+        IZ: "Information centre - The information centre on the Vollgut was planned by 36 architecture students* as a DesignBuild project of the Natural Building Lab and is located in the middle of the Vollgut community garden.",
+        Stif: "Land and property are scarce goods and therefore expensive. Usually too expensive for affordable housing and social or cultural projects, especially in city centres. Farmers are also confronted with rising land prices and leases. The Edith Maryon Foundation works to remove land from speculation so that we or others can use it in a socially responsible manner.",
+        FriendsDesc: "We join forces with other great initiatives that have like-minded visions. Together we aim to realize communities, green cities and flurishing societies how we envision them!",
+        FriendsTitle1: "Title",
+        FriendsDec1: "Description",
+        FriendsTitle2: "Title",
+        FriendsDec2: "Description",
+        FriendsTitle3: "Title",
+        FriendsDec3: "Description",
+        EventDesc: "We usually meet on Saturday afternoons in VGG to take care of the garden, fix and build things and hung out together. Contact us beforehand and come and join us. For other events check out our facebook page. Come and join us!",
+        ContactDesc: "Questions? Ideas? Contributions? Reach out any time!",
+        FN: "First Name",
+        LN: "Last Name ",
+        Email: "Email",
+        tandCagree: "I agree with the terms and conditions",
+        PtandCagree: "Please agree with the terms and conditions",
+        Submit: "Submit",
+        YourMessage: "Your message",
+        GeneralInfo: "General Information:",
+        Covid: "Covid-19",
+        GeneralInfoDesc: "To keep us all healthy, please keep a minimum of 1.5 meters away from people who are not living with you when out in public.When sitting in parks or other green spaces, you must keep a 5-meter distance(that’s roughly 16.5 feet) from others.",
+        ThankYou: "Thank you!",
+        Thank: "Thank you",
+        ThankMessage: "for reaching out to us. We will come back to you as soon as possible!",
+        Close: "Close",
+        tandC: "TandC",
+        TermsAndConditions: " Terms and Conditions",
+        tandcDesc1: " Like most similar websites, this site uses cookies. On this page we explain more about cookies and how we use them.By using this website and agreeing to this policy, you consent to our use of cookies in accordance with the terms of this policy.",
+        AboutCookies: "About cookies",
+        tandcDesc2: "Cookies are files, often including unique identifiers, that are sent by web servers to web browsers, and which may then be sent back to the server each time the browser requests a page from the server.Cookies can be used by web servers to identify and track users as they navigate different pages on a website, and to identify users returning to a website.Cookies may be either persistent cookies or session cookies.A persistent cookie consists of a text file sent by a web server to a web browser, which will be stored by the browser and will remain valid until its set expiry date(unless deleted by the user before the expiry date).A session cookie, on the other hand, will expire at the end of the user session, when the web browser is closed.",
+        CookiesWebsite: "Cookies on this website",
+        tandcDesc3: "    We use both session cookies and persistent cookies on this website."
 
-
-const messages = { 
-    'en': {
-    About: "About",
-    Community: "Community",
-    WhatWeDo: "What we do",
-    Partners: "Partners",
-    Events:"Events",
-    Contact: "Contact",
-    Welcome: "Welcome to VGG Garden!",
-    GardenDef: "Vollguter Gemeinschaftsgarten (VGG) is a Neukölln-based community project located in the heart of the Kindl Kiez. VGG is a garden. VGG is a platform for experimentation, where you can explore the worlds of plants and herbs and where you can build installations from recycled material. It is a place to learn from each other, to lern about bees, how to repair your bike, how to weld, how to prepare dumplings for a large community or discover all about composting. VGG is platform for artists and performers. For some, VGG is a home. VGG is a place to meet and hang out. VGG is an open community of people who like to create ideas, cook and build things together and get their hands dirty. Everyone is welcome, we take care of all beds and plants jointly. Simply being there and participating makes you part of VGG. We believe in bio- and social diversity. We do not tolerate racism, sexism and any other for of discrimination. We are proud of our diversity and make space to appreciate all living things. We believe in the three permaculture ethics: earth care, people care, fair share. COME AND JOIN US!",
-    OpeningHours: "Opening Hours: the Garden is always open for you! Your fellow gardeners often meet on Saturday afternoons.Contact us(Link: (https://vgg-nkln.herokuapp.com/#contact) and come around!",
-    WeSigned: "We signed the ",
-    Urban: "Urban Gardening Manifest",
-    Title1: "VGG Garden",
-    Desc1: "Sunny and flowery times!",          
-    Title2: "VGG Garden",
-    Desc2: "Before everything started...",  
-    Title3: "VGG Garden",
-    Desc3: "Weekly meeting where we share food and love <3",  
-    GardenerMonth: "Our awsome gardener of this month is ... Olivia",
-    GardenerDesc: "This month, mother nature has chosen Olivia as the gardener of the month. Oli is one of the fundation of the garden and her knowledge together with her shinny spirit make her an incredible asset for the garden!",
-    CommDesc: "VGG garden is composed of a wide variety of people where everyone is welcome. We are gardeners, builders, party bees with different background, culture, colors, gender and talents",
-    CommP1: "Some quick example text to build on the card title and make up the bulk of the card's content.",
-    CommP2: "Some quick example text to build on the card title and make up the bulk of the card's content.",         
-    CommP3: "Some quick example text to build on the card title and make up the bulk of the card's content.",           
-    CommP4: "Some quick example text to build on the card title and make up the bulk of the card's content.",              
-    CommP5: "Some quick example text to build on the card title and make up the bulk of the card's content.",
-    CommP6: "Some quick example text to build on the card title and make up the bulk of the card's content.",
-    CommP7: "Some quick example text to build on the card title and make up the bulk of the card's content.",
-    WWDDesc: "Our activities in the garden vary to a great extent. We cultivate the entire area ourselves making sure that beds are built and maintained, we plant flowers, herbs, fruit and vegetables, we make sure that we water the plants regularly and that the garden stays clean. Through our activities we offer workshops, for example soap workshop, bicycle repair workshop, clothing exchanges, seed exchange etc. We also organize events e.g. garden parties, garden-cinema, flea markets and much more. The garden is also a meeting point for many neighbours* and should invite you to stay without the pressure of consumption.",
-    PartnerDesc: "VGG has great partners with whom we work together and who support us: ",
-    ZH: "Zuhause - Zuhause e.V. is a diverse collective of artists. The Vollguter Gemeinschaftsgarten was initiated in 2017 by Zuhause e.V. ",
-    IZ: "Information centre - The information centre on the Vollgut was planned by 36 architecture students* as a DesignBuild project of the Natural Building Lab and is located in the middle of the Vollgut community garden.", 
-    Stif: "Land and property are scarce goods and therefore expensive. Usually too expensive for affordable housing and social or cultural projects, especially in city centres. Farmers are also confronted with rising land prices and leases. The Edith Maryon Foundation works to remove land from speculation so that we or others can use it in a socially responsible manner.",
-    FriendsDesc: "We join forces with other great initiatives that have like-minded visions. Together we aim to realize communities, green cities and flurishing societies how we envision them!",
-    FriendsTitle1: "Title",
-    FriendsDec1:"Description",
-    FriendsTitle2: "Title",
-    FriendsDec2: "Description",
-    FriendsTitle3: "Title",
-    FriendsDec3: "Description",
-    EventDesc: "We usually meet on Saturday afternoons in VGG to take care of the garden, fix and build things and hung out together. Contact us beforehand and come and join us. For other events check out our facebook page. Come and join us!",
-    ContactDesc: "Questions? Ideas? Contributions? Reach out any time!",
-    FN:"First Name",
-    LN:"Last Name ",
-    Email:"Email",
-    tandCagree: "I agree with the terms and conditions",
-    PtandCagree:"Please agree with the terms and conditions",
-    Submit: "Submit",
-    YourMessage: "Your message",
-    GeneralInfo: "General Information:",
-    Covid: "Covid-19",
-    GeneralInfoDesc: "To keep us all healthy, please keep a minimum of 1.5 meters away from people who are not living with you when out in public.When sitting in parks or other green spaces, you must keep a 5-meter distance(that’s roughly 16.5 feet) from others.",
-    ThankYou: "Thank you!",
-    Thank: "Thank you",
-    ThankMessage: "for reaching out to us. We will come back to you as soon as possible!",
-    Close: "Close",
-    tandC: "TandC",
-    TermsAndConditions: " Terms and Conditions",
-    tandcDesc1: " Like most similar websites, this site uses cookies. On this page we explain more about cookies and how we use them.By using this website and agreeing to this policy, you consent to our use of cookies in accordance with the terms of this policy.",
-    AboutCookies: "About cookies",
-    tandcDesc2: "Cookies are files, often including unique identifiers, that are sent by web servers to web browsers, and which may then be sent back to the server each time the browser requests a page from the server.Cookies can be used by web servers to identify and track users as they navigate different pages on a website, and to identify users returning to a website.Cookies may be either persistent cookies or session cookies.A persistent cookie consists of a text file sent by a web server to a web browser, which will be stored by the browser and will remain valid until its set expiry date(unless deleted by the user before the expiry date).A session cookie, on the other hand, will expire at the end of the user session, when the web browser is closed.",
-    CookiesWebsite: "Cookies on this website",
-    tandcDesc3: "    We use both session cookies and persistent cookies on this website.",
-    
-    }, 
-    'de': {
+    },
+    "de": {
         About: "Über uns",
         Community: "Gemeinschaft",
         WhatWeDo: "Was wir machen",
@@ -133,10 +131,10 @@ const messages = {
         AboutCookies: "About cookies",
         tandcDesc2: "Cookies are files, often including unique identifiers, that are sent by web servers to web browsers, and which may then be sent back to the server each time the browser requests a page from the server.Cookies can be used by web servers to identify and track users as they navigate different pages on a website, and to identify users returning to a website.Cookies may be either persistent cookies or session cookies.A persistent cookie consists of a text file sent by a web server to a web browser, which will be stored by the browser and will remain valid until its set expiry date(unless deleted by the user before the expiry date).A session cookie, on the other hand, will expire at the end of the user session, when the web browser is closed.",
         CookiesWebsite: "Cookies on this website",
-        tandcDesc3: "    We use both session cookies and persistent cookies on this website.",
-    
-    }, 
-    'tr': {
+        tandcDesc3: "    We use both session cookies and persistent cookies on this website."
+
+    },
+    "tr": {
         About: "hakkında",
         Community: "cemiyet",
         WhatWeDo: "Ne yapıyoruz",
@@ -146,10 +144,10 @@ const messages = {
         Welcome: "VGG Garden'a hoş geldiniz!",
         OpeningHours: "Opening Hours: the Garden is always open!",
         WeSigned: "We signed the ",
-        Urban: "Urban Gardening Manifest",
+        Urban: "Urban Gardening Manifest"
 
     },
-    'ar': {
+    "ar": {
         About: "على وشك أن",
         Community: "الجماعة",
         WhatWeDo: "الذي نفعله",
@@ -159,14 +157,12 @@ const messages = {
         Welcome: "مرحبًا بكم في حديقة VGG!",
         OpeningHours: "Opening Hours: the Garden is always open!",
         WeSigned: "We signed the ",
-        Urban: "Urban Gardening Manifest",
+        Urban: "Urban Gardening Manifest"
 
-
-    } 
+    }
 
 };
 
-
-const i18n = new VueI18n({ locale: 'en',  fallbackLocale: 'de', messages, });
+const i18n = new VueI18n({ locale: "en", fallbackLocale: "de", messages });
 
 export default i18n;

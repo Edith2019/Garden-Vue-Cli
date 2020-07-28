@@ -1,16 +1,16 @@
-<template>
-    <div class="whatwedo-container">
-        <div class="card whatwedo">
-            <div class="card-body">
-                <h1 class="card-title">{{$t("WhatWeDo")}}</h1>
-                <p class="card-text">
+<template >
+    <div class="whatwedo-container" >
+        <div class="card whatwedo" >
+            <div class="card-body" >
+                <h1 class="card-title" >{{$t("WhatWeDo")}}</h1 >
+                <p class="card-text" >
                 {{ $t("WWDDesc")}}
-                </p>
-            </div>
+                </p >
+            </div >
 
-            <div class="container">
-                <div class="row">
-                    <div class="col-6 col-md-4 " style="width: 18rem;">
+            <div class="container" >
+                <div class="row" >
+                    <div class="col-6 col-md-4 " style="width: 18rem;" >
                         <progressive-img
                             id="pic"
                             src="/pasta-min.jpg"
@@ -18,11 +18,11 @@
                             class="card-img-top"
                             alt="Responsive image"
                         />
-                        <div class="middle">
-                            <div class="text">Pastatafel - Aout 2019</div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4" style="width: 18rem;">
+                        <div class="middle" >
+                            <div class="text" >Pastatafel - Aout 2019</div >
+                        </div >
+                    </div >
+                    <div class="col-6 col-md-4" style="width: 18rem;" >
                         <progressive-img
                             id="pic"
                             src="/green-min.jpg"
@@ -30,11 +30,11 @@
                             class="card-img-top"
                             alt="Responsive image"
                         />
-                        <div class="middle">
-                            <div class="text">Pastatafel - Aout 2019</div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4" style="width: 18rem;">
+                        <div class="middle" >
+                            <div class="text" >Pastatafel - Aout 2019</div >
+                        </div >
+                    </div >
+                    <div class="col-6 col-md-4" style="width: 18rem;" >
                         <progressive-img
                             id="pic"
                             src="/housePaint-min.jpg"
@@ -42,11 +42,11 @@
                             class="card-img-top"
                             alt="Responsive image"
                         />
-                        <div class="middle">
-                            <div class="text">Pastatafel - Aout 2019</div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4" style="width: 18rem;">
+                        <div class="middle" >
+                            <div class="text" >Pastatafel - Aout 2019</div >
+                        </div >
+                    </div >
+                    <div class="col-6 col-md-4" style="width: 18rem;" >
                         <progressive-img
                             id="pic"
                             src="/flowers-min.jpg"
@@ -54,11 +54,11 @@
                             class="card-img-top"
                             alt="Responsive image"
                         />
-                        <div class="middle">
-                            <div class="text">Pastatafel - Aout 2019</div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4" style="width: 18rem;">
+                        <div class="middle" >
+                            <div class="text" >Pastatafel - Aout 2019</div >
+                        </div >
+                    </div >
+                    <div class="col-6 col-md-4" style="width: 18rem;" >
                         <progressive-img
                             id="pic"
                             src="/sun-min.jpg"
@@ -66,11 +66,11 @@
                             class="card-img-top"
                             alt="Responsive image"
                         />
-                        <div class="middle">
-                            <div class="text">Pastatafel - Aout 2019</div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4" style="width: 18rem;">
+                        <div class="middle" >
+                            <div class="text" >Pastatafel - Aout 2019</div >
+                        </div >
+                    </div >
+                    <div class="col-6 col-md-4" style="width: 18rem;" >
                         <progressive-img
                             id="pic"
                             src="/green-min.jpg"
@@ -78,11 +78,11 @@
                             class="rcard-img-top"
                             alt="Responsive image"
                         />
-                        <div class="middle">
-                            <div class="text">Pastatafel - Aout 2019</div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4" style="width: 18rem;">
+                        <div class="middle" >
+                            <div class="text" >Pastatafel - Aout 2019</div >
+                        </div >
+                    </div >
+                    <div class="col-6 col-md-4" style="width: 18rem;" >
                         <progressive-img
                             id="pic"
                             src="/12633-min.jpg"
@@ -90,11 +90,11 @@
                             class="card-img-top "
                             alt="Responsive image"
                         />
-                        <div class="middle">
-                            <div class="text">Pastatafel - Aout 2019</div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4" style="width: 18rem;">
+                        <div class="middle" >
+                            <div class="text" >Pastatafel - Aout 2019</div >
+                        </div >
+                    </div >
+                    <div class="col-6 col-md-4" style="width: 18rem;" >
                         <progressive-img
                             id="pic"
                             src="/pink-min.jpg"
@@ -102,11 +102,11 @@
                             class="card-img-top"
                             alt="Responsive image"
                         />
-                        <div class="middle">
-                            <div class="text">Pastatafel - Aout 2019</div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4" style="width: 18rem;">
+                        <div class="middle" >
+                            <div class="text" >Pastatafel - Aout 2019</div >
+                        </div >
+                    </div >
+                    <div class="col-6 col-md-4" style="width: 18rem;" >
                         <progressive-img
                             id="pic"
                             src="/couture-min.jpg"
@@ -114,11 +114,11 @@
                             class="card-img-top"
                             alt="Responsive image"
                         />
-                        <div class="middle">
-                            <div class="text">Pastatafel - Aout 2019</div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4" style="width: 18rem;">
+                        <div class="middle" >
+                            <div class="text" >Pastatafel - Aout 2019</div >
+                        </div >
+                    </div >
+                    <div class="col-6 col-md-4" style="width: 18rem;" >
                         <progressive-img
                             id="pic"
                             src="/fuego-min.jpg"
@@ -126,11 +126,11 @@
                             class="card-img-top "
                             alt="Responsive image"
                         />
-                        <div class="middle">
-                            <div class="text">Pastatafel - Aout 2019</div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4" style="width: 18rem;">
+                        <div class="middle" >
+                            <div class="text" >Pastatafel - Aout 2019</div >
+                        </div >
+                    </div >
+                    <div class="col-6 col-md-4" style="width: 18rem;" >
                         <progressive-img
                             id="pic"
                             src="/sits-min.jpg"
@@ -138,11 +138,11 @@
                             class="card-img-top"
                             alt="Responsive image"
                         />
-                        <div class="middle">
-                            <div class="text">Pastatafel - Aout 2019</div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4" style="width: 18rem;">
+                        <div class="middle" >
+                            <div class="text" >Pastatafel - Aout 2019</div >
+                        </div >
+                    </div >
+                    <div class="col-6 col-md-4" style="width: 18rem;" >
                         <progressive-img
                             id="pic"
                             src="/cooking.png"
@@ -150,11 +150,11 @@
                             class="card-img-top"
                             alt="Responsive image"
                         />
-                        <div class="middle">
-                            <div class="text">Pastatafel - Aout 2019</div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4" style="width: 18rem;">
+                        <div class="middle" >
+                            <div class="text" >Pastatafel - Aout 2019</div >
+                        </div >
+                    </div >
+                    <div class="col-6 col-md-4" style="width: 18rem;" >
                         <progressive-img
                             id="pic"
                             src="/red-min.jpg"
@@ -162,11 +162,11 @@
                             class="card-img-top"
                             alt="Responsive image"
                         />
-                        <div class="middle">
-                            <div class="text">Pastatafel - Aout 2019</div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4" style="width: 18rem;">
+                        <div class="middle" >
+                            <div class="text" >Pastatafel - Aout 2019</div >
+                        </div >
+                    </div >
+                    <div class="col-6 col-md-4" style="width: 18rem;" >
                         <progressive-img
                             id="pic"
                             src="/painting-min.png"
@@ -174,11 +174,11 @@
                             class="card-img-top"
                             alt="Responsive image"
                         />
-                        <div class="middle">
-                            <div class="text">Pastatafel - Aout 2019</div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4" style="width: 18rem;">
+                        <div class="middle" >
+                            <div class="text" >Pastatafel - Aout 2019</div >
+                        </div >
+                    </div >
+                    <div class="col-6 col-md-4" style="width: 18rem;" >
                         <progressive-img
                             id="pic"
                             src="/leaves-min.jpg"
@@ -186,15 +186,15 @@
                             class="card-img-top "
                             alt="Responsive image"
                         />
-                        <div class="middle">
-                            <div class="text">Pastatafel - Aout 2019</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</template>
+                        <div class="middle" >
+                            <div class="text" >Pastatafel - Aout 2019</div >
+                        </div >
+                    </div >
+                </div >
+            </div >
+        </div >
+    </div >
+</template >
 
 <script>
 export default {
@@ -216,11 +216,11 @@ export default {
         },
         onErrorPlaceholder(error) {
             // placeholder image error
-        },
+        }
     },
     components: {
         // VueProgressiveImage,
-    },
+    }
 };
 </script>
 

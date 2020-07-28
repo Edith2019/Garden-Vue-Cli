@@ -1,8 +1,8 @@
-<template>
+<template >
     <!-- <div id="calendar "> -->
-        <Calendar :attributes="attributes"> </Calendar>
+        <Calendar :attributes="attributes" > </Calendar >
     <!-- </div> -->
-</template>
+</template >
 <script>
 import Calendar from "v-calendar/lib/components/calendar.umd";
 
@@ -13,12 +13,12 @@ export default {
                 description: "Saturday afternoon is our usual garden day!",
                 isComplete: false,
                 dates: { weekdays: 7 }, // Every Friday
-                color: "green",
-            },
+                color: "green"
+            }
         ];
         return {
             incId: todos.length,
-            todos,
+            todos
         };
     },
     computed: {
@@ -28,25 +28,23 @@ export default {
                     dates: todo.dates,
                     dot: {
                         color: todo.color,
-                        class: todo.isComplete ? "opacity-75" : "",
+                        class: todo.isComplete ? "opacity-75" : ""
                     },
                     popover: {
                         label: todo.description,
-                        visibility: "hover",
+                        visibility: "hover"
                     },
-                    customData: todo,
-                })),
+                    customData: todo
+                }))
             ];
-        },
+        }
     },
 
     components: {
-        Calendar,
-    },
+        Calendar
+    }
 };
 </script>
 <style scoped>
-
-
 
 </style>

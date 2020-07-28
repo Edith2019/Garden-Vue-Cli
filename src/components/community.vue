@@ -1,34 +1,34 @@
-<template>
-    <div class="community-container">
-        <div class="gardenerOfMonth mx-auto ">
-            <p class="h1 mx-auto  Gardener-title col">
+<template >
+    <div class="community-container" >
+        <div class="gardenerOfMonth mx-auto " >
+            <p class="h1 mx-auto  Gardener-title col" >
                 {{ $t("GardenerMonth")}}
-            </p>
-            <div class="card rounded mx-auto d-block col" style="width: 30rem">
+            </p >
+            <div class="card rounded mx-auto d-block col" style="width: 30rem" >
                 <progressive-img
                     id="protrait"
                     src="/month.jpg"
                     placeholder="/pasta.jpg"
                     alt="Responsive image"
                 />
-                <div class="card-body">
-                    <p class="card-text">
+                <div class="card-body" >
+                    <p class="card-text" >
                         {{ $t("GardenerDesc")}}
-                        
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="card Community">
-            <div class="card-body">
-                <h1 class="card-title"> {{$t("Community")}}</h1>
-                <p class="card-text">
+
+                    </p >
+                </div >
+            </div >
+        </div >
+        <div class="card Community" >
+            <div class="card-body" >
+                <h1 class="card-title" > {{$t("Community")}}</h1 >
+                <p class="card-text" >
                     {{$t("CommDesc")}}
-                </p>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-6 col-md-4" style="width: 18rem;">
+                </p >
+            </div >
+            <div class="container" >
+                <div class="row" >
+                    <div class="col-6 col-md-4" style="width: 18rem;" >
                         <progressive-img
                             class="card-img-top"
                             id="protrait"
@@ -36,13 +36,13 @@
                             placeholder="/pasta.jpg"
                             alt="Card image cap"
                         />
-                        <div class="card-body">
-                            <p class="card-text">
+                        <div class="card-body" >
+                            <p class="card-text" >
                              {{$t("CommP1")}}
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4" style="width: 18rem;">
+                            </p >
+                        </div >
+                    </div >
+                    <div class="col-6 col-md-4" style="width: 18rem;" >
                         <progressive-img
                             class="card-img-top"
                             id="protrait"
@@ -50,14 +50,14 @@
                             placeholder="/pasta.jpg"
                             alt="Card image cap"
                         />
-                        <div class="card-body">
-                            <p class="card-text">
+                        <div class="card-body" >
+                            <p class="card-text" >
                            {{$t("CommP2")}}
 
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4" style="width: 18rem;">
+                            </p >
+                        </div >
+                    </div >
+                    <div class="col-6 col-md-4" style="width: 18rem;" >
                         <progressive-img
                             class="card-img-top"
                             id="protrait"
@@ -65,14 +65,14 @@
                             placeholder="/pasta.jpg"
                             alt="Card image cap"
                         />
-                        <div class="card-body">
-                            <p class="card-text">
+                        <div class="card-body" >
+                            <p class="card-text" >
                         {{ $t("CommP3")}}
 
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4" style="width: 18rem;">
+                            </p >
+                        </div >
+                    </div >
+                    <div class="col-6 col-md-4" style="width: 18rem;" >
                         <progressive-img
                             class="card-img-top"
                             id="protrait"
@@ -80,14 +80,14 @@
                             placeholder="/pasta.jpg"
                             alt="Card image cap"
                         />
-                        <div class="card-body">
-                            <p class="card-text">
+                        <div class="card-body" >
+                            <p class="card-text" >
                          {{$t("CommP4")}}
 
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4" style="width: 18rem;">
+                            </p >
+                        </div >
+                    </div >
+                    <div class="col-6 col-md-4" style="width: 18rem;" >
                         <progressive-img
                             class="card-img-top"
                             id="protrait"
@@ -95,14 +95,14 @@
                             placeholder="/pasta.jpg"
                             alt="Card image cap"
                         />
-                        <div class="card-body">
-                            <p class="card-text">
+                        <div class="card-body" >
+                            <p class="card-text" >
                             {{$t("CommP5")}}
 
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4" style="width: 18rem;">
+                            </p >
+                        </div >
+                    </div >
+                    <div class="col-6 col-md-4" style="width: 18rem;" >
                         <progressive-img
                             class="card-img-top"
                             id="protrait"
@@ -110,14 +110,14 @@
                             placeholder="/pasta.jpg"
                             alt="Card image cap"
                         />
-                        <div class="card-body">
-                            <p class="card-text">
+                        <div class="card-body" >
+                            <p class="card-text" >
                           {{$t("CommP6")}}
 
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4" style="width: 18rem;">
+                            </p >
+                        </div >
+                    </div >
+                    <div class="col-6 col-md-4" style="width: 18rem;" >
                         <progressive-img
                             class="card-img-top"
                             id="protrait"
@@ -125,19 +125,19 @@
                             placeholder="/pasta.jpg"
                             alt="Card image cap"
                         />
-                        <div class="card-body">
-                            <p class="card-text">
+                        <div class="card-body" >
+                            <p class="card-text" >
                            {{$t("CommP7")}}
 
-                            </p>
-                        </div>
-                    </div>
-                </div>
+                            </p >
+                        </div >
+                    </div >
+                </div >
                 <!-- </div> -->
-            </div>
-        </div>
-        </div>
-</template>
+            </div >
+        </div >
+        </div >
+</template >
 
 <script>
 export default {
@@ -159,11 +159,11 @@ export default {
         },
         onErrorPlaceholder(error) {
             // placeholder image error
-        },
+        }
     },
     components: {
         // VueProgressiveImage,
-    },
+    }
 };
 </script>
 

@@ -1,14 +1,14 @@
-<template>
-    <div>
+<template >
+    <div >
         <intro />
-    </div>
-</template>
+    </div >
+</template >
 
 <script>
 import intro from "./intro";
 export default {
     components: {
-        intro,
-    },
+        intro
+    }
 };
 </script>

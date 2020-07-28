@@ -49,12 +49,12 @@ button {
 .ende {
     max-width: 300px;
     margin-bottom: 50px;
-
 }
+
 button {
-        padding-left: 0px;
-padding-right: 20px;
-margin-left: 0px;
+    padding-left: 0px;
+    padding-right: 20px;
+    margin-left: 0px;
 }
 
 }

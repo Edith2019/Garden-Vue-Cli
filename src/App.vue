@@ -1,6 +1,6 @@
-<template>
-    <div id="app">
-        <navbar id="navbar"/>
+<template >
+    <div id="app" >
+        <navbar id="navbar" />
         <intro id="intro" />
         <about id="about" />
         <community id="community" />
@@ -8,15 +8,15 @@
         <partners id="partners" />
         <events id="events" />
         <contact id="contact" />
-        <footer/>
+        <footer />
 
-        <div class="footer">
-            <p>Copyright © 2020 VGG</p>
-            <p v-on:click="togglemodal" class="tandcApp">TandC</p>
+        <div class="footer" >
+            <p >Copyright © 2020 VGG</p >
+            <p v-on:click="togglemodal" class="tandcApp" >TandC</p >
             <tandc id="tandcModal" />
-        </div>
-    </div>
-</template>
+        </div >
+    </div >
+</template >
 
 <script>
 import navbar from "./components/navbar.vue";
@@ -41,15 +41,15 @@ export default {
         whatwedo,
         partners,
         events,
-        contact,
-      
+        contact
+
     },
 
     methods: {
-        togglemodal: function() {
+        togglemodal: function () {
             $("#tandcModal").modal();
-        },
-    },
+        }
+    }
 };
 </script>
 
@@ -135,8 +135,5 @@ p {
 .tandcApp {
     cursor: pointer;
 }
-
-
-
 
 </style>

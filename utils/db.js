@@ -12,5 +12,5 @@ module.exports.postSubmit = (first, last, email, message) => {
 
     const params = [first, last, email, message];
     return db.query(q, params);
-}
+};
 
