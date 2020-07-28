@@ -88,5 +88,9 @@ export default {
 .events-container {
        width: 70%;
     }
+
+    .fb-page.rounded.border {
+        width: 200px;
+    }
 }
 </style>

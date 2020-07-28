@@ -55,7 +55,7 @@ export default {
 
 <style>
 
-@import url('https://fonts.googleapis.com/css?family=DM+Serif+Display');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
 #translation {
     margin-top: 200px;
 }
@@ -69,7 +69,7 @@ export default {
 
 * {
     margin: 0px;
-    font-family: "DM Serif Display";
+    font-family: "Josefin Sans";
 
 }
 
@@ -136,15 +136,7 @@ p {
     cursor: pointer;
 }
 
-#intro {
-    border: solid red 4px;
-}
 
-#about {
-       border: solid blue 4px;
-}
 
-#community {
-    border: solid 4px pink;
-}
+
 </style>

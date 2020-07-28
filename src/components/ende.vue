@@ -33,7 +33,7 @@ data() {
 
 .ende {
  position: absolute;
-
+border: solid 5px green;
 
 
 }
@@ -47,14 +47,14 @@ button {
 
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 400px) {
 .ende {
     max-width: 300px;
 
 }
 button {
         padding-left: 0px;
-padding-right: 30px;
+padding-right: 20px;
 margin-left: 0px;
 }
 
