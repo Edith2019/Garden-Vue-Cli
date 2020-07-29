@@ -493,13 +493,25 @@
                            <div class="col-6 col-md-4" style="width: 18rem;">
                         <progressive-img
                             id="pic"
-                            src="/cookingloving.jpg"
+                            src="/foody.jpg"
                             placeholder="/leaves.jpg"
                             class="card-img-top "
                             alt="Responsive image"
                         />
                         <div class="middle">
                             <div class="text">{{ $t("Pic41") }}</div>
+                        </div>
+                    </div>
+                         <div class="col-6 col-md-4" style="width: 18rem;">
+                        <progressive-img
+                            id="pic"
+                            src="/beautiful.jpg"
+                            placeholder="/leaves.jpg"
+                            class="card-img-top "
+                            alt="Responsive image"
+                        />
+                        <div class="middle">
+                            <div class="text">{{ $t("Pic42") }}</div>
                         </div>
                     </div>
                 </div>
