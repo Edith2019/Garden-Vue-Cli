@@ -7,7 +7,7 @@
             <div class="card rounded mx-auto d-block col" style="width: 30rem">
                 <progressive-img
                     id="protrait"
-                    src="/month.jpg"
+                    src="/Oli.jpg"
                     placeholder="/pasta.jpg"
                     alt="Responsive image"
                 />
