@@ -99,7 +99,7 @@
             <div class="row">
                 <div
                     id="location"
-                    class="card col-md-auto d-flex justify-content-start"
+                    class="card col-md-auto d-flex justify-content-between"
                     style="width: 25rem;"
                 >
                     <div class="card-body">
@@ -114,7 +114,7 @@
                 </div>
                 <div
                     id="location"
-                    class="card col-md-6 ml-auto d-flex justify-content-end"
+                    class="card col-md-6 ml-auto d-flex justify-content-between"
                     style="width: 25rem;"
                 >
                     <div class="card-body">
