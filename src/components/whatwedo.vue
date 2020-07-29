@@ -541,6 +541,7 @@ export default {
 }
 img.progressive-image-main {
     height: 200px !important;
+    object-fit: cover !important;
 }
 .card-img-top {
     margin: 0.15%;
