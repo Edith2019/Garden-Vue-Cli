@@ -1,5 +1,5 @@
-<template >
-    <div id="app" >
+<template>
+    <div id="app">
         <navbar id="navbar" />
         <intro id="intro" />
         <about id="about" />
@@ -10,13 +10,13 @@
         <contact id="contact" />
         <footer />
 
-        <div class="footer" >
-            <p >Copyright © 2020 VGG</p >
-            <p v-on:click="togglemodal" class="tandcApp" >TandC</p >
+        <div class="footer">
+            <p>Copyright © 2020 VGG</p>
+            <p v-on:click="togglemodal" class="tandcApp">TandC</p>
             <tandc id="tandcModal" />
-        </div >
-    </div >
-</template >
+        </div>
+    </div>
+</template>
 
 <script>
 import navbar from "./components/navbar.vue";
@@ -42,7 +42,6 @@ export default {
         partners,
         events,
         contact
-
     },
 
     methods: {
@@ -54,8 +53,6 @@ export default {
 </script>
 
 <style>
-
-@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
 #translation {
     margin-top: 200px;
 }
@@ -69,8 +66,7 @@ export default {
 
 * {
     margin: 0px;
-    font-family: "Josefin Sans";
-
+    font-family: sans-serif;
 }
 
 img {
@@ -135,5 +131,4 @@ p {
 .tandcApp {
     cursor: pointer;
 }
-
 </style>

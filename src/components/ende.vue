@@ -35,6 +35,7 @@ export default {
 <style>
 .ende {
     position: absolute;
+    width: 250px !important;
 }
 button {
     border: none;

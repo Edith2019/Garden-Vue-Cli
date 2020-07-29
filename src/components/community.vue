@@ -45,7 +45,7 @@
                         <progressive-img
                             class="card-img-top"
                             id="protrait"
-                            src="/green-min.jpg"
+                            src="/Edithgarden.jpg"
                             placeholder="/pasta.jpg"
                             alt="Card image cap"
                         />
@@ -164,6 +164,10 @@ export default {
     border: solid 5px white;
     padding: 20px;
     width: 30rem;
+}
+
+.img.progressive-image-main {
+    height: 150px !important;
 }
 
 @media only screen and (min-width: 1300px) {

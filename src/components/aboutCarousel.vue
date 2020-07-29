@@ -48,7 +48,7 @@
                     </div>
                     <div class="carousel-item">
                         <img
-                            src="../assets/pasta-min.jpg"
+                            src="/beautiful.jpg"
                             class="d-block w-100"
                             alt="..."
                         />
