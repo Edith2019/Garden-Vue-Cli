@@ -12,7 +12,7 @@ export default {
                 isComplete: false,
                 dates: { weekdays: 7 }, // Every Friday
                 color: "green"
-            },
+            }
         ];
         return {
             incId: todos.length,
