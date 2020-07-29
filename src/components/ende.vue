@@ -34,13 +34,12 @@ export default {
 
 <style>
 .ende {
-    position: absolute;
-margin-right: 50px;
+    position: relative;
+    margin-right: 50px;
 }
 button {
     border: none;
     background: none;
-    margin-left: 50px;
     padding-top: 8px;
 }
 
