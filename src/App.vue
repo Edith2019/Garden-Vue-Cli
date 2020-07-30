@@ -6,6 +6,7 @@
         <community id="community" />
         <whatwedo id="whatwedo" />
         <partners id="partners" />
+        <friends id="friends"/>
         <events id="events" />
         <contact id="contact" />
         <footer />
@@ -26,6 +27,7 @@ import about from "./components/about.vue";
 import community from "./components/community.vue";
 import whatwedo from "./components/whatwedo.vue";
 import partners from "./components/partners.vue";
+import friends from "./components/friends.vue";
 import events from "./components/events.vue";
 import contact from "./components/contact.vue";
 
@@ -40,6 +42,7 @@ export default {
         community,
         whatwedo,
         partners,
+        friends,
         events,
         contact
     },

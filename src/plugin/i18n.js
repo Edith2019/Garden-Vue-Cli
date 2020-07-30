@@ -81,10 +81,13 @@ const messages = {
         IZ: "Information centre - The information centre on the Vollgut was planned by 36 architecture students* as a DesignBuild project of the Natural Building Lab and is located in the middle of the Vollgut community garden.",
         Stif: "Land and property are scarce goods and therefore expensive. Usually too expensive for affordable housing and social or cultural projects, especially in city centres. Farmers are also confronted with rising land prices and leases.The Edith Maryon is a Foundation that works to remove land from speculation so that it can be used in a socially responsible manner by themselves or by others. The VGG is located in such a property.",
         FriendsDesc: "We join forces with other great initiatives that have like-minded visions. Together we aim to realize communities, greener cities and flurishing societies as we envision them!",
+        Header1:"header",
         FriendsTitle1: "Title",
         FriendsDec1: "Description",
+        Header2: "header",
         FriendsTitle2: "Title",
         FriendsDec2: "Description",
+        Header3: "header",
         FriendsTitle3: "Title",
         FriendsDec3: "Description",
         EventDesc: "We usually meet on Saturday afternoons in VGG to take care of the garden, fix and build things and hung out together. Contact us beforehand and come and join us. For other events check out our facebook page. Come and join us!",
@@ -148,10 +151,13 @@ const messages = {
         IZ: "Infozentrale - Die Infozentrale auf dem Vollgut wurde als DesignBuild Projekt des Natural Building Labs von 36 Architekturstudent*innen geplant und befindet sich mitten im Vollguter Gemeinschaftsgarten. ",
         Stif: "Stiftung Edith Maryon gGmbH - Die Stiftung Edith Maryon entzieht Grundstücke der Spekulation, damit sie dauerhaft sozialverträglich genutzt werden können. Der VGG ist ein Beispiel für eine solche Fläche.",
         FriendsDesc: "Wir schließen uns mit anderen großen Initiativen zusammen, die gleichgesinnte Visionen haben. Gemeinsam wollen wir Gemeinden, grüne Städte und florierende Gesellschaften so verwirklichen, wie wir sie uns wünschen! ",
+        Header1: "header",
         FriendsTitle1: "Title",
         FriendsDec1: "Description",
+        Header2: "header",
         FriendsTitle2: "Title",
         FriendsDec2: "Description",
+        Header3: "header",
         FriendsTitle3: "Title",
         FriendsDec3: "Description",
         EventDesc: "Wir treffen uns oft samstagnachmittags im VGG, um den Garten zu pflegen, Dinge zu reparieren und zu bauen, und einfach zusammen zu sein. Nimm vorher Kontakt mit uns auf und komm vorbei. Für andere Veranstaltungen besuch unsere Facebook-Seite. Komm und mach mit!",
@@ -176,7 +182,7 @@ const messages = {
         AboutCookies: "About cookies",
         tandcDesc2: "Cookies are files, often including unique identifiers, that are sent by web servers to web browsers, and which may then be sent back to the server each time the browser requests a page from the server.Cookies can be used by web servers to identify and track users as they navigate different pages on a website, and to identify users returning to a website.Cookies may be either persistent cookies or session cookies.A persistent cookie consists of a text file sent by a web server to a web browser, which will be stored by the browser and will remain valid until its set expiry date(unless deleted by the user before the expiry date).A session cookie, on the other hand, will expire at the end of the user session, when the web browser is closed.",
         CookiesWebsite: "Cookies on this website",
-        tandcDesc3: "    We use both session cookies and persistent cookies on this website."
+        tandcDesc3: "We use both session cookies and persistent cookies on this website."
 
     },
     "tr": {

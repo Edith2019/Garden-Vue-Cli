@@ -9,99 +9,19 @@
             </div>
         </div>
         <div class="card-deck rounded border">
-            <div id="hover" class="card">
+            <div class="card hover" v-for="datapartner in datapartners" v-bind:key="datapartner.key">
                 <img
-                    src="../assets/zuhause-min.jpg"
+                    v-bind:src="datapartner.src"
                     class="card-img-top"
-                    alt="..."
+                    v-bind:alt="datapartner.alt"
                 />
                 <div class="card-body">
-                    <a href="http://daszuhause.com" target="_blank">
-                        <h5 class="card-title">Zuhause e.V.</h5>
+                    <a v-bind:href="datapartner.href" target="_blank">
+                        <h5 class="card-title">{{ datapartner.title}}</h5>
                     </a>
                     <p class="card-text">
-                        {{ $t("ZH") }}
+                        {{ $t(datapartner.desc) }}
                     </p>
-                    <p class="card-text"></p>
-                </div>
-            </div>
-            <div id="hover" class="card">
-                <img
-                    src="../assets/Infozentrale-min.jpg"
-                    class="card-img-top"
-                    alt="..."
-                />
-                <div class="card-body">
-                    <a href="https://www.infozentrale.berlin" target="_blank">
-                        <h5 class="card-title">Infozentrale</h5>
-                    </a>
-                    <p class="card-text">
-                        {{ $t("IZ") }}
-                    </p>
-                    <p class="card-text"></p>
-                </div>
-            </div>
-            <div id="hover" class="card">
-                <img
-                    src="../assets/Maryon-min.png"
-                    class="card-img-top"
-                    alt="..."
-                />
-                <div class="card-body">
-                    <a
-                        class="main-card"
-                        href="https://maryon.ch/stiftung/tochterunternehmen/terra-libra/herzlich-willkommen/"
-                        target="_blank"
-                    >
-                        <h5 class="card-title">Stiftung Edith Maryon</h5>
-                    </a>
-                    <p class="card-text">
-                        {{ $t("Stif") }}
-                    </p>
-                    <p class="card-text"></p>
-                </div>
-            </div>
-        </div>
-        <div id="friends" class="card Partner ">
-            <div class="card-body">
-                <h1 class="card-title">Friends</h1>
-                <p class="card-text">
-                    {{ $t("FriendsDesc") }}
-                </p>
-            </div>
-        </div>
-        <div class="row rounded border ">
-            <div class="col-sm">
-                <div class="card border-success mb-5" style="max-width: 18rem;">
-                    <div class="card-header text-success">Header</div>
-                    <div class="card-body ">
-                        <h5 class="card-title">{{ $t("FriendsTitle1") }}</h5>
-                        <p class="card-text">
-                            {{ $t("FriendDesc1") }}
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm">
-                <div class="card border-success mb-5" style="max-width: 18rem;">
-                    <div class="card-header text-success">Header</div>
-                    <div class="card-body ">
-                        <h5 class="card-title">{{ $t("FriendsTitle2") }}</h5>
-                        <p class="card-text">
-                            {{ $t("FriendDesc2") }}
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm">
-                <div class="card border-success mb-5" style="max-width: 18rem;">
-                    <div class="card-header text-success">Header</div>
-                    <div class="card-body ">
-                        <h5 class="card-title">{{ $t("FriendsTitle3") }}</h5>
-                        <p class="card-text">
-                            {{ $t("FriendDesc3") }}
-                        </p>
-                    </div>
                 </div>
             </div>
         </div>
@@ -109,8 +29,15 @@
 </template>
 
 <script>
+import cardspartner from "./cardspartners.js";
 export default {
-    name: "partners"
+    name: "partners",
+    data() {
+        return {
+            cardspartner: [],
+            datapartners: cardspartner.cardspartner,
+        };
+    },
 };
 </script>
 
@@ -126,10 +53,10 @@ export default {
     margin-bottom: -5px;
     margin: auto;
 }
-#hover {
+.hover {
     transition: all 0.2s ease-in-out;
 }
-#hover:hover {
+.hover:hover {
     transform: scale(1.1);
 }
 .card-deck {
