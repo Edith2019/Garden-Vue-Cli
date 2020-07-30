@@ -10,508 +10,16 @@
 
             <div class="container">
                 <div class="row">
-                    <div class="col-6 col-md-4 " style="width: 18rem;">
+                    <div class="col-6 col-md-4 " style="width: 18rem;" v-for="pictureData in picturesData" v-bind:key="pictureData.key">
                         <progressive-img
-                            id="pic"
-                            src="/pasta-min.jpg"
-                            placeholder="/pasta.jpg"
-                            class="card-img-top"
-                            alt="Responsive image"
+                            v-bind:id="pictureData.id"
+                            v-bind:src=" pictureData.src "
+                            v-bind:placeholder="pictureData.placeholder"
+                            class="card-img-top pic"
+                            alt="Responsive image "
                         />
                         <div class="middle">
-                            <div class="text">{{ $t("Pic1") }}</div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4" style="width: 18rem;">
-                        <progressive-img
-                            id="pic"
-                            src="/green-min.jpg"
-                            placeholder="/gardenGreen.jpg"
-                            class="card-img-top"
-                            alt="Responsive image"
-                        />
-                        <div class="middle">
-                            <div class="text">{{ $t("Pic2") }}</div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4" style="width: 18rem;">
-                        <progressive-img
-                            id="pic"
-                            src="/housePaint-min.jpg"
-                            placeholder="/housePaint.jpg"
-                            class="card-img-top"
-                            alt="Responsive image"
-                        />
-                        <div class="middle">
-                            <div class="text">{{ $t("Pic3") }}</div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4" style="width: 18rem;">
-                        <progressive-img
-                            id="pic"
-                            src="/sun-min.jpg"
-                            placeholder="/sun.jpg"
-                            class="card-img-top"
-                            alt="Responsive image"
-                        />
-                        <div class="middle">
-                            <div class="text">{{ $t("Pic4") }}</div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4" style="width: 18rem;">
-                        <progressive-img
-                            id="pic"
-                            src="/12633-min.jpg"
-                            placeholder="/12633.jpg"
-                            class="card-img-top "
-                            alt="Responsive image"
-                        />
-                        <div class="middle">
-                            <div class="text">{{ $t("Pic5") }}</div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4" style="width: 18rem;">
-                        <progressive-img
-                            id="pic"
-                            src="/pink-min.jpg"
-                            placeholder="/pink.jpg"
-                            class="card-img-top"
-                            alt="Responsive image"
-                        />
-                        <div class="middle">
-                            <div class="text">{{ $t("Pic6") }}</div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4" style="width: 18rem;">
-                        <progressive-img
-                            id="pic"
-                            src="/couture-min.jpg"
-                            placeholder="/couture.jpg"
-                            class="card-img-top"
-                            alt="Responsive image"
-                        />
-                        <div class="middle">
-                            <div class="text">{{ $t("Pic7") }}</div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4" style="width: 18rem;">
-                        <progressive-img
-                            id="pic"
-                            src="/fuego-min.jpg"
-                            placeholder="/fuego.jpg"
-                            class="card-img-top "
-                            alt="Responsive image"
-                        />
-                        <div class="middle">
-                            <div class="text">{{ $t("Pic8") }}</div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4" style="width: 18rem;">
-                        <progressive-img
-                            id="pic"
-                            src="/sits-min.jpg"
-                            placeholder="/sits.jpg"
-                            class="card-img-top"
-                            alt="Responsive image"
-                        />
-                        <div class="middle">
-                            <div class="text">{{ $t("Pic9") }}</div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4" style="width: 18rem;">
-                        <progressive-img
-                            id="pic"
-                            src="/cooking.png"
-                            placeholder="/cooking.png"
-                            class="card-img-top"
-                            alt="Responsive image"
-                        />
-                        <div class="middle">
-                            <div class="text">{{ $t("Pic10") }}</div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4" style="width: 18rem;">
-                        <progressive-img
-                            id="pic"
-                            src="/red-min.jpg"
-                            placeholder="/red.jpg"
-                            class="card-img-top"
-                            alt="Responsive image"
-                        />
-                        <div class="middle">
-                            <div class="text">{{ $t("Pic11") }}</div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4" style="width: 18rem;">
-                        <progressive-img
-                            id="pic"
-                            src="/painting-min.png"
-                            placeholder="/painting.png"
-                            class="card-img-top"
-                            alt="Responsive image"
-                        />
-                        <div class="middle">
-                            <div class="text">{{ $t("Pic12") }}</div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4" style="width: 18rem;">
-                        <progressive-img
-                            id="pic"
-                            src="/leaves-min.jpg"
-                            placeholder="/leaves.jpg"
-                            class="card-img-top "
-                            alt="Responsive image"
-                        />
-                        <div class="middle">
-                            <div class="text">{{ $t("Pic13") }}</div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4" style="width: 18rem;">
-                        <progressive-img
-                            id="pic"
-                            src="/sits.jpg"
-                            placeholder="/sits.jpg"
-                            class="card-img-top "
-                            alt="Responsive image"
-                        />
-                        <div class="middle">
-                            <div class="text">{{ $t("Pic14") }}</div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4" style="width: 18rem;">
-                        <progressive-img
-                            id="pic"
-                            src="/pig.jpg"
-                            placeholder="/leaves.jpg"
-                            class="card-img-top "
-                            alt="Responsive image"
-                        />
-                        <div class="middle">
-                            <div class="text">{{ $t("Pic15") }}</div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4" style="width: 18rem;">
-                        <progressive-img
-                            id="pic"
-                            src="/locomotive.jpg"
-                            placeholder="/leaves.jpg"
-                            class="card-img-top "
-                            alt="Responsive image"
-                        />
-                        <div class="middle">
-                            <div class="text">{{ $t("Pic16") }}</div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4" style="width: 18rem;">
-                        <progressive-img
-                            id="pic"
-                            src="/ThreeLittlePigs.jpg"
-                            placeholder="/leaves.jpg"
-                            class="card-img-top "
-                            alt="Responsive image"
-                        />
-                        <div class="middle">
-                            <div class="text">{{ $t("Pic17") }}</div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4" style="width: 18rem;">
-                        <progressive-img
-                            id="pic"
-                            src="/bells.jpg"
-                            placeholder="/leaves.jpg"
-                            class="card-img-top "
-                            alt="Responsive image"
-                        />
-                        <div class="middle">
-                            <div class="text">{{ $t("Pic18") }}</div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4" style="width: 18rem;">
-                        <progressive-img
-                            id="pic"
-                            src="/concert.jpg"
-                            placeholder="/leaves.jpg"
-                            class="card-img-top "
-                            alt="Responsive image"
-                        />
-                        <div class="middle">
-                            <div class="text">{{ $t("Pic19") }}</div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4" style="width: 18rem;">
-                        <progressive-img
-                            id="pic"
-                            src="/owls.jpg"
-                            placeholder="/leaves.jpg"
-                            class="card-img-top "
-                            alt="Responsive image"
-                        />
-                        <div class="middle">
-                            <div class="text">{{ $t("Pic20") }}</div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4" style="width: 18rem;">
-                        <progressive-img
-                            id="pic"
-                            src="/cinema.jpg"
-                            placeholder="/leaves.jpg"
-                            class="card-img-top "
-                            alt="Responsive image"
-                        />
-                        <div class="middle">
-                            <div class="text">{{ $t("Pic21") }}</div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4" style="width: 18rem;">
-                        <progressive-img
-                            id="pic"
-                            src="/bee.jpg"
-                            placeholder="/leaves.jpg"
-                            class="card-img-top "
-                            alt="Responsive image"
-                        />
-                        <div class="middle">
-                            <div class="text">{{ $t("Pic22") }}</div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4" style="width: 18rem;">
-                        <progressive-img
-                            id="pic"
-                            src="/gardenvibe.jpg"
-                            placeholder="/leaves.jpg"
-                            class="card-img-top "
-                            alt="Responsive image"
-                        />
-                        <div class="middle">
-                            <div class="text">{{ $t("Pic23") }}</div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4" style="width: 18rem;">
-                        <progressive-img
-                            id="pic"
-                            src="/Felixdj.jpg"
-                            placeholder="/leaves.jpg"
-                            class="card-img-top "
-                            alt="Responsive image"
-                        />
-                        <div class="middle">
-                            <div class="text">{{ $t("Pic24") }}</div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4" style="width: 18rem;">
-                        <progressive-img
-                            id="pic"
-                            src="/dog.jpg"
-                            placeholder="/leaves.jpg"
-                            class="card-img-top "
-                            alt="Responsive image"
-                        />
-                        <div class="middle">
-                            <div class="text">{{ $t("Pic25") }}</div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4" style="width: 18rem;">
-                        <progressive-img
-                            id="pic"
-                            src="/cookingloving.jpg"
-                            placeholder="/leaves.jpg"
-                            class="card-img-top "
-                            alt="Responsive image"
-                        />
-                        <div class="middle">
-                            <div class="text">{{ $t("Pic26") }}</div>
-                        </div>
-                    </div>
-                       <div class="col-6 col-md-4" style="width: 18rem;">
-                        <progressive-img
-                            id="pic"
-                            src="/bluming.jpg"
-                            placeholder="/leaves.jpg"
-                            class="card-img-top "
-                            alt="Responsive image"
-                        />
-                        <div class="middle">
-                            <div class="text">{{ $t("Pic27") }}</div>
-                        </div>
-                    </div>
-                       <div class="col-6 col-md-4" style="width: 18rem;">
-                        <progressive-img
-                            id="pic"
-                            src="/trash.jpg"
-                            placeholder="/leaves.jpg"
-                            class="card-img-top "
-                            alt="Responsive image"
-                        />
-                        <div class="middle">
-                            <div class="text">{{ $t("Pic28") }}</div>
-                        </div>
-                    </div>
-                       <div class="col-6 col-md-4" style="width: 18rem;">
-                        <progressive-img
-                            id="pic"
-                            src="/gardenfest.jpg"
-                            placeholder="/leaves.jpg"
-                            class="card-img-top "
-                            alt="Responsive image"
-                        />
-                        <div class="middle">
-                            <div class="text">{{ $t("Pic29") }}</div>
-                        </div>
-                    </div>
-                       <div class="col-6 col-md-4" style="width: 18rem;">
-                        <progressive-img
-                            id="pic"
-                            src="/flamenco.jpg"
-                            placeholder="/leaves.jpg"
-                            class="card-img-top "
-                            alt="Responsive image"
-                        />
-                        <div class="middle">
-                            <div class="text">{{ $t("Pic30") }}</div>
-                        </div>
-                    </div>
-                         <div class="col-6 col-md-4" style="width: 18rem;">
-                        <progressive-img
-                            id="pic"
-                            src="/Bailando.jpg"
-                            placeholder="/leaves.jpg"
-                            class="card-img-top "
-                            alt="Responsive image"
-                        />
-                        <div class="middle">
-                            <div class="text">{{ $t("Pic31") }}</div>
-                        </div>
-                    </div>
-                         <div class="col-6 col-md-4" style="width: 18rem;">
-                        <progressive-img
-                            id="pic"
-                            src="/Drum.jpg"
-                            placeholder="/leaves.jpg"
-                            class="card-img-top "
-                            alt="Responsive image"
-                        />
-                        <div class="middle">
-                            <div class="text">{{ $t("Pic32") }}</div>
-                        </div>
-                    </div>
-                         <div class="col-6 col-md-4" style="width: 18rem;">
-                        <progressive-img
-                            id="pic"
-                            src="/beeday.jpg"
-                            placeholder="/leaves.jpg"
-                            class="card-img-top "
-                            alt="Responsive image"
-                        />
-                        <div class="middle">
-                            <div class="text">{{ $t("Pic33") }}</div>
-                        </div>
-                    </div>
-                         <div class="col-6 col-md-4" style="width: 18rem;">
-                        <progressive-img
-                            id="pic"
-                            src="/experiment.jpg"
-                            placeholder="/leaves.jpg"
-                            class="card-img-top "
-                            alt="Responsive image"
-                        />
-                        <div class="middle">
-                            <div class="text">{{ $t("Pic34") }}</div>
-                        </div>
-                    </div>
-                         <div class="col-6 col-md-4" style="width: 18rem;">
-                        <progressive-img
-                            id="pic"
-                            src="/Neighbours.jpg"
-                            placeholder="/leaves.jpg"
-                            class="card-img-top "
-                            alt="Responsive image"
-                        />
-                        <div class="middle">
-                            <div class="text">{{ $t("Pic35") }}</div>
-                        </div>
-                    </div>
-                         <div class="col-6 col-md-4" style="width: 18rem;">
-                        <progressive-img
-                            id="pic"
-                            src="/potato.jpg"
-                            placeholder="/leaves.jpg"
-                            class="card-img-top "
-                            alt="Responsive image"
-                        />
-                        <div class="middle">
-                            <div class="text">{{ $t("Pic36") }}</div>
-                        </div>
-                    </div>
-                           <div class="col-6 col-md-4" style="width: 18rem;">
-                        <progressive-img
-                            id="pic"
-                            src="/berries.jpg"
-                            placeholder="/leaves.jpg"
-                            class="card-img-top "
-                            alt="Responsive image"
-                        />
-                        <div class="middle">
-                            <div class="text">{{ $t("Pic37") }}</div>
-                        </div>
-                    </div>
-                           <div class="col-6 col-md-4" style="width: 18rem;">
-                        <progressive-img
-                            id="pic"
-                            src="/lemonade.jpg"
-                            placeholder="/leaves.jpg"
-                            class="card-img-top "
-                            alt="Responsive image"
-                        />
-                        <div class="middle">
-                            <div class="text">{{ $t("Pic38") }}</div>
-                        </div>
-                    </div>
-                           <div class="col-6 col-md-4" style="width: 18rem;">
-                        <progressive-img
-                            id="pic"
-                            src="/salad.jpg"
-                            placeholder="/leaves.jpg"
-                            class="card-img-top "
-                            alt="Responsive image"
-                        />
-                        <div class="middle">
-                            <div class="text">{{ $t("Pic39") }}</div>
-                        </div>
-                    </div>
-                           <div class="col-6 col-md-4" style="width: 18rem;">
-                        <progressive-img
-                            id="pic"
-                            src="/seeds.jpg"
-                            placeholder="/leaves.jpg"
-                            class="card-img-top "
-                            alt="Responsive image"
-                        />
-                        <div class="middle">
-                            <div class="text">{{ $t("Pic40") }}</div>
-                        </div>
-                    </div>
-                           <div class="col-6 col-md-4" style="width: 18rem;">
-                        <progressive-img
-                            id="pic"
-                            src="/foody.jpg"
-                            placeholder="/leaves.jpg"
-                            class="card-img-top "
-                            alt="Responsive image"
-                        />
-                        <div class="middle">
-                            <div class="text">{{ $t("Pic41") }}</div>
-                        </div>
-                    </div>
-                         <div class="col-6 col-md-4" style="width: 18rem;">
-                        <progressive-img
-                            id="pic"
-                            src="/beautiful.jpg"
-                            placeholder="/leaves.jpg"
-                            class="card-img-top "
-                            alt="Responsive image"
-                        />
-                        <div class="middle">
-                            <div class="text">{{ $t("Pic42") }}</div>
+                            <div class="text">{{ $t(  pictureData.text  ) }}</div>
                         </div>
                     </div>
                 </div>
@@ -521,16 +29,38 @@
 </template>
 
 <script>
+import pictures from "./cardsWWD.js";
+
 export default {
     name: "whatwedo",
     data() {
-        return {};
+        return {
+            pictures:[],
+            picturesData: pictures.pictures
+
+        };
+    
     },
-};
+// watch: {
+// pictures: function() {
+//     // console.log("picutre in watch", this.pictures)
+// }
+// },
+
+//     mounted: function (){
+       
+//     // console.log("this.pictures", this.pictures)
+//     //    console.log("pictures", pictures.pictures)
+//     //    var picturesData = pictures.pictures;
+//     //    picturesData = this.picturesData;
+//        console.log("picturseDATA", this.picturesData);
+// //   console.log("picturseDATA", pictureData.id);    // pictures = this.pictures
+// }
+}
 </script>
 
 <style scoped>
-#pic {
+.pic {
     max-height: 200px !important;
     opacity: 1;
     display: block;
@@ -564,7 +94,7 @@ img.progressive-image-main {
     -ms-transform: translate(-50%, -50%);
     text-align: center;
 }
-.col-6.col-md-4:hover #pic {
+.col-6.col-md-4:hover .pic {
     opacity: 0.3;
 }
 .col-6.col-md-4:hover .middle {

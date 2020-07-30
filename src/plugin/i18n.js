@@ -74,7 +74,7 @@ const messages = {
         Pic38: "Garden lemonade",
         Pic39: "Spring salat",
         Pic40: "Sommer seeds collection",
-        Pic41: "Vegetable, bread and love",
+        Pic41: "Vegetables, bread and love",
         Pic42: "Garden party",
         PartnerDesc: "VGG has great partners with whom we work together and who support us: ",
         ZH: "Zuhause - Zuhause e.V. is a diverse collective of artists. The Vollguter Gemeinschaftsgarten was initiated in 2017 by Zuhause e.V. ",
