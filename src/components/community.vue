@@ -27,101 +27,22 @@
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-6 col-md-4" style="width: 18rem;">
+                    <div
+                        class="col-6 col-md-4"
+                        style="width: 18rem"
+                        v-for="cardComm in cardsComm"
+                        v-bind:key="cardComm.key"
+                    >
                         <progressive-img
+                            v-bind:id="cardComm.id"
+                            v-bind:src="cardComm.src"
+                            v-bind:placeholder="cardComm.placeholder"
                             class="card-img-top"
-                            id="protrait"
-                            src="/green-min.jpg"
-                            placeholder="/pasta.jpg"
                             alt="Card image cap"
                         />
                         <div class="card-body">
                             <p class="card-text">
-                                {{ $t("CommP1") }}
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4" style="width: 18rem;">
-                        <progressive-img
-                            class="card-img-top"
-                            id="protrait"
-                            src="/Edithgarden.jpg"
-                            placeholder="/pasta.jpg"
-                            alt="Card image cap"
-                        />
-                        <div class="card-body">
-                            <p class="card-text">
-                                {{ $t("CommP2") }}
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4" style="width: 18rem;">
-                        <progressive-img
-                            class="card-img-top"
-                            id="protrait"
-                            src="/green-min.jpg"
-                            placeholder="/pasta.jpg"
-                            alt="Card image cap"
-                        />
-                        <div class="card-body">
-                            <p class="card-text">
-                                {{ $t("CommP3") }}
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4" style="width: 18rem;">
-                        <progressive-img
-                            class="card-img-top"
-                            id="protrait"
-                            src="/green-min.jpg"
-                            placeholder="/pasta.jpg"
-                            alt="Card image cap"
-                        />
-                        <div class="card-body">
-                            <p class="card-text">
-                                {{ $t("CommP4") }}
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4" style="width: 18rem;">
-                        <progressive-img
-                            class="card-img-top"
-                            id="protrait"
-                            src="/green-min.jpg"
-                            placeholder="/pasta.jpg"
-                            alt="Card image cap"
-                        />
-                        <div class="card-body">
-                            <p class="card-text">
-                                {{ $t("CommP5") }}
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4" style="width: 18rem;">
-                        <progressive-img
-                            class="card-img-top"
-                            id="protrait"
-                            src="/green-min.jpg"
-                            placeholder="/pasta.jpg"
-                            alt="Card image cap"
-                        />
-                        <div class="card-body">
-                            <p class="card-text">
-                                {{ $t("CommP6") }}
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4" style="width: 18rem;">
-                        <progressive-img
-                            class="card-img-top"
-                            id="protrait"
-                            src="/green-min.jpg"
-                            placeholder="/pasta.jpg"
-                            alt="Card image cap"
-                        />
-                        <div class="card-body">
-                            <p class="card-text">
-                                {{ $t("CommP7") }}
+                                {{ $t(cardComm.portraitDesc) }}
                             </p>
                         </div>
                     </div>
@@ -130,13 +51,18 @@
         </div>
     </div>
 </template>
-
 <script>
+import cards from "./cardsCommunity.js";
 export default {
-    name: "community"
+    name: "community",
+    data() {
+        return {
+            cards: [],
+            cardsComm: cards.cards,
+        };
+    },
 };
 </script>
-
 <style scoped>
 .community-container {
     height: auto;
@@ -165,11 +91,6 @@ export default {
     padding: 20px;
     width: 30rem;
 }
-
-.img.progressive-image-main {
-    height: 150px !important;
-}
-
 @media only screen and (min-width: 1300px) {
     .community-container {
         width: 70%;

@@ -7,19 +7,23 @@
                     {{ $t("WWDDesc") }}
                 </p>
             </div>
-
             <div class="container">
                 <div class="row">
-                    <div class="col-6 col-md-4 " style="width: 18rem;" v-for="pictureData in picturesData" v-bind:key="pictureData.key">
+                    <div
+                        class="col-6 col-md-4 "
+                        style="width: 18rem"
+                        v-for="pictureData in picturesData"
+                        v-bind:key="pictureData.key"
+                    >
                         <progressive-img
                             v-bind:id="pictureData.id"
-                            v-bind:src=" pictureData.src "
+                            v-bind:src="pictureData.src"
                             v-bind:placeholder="pictureData.placeholder"
                             class="card-img-top pic"
                             alt="Responsive image "
                         />
                         <div class="middle">
-                            <div class="text">{{ $t(  pictureData.text  ) }}</div>
+                            <div class="text">{{ $t(pictureData.text) }}</div>
                         </div>
                     </div>
                 </div>
@@ -35,28 +39,11 @@ export default {
     name: "whatwedo",
     data() {
         return {
-            pictures:[],
-            picturesData: pictures.pictures
-
+            pictures: [],
+            picturesData: pictures.pictures,
         };
-    
     },
-// watch: {
-// pictures: function() {
-//     // console.log("picutre in watch", this.pictures)
-// }
-// },
-
-//     mounted: function (){
-       
-//     // console.log("this.pictures", this.pictures)
-//     //    console.log("pictures", pictures.pictures)
-//     //    var picturesData = pictures.pictures;
-//     //    picturesData = this.picturesData;
-//        console.log("picturseDATA", this.picturesData);
-// //   console.log("picturseDATA", pictureData.id);    // pictures = this.pictures
-// }
-}
+};
 </script>
 
 <style scoped>

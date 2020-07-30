@@ -221,10 +221,10 @@ const pictures = [
         placeholder: "thirty",
         text: "Pic30"
     },
-     {
+    {
         key: "thirtyone",
         id: "pic31",
-         src: "/Bailando.jpg",
+        src: "/Bailando.jpg",
         placeholder: "thirtyone",
         text: "Pic31"
     },
