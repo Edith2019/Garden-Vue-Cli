@@ -61,7 +61,7 @@
                     >
                         <img
                             id="social"
-                            src="@/assets/fproute-min.png"
+                            src="../../assets/fproute-min.png"
                             width="30px"
                             height="30px"
                         />
@@ -74,7 +74,7 @@
                     >
                         <img
                             id="social"
-                            src="@/assets/instaproute-min.png"
+                            src="../../assets/instaproute-min.png"
                             width="30px"
                             height="30px"
                         />
@@ -91,7 +91,7 @@ export default {
     name: "navbar",
     components: {
         languages
-    }
+    },
 };
 </script>
 

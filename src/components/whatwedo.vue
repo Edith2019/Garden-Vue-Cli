@@ -33,7 +33,7 @@
 </template>
 
 <script>
-import pictures from "./cardsWWD.js";
+import pictures from "./js/cardsWWD.js";
 
 export default {
     name: "whatwedo",

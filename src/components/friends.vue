@@ -25,7 +25,7 @@
 </template>
 
 <script>
-import cardsfriends from "./cardsfriends.js"
+import cardsfriends from "./js/cardsfriends.js"
 export default {
     name:"friends",
     data() {

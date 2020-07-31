@@ -64,7 +64,7 @@ export default {
     height: auto;
     width: 100%;
     background-size: cover;
-    background: url("./assets/House-min.jpg") no-repeat center center fixed;
+    background: url("../assets/House-min.jpg") no-repeat center center fixed;
 }
 
 * {

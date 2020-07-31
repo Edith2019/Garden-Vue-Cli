@@ -29,7 +29,7 @@
 </template>
 
 <script>
-import cardspartner from "./cardspartners.js";
+import cardspartner from "./js/cardspartners.js";
 export default {
     name: "partners",
     data() {

@@ -7,8 +7,8 @@
             <div class="card rounded mx-auto d-block col" style="width: 30rem">
                 <progressive-img
                     id="protrait"
-                    src="/Oli.jpg"
-                    placeholder="/pasta.jpg"
+                    src="/assets/Oli.jpg"
+                    placeholder="/Oli.jpg"
                     alt="Responsive image"
                 />
                 <div class="card-body">
@@ -52,7 +52,7 @@
     </div>
 </template>
 <script>
-import cards from "./cardsCommunity.js";
+import cards from "./js/cardsCommunity.js";
 export default {
     name: "community",
     data() {
