@@ -9,14 +9,12 @@
             </div>
         </div>
         <div class="row rounded border ">
-            <div class="col-sm"  v-for="datafriend in datafriends" v-bind:key="datafriend.key">
+            <div class="col-4 mx-auto"  v-for="datafriend in datafriends" v-bind:key="datafriend.key">
                 <div class="card border-success mb-5" style="max-width: 18rem;">
-                    <div class="card-header text-success">{{ $t(datafriend.header)}}</div>
                     <div class="card-body ">
-                        <h5 class="card-title">{{ $t(datafriend.title) }}</h5>
-                        <p class="card-text">
-                            {{ $t(datafriend.desc) }}
-                        </p>
+                        <a href= "datafriend.href">
+                        <h5 class="card-title text-center text-success" style="text-decoration:none;">{{ $t(datafriend.title) }}</h5>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -43,6 +41,7 @@ export default {
     width: 90%;
     margin: 200px auto;
     padding-top: 100px;
+   
 }
 
 .card-deck {

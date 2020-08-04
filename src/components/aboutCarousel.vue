@@ -22,7 +22,7 @@
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <img
-                            src="../../assets/House-min.jpg"
+                            src="/assets/House-min.jpg"
                             class="d-block w-100"
                             alt="..."
                         />
@@ -35,7 +35,7 @@
                     </div>
                     <div class="carousel-item">
                         <img
-                            src="../../assets/Pano-min.png"
+                            src="/assets/Pano-min.png"
                             class="d-block w-100"
                             alt="..."
                         />
@@ -48,7 +48,7 @@
                     </div>
                     <div class="carousel-item">
                         <img
-                            src="../../assets/beautiful.jpg"
+                            src="/assets/beautiful.jpg"
                             class="d-block w-100"
                             alt="..."
                         />

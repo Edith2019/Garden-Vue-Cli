@@ -12,7 +12,7 @@
 
             <img
                 class="Intro-picture"
-                src="../../assets/container-min.jpg"
+                src="/assets/container-min.jpg"
                 width="80%"
                 height="50%"
             />

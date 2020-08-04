@@ -19,8 +19,9 @@ export default {
             languages: [
                 { flag: "us", language: "en", title: "English" },
                 { flag: "de", language: "de", title: "Deutsch" },
-                { flag: "tr", language: "tr", title: "Türk" },
-                { flag: "ar", language: "ar", title: "عربى" }
+                { flag: "tr", language: "tr", title: "Türkçe" },
+                { flag: "ar", language: "ar", title: "عربى" },
+                { flag: "jp", language: "jp", title: "日本人" }
             ]
         };
     },
