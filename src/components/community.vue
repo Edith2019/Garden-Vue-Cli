@@ -4,7 +4,7 @@
             <p class="h1 mx-auto  Gardener-title col">
                 {{ $t("GardenerMonth") }}
             </p>
-            <div class="card rounded mx-auto d-block col" style="width: 30rem">
+            <div class="card rounded mx-auto d-block col " style="width: 30rem">
                 <progressive-img
                     id="protrait"
                     src="/assets/Oli.jpg"
@@ -28,7 +28,7 @@
             <div class="container">
                 <div class="row">
                     <div
-                        class="col-6 col-md-4"
+                        class="col-6 col-md-4 rounded "
                         style="width: 18rem"
                         v-for="cardComm in cardsComm"
                         v-bind:key="cardComm.key"
@@ -37,8 +37,10 @@
                             v-bind:id="cardComm.id"
                             v-bind:src="cardComm.src"
                             v-bind:placeholder="cardComm.placeholder"
-                            class="card-img-top"
+                            class="rounded"
                             alt="Card image cap"
+                            style="height:280px; object-fit:scale-down;"
+                            
                         />
                         <div class="card-body">
                             <p class="card-text">
@@ -59,6 +61,8 @@ export default {
         return {
             cards: [],
             cardsComm: cards.cards,
+           
+            
         };
     },
 };
@@ -73,6 +77,8 @@ export default {
 .card.Community {
     margin-bottom: 0px !important;
 }
+
+
 .Community {
     height: auto;
     width: 100%;
@@ -82,9 +88,7 @@ export default {
 .gardenerOfMonth {
     width: 90%;
 }
-.card.rounded.mx-auto.d-block {
-    margin-top: 2rem;
-}
+
 .Gardener-title {
     color: white;
     border: solid 5px white;
