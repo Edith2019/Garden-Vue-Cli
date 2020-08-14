@@ -54,6 +54,16 @@ const cardsfriends = [
 
     },
 
+    {
+        key: "ten",
+        title: "Horstwirtschaft",
+        href: "https://www.facebook.com/horstwirtschaft/"
+
+    },
+
+
+   
+
 ]
 
 export default { cardsfriends }
