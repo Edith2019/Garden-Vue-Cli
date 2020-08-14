@@ -39,8 +39,6 @@
                             v-bind:placeholder="cardComm.placeholder"
                             class="rounded"
                             alt="Card image cap"
-                            style="height:280px; object-fit:scale-down;"
-                            
                         />
                         <div class="card-body">
                             <p class="card-text">
@@ -67,7 +65,16 @@ export default {
     },
 };
 </script>
+<style>
+/* #portraitsix img {
+height: 280px !important;
+object-fit: cover;
+} */
+
+</style>
 <style scoped>
+
+
 .community-container {
     height: auto;
     width: 90%;

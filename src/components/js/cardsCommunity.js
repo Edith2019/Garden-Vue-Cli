@@ -5,15 +5,15 @@ const cards = [
         id: "portraitone",
         src: "/assets/green-min.jpg",
         placeholder: "./assets/green-min.jpg",
-        portraitDesc: "CommP1"
+        portraitDesc: "CommP1",
     },
-
     {
         key: "portraittwo",
         id: "portraittwo",
-        src: "/assets/Edithgarden.jpg",
+        src: "/assets/Edith.jpg",
         placeholder: "/Edithgarden.jpg",
         portraitDesc: "CommP2"
+
     },
     {
         key: "portraitthree",
@@ -32,7 +32,7 @@ const cards = [
     {
         key: "portraitfive",
         id: "portraitfive",
-        src: "/assets/green-min.jpg",
+        src: "/assets/Ina.jpg",
         placeholder: "/assets/Inga.jpg",
         portraitDesc: "CommP5"
     },
@@ -46,14 +46,14 @@ const cards = [
     {
         key: "portraitseven",
         id: "portraitseven",
-        src: "/assets/Felix.jpg",
+        src: "/assets/FelixFe.jpg",
         placeholder: "/assets/Felix.jpg",
         portraitDesc: "CommP7"
     },
     {
         key: "portraitheight",
         id: "portraitheight",
-        src: "/assets/green-min.jpg",
+        src: "/assets/sammy.jpg",
         placeholder: "/assets/green-min.jpg",
         portraitDesc: "CommP8"
     },
