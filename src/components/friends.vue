@@ -8,9 +8,9 @@
                 </p>
             </div>
         </div>
-        <div class="row rounded border ">
-            <div class="col-4 mx-auto"  v-for="datafriend in datafriends" v-bind:key="datafriend.key">
-                <div class="card border-success mb-5" style="max-width: 18rem;">
+        <div class="row rounded border p-4">
+            <div   v-for="datafriend in datafriends" v-bind:key="datafriend.key">
+                <div class="card border-success m-2" style="max-width: 18rem;" >
                     <div class="card-body ">
                         <a href= "datafriend.href">
                         <h5 class="card-title text-center text-success" style="text-decoration:none;">{{ $t(datafriend.title) }}</h5>
