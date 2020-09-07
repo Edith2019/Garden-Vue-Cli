@@ -67,7 +67,13 @@ export default {
 </script>
 <style>
 /* #portraitsix img {
-height: 280px !important;
+height: 460px !important;
+object-fit: cover;
+padding: 0 !important;
+}
+
+#portraitone img {
+height: 460px !important;
 object-fit: cover;
 } */
 
