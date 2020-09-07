@@ -54,21 +54,21 @@ const cards = [
         key: "portraitheight",
         id: "portraitheight",
         src: "/assets/sammy.jpg",
-        placeholder: "/assets/green-min.jpg",
+        placeholder: "/assets/sammy.jpg",
         portraitDesc: "CommP8"
     },
     {
         key: "portraitnine",
         id: "portraitnine",
-        src: "/assets/Sam.jpg",
-        placeholder: "/assets/Sam.jpg",
+        src: "/assets/sam.jpg",
+        placeholder: "/assets/sam.jpg",
         portraitDesc: "CommP9"
     },
     {
         key: "portraitten",
         id: "portraitten",
         src: "/assets/Jennie.jpg",
-        placeholder: "7/green-min.jpg",
+        placeholder: "/assets/Jennie.jpg",
         portraitDesc: "CommP10"
     },
 
