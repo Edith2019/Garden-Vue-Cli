@@ -8,7 +8,7 @@
                 </p>
             </div>
         </div>
-        <div class="row rounded border p-4">
+        <div class="row rounded border pl-4">
             <div   v-for="datafriend in datafriends" v-bind:key="datafriend.key">
                 <div class="card border-success m-2" style="max-width: 18rem;" >
                     <div class="card-body ">

@@ -3,8 +3,8 @@ const cards = [
     {
         key:"portraitone",
         id: "portraitone",
-        src: "/assets/green-min.jpg",
-        placeholder: "./assets/green-min.jpg",
+        src: "/assets/Ritsuko.jpg",
+        placeholder: "/assets/Ritsuko.jpg",
         portraitDesc: "CommP1",
     },
     {
