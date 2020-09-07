@@ -315,19 +315,19 @@ const messages = {
         tandcDesc3: "Bu web sitesinde hem oturum çerezlerini hem de kalıcı çerezleri kullanıyoruz."
 
     },
-    "ar": {
-        About: "على وشك أن",
-        Community: "الجماعة",
-        WhatWeDo: "الذي نفعله",
-        Partners: "شركاء",
-        Events: " الأحداث",
-        Contact: "اتصل",
-        Welcome: "مرحبًا بكم في حديقة VGG!",
-        OpeningHours: "Opening Hours: the Garden is always open!",
-        WeSigned: "We signed the ",
-        Urban: "Urban Gardening Manifest"
+    // "ar": {
+    //     About: "على وشك أن",
+    //     Community: "الجماعة",
+    //     WhatWeDo: "الذي نفعله",
+    //     Partners: "شركاء",
+    //     Events: " الأحداث",
+    //     Contact: "اتصل",
+    //     Welcome: "مرحبًا بكم في حديقة VGG!",
+    //     OpeningHours: "Opening Hours: the Garden is always open!",
+    //     WeSigned: "We signed the ",
+    //     Urban: "Urban Gardening Manifest"
 
-    },
+    // },
     "jp": {
         About: "VGGとは",
         Community: "コミュニティー",
