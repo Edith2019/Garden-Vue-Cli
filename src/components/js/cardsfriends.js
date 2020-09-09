@@ -2,7 +2,7 @@ const cardsfriends = [
     {
         key: "one",
         title: "Feld Food Forest",
-        href:"www.feldfoodforest.org"
+        href:"http://www.feldfoodforest.org"
 
     },
     {
@@ -25,8 +25,8 @@ const cardsfriends = [
     },
     {
         key: "five",
-        title: "Gesundheitskollektiv Berlin",
-        href: "https://www.geko-berlin.de"
+        title: "Horstwirtshaft",
+        href: "http://horstwirtschaft.de"
 
     },
     {
@@ -54,12 +54,7 @@ const cardsfriends = [
 
     },
 
-    {
-        key: "ten",
-        title: "Horstwirtschaft",
-        href: "https://www.facebook.com/horstwirtschaft/"
-
-    },
+  
 
 
    
