@@ -12,7 +12,7 @@
             <div   v-for="datafriend in datafriends" v-bind:key="datafriend.key">
                 <div class="card border-success m-2" style="max-width: 18rem;" >
                     <div class="card-body ">
-                        <a href= "datafriend.href">
+                        <a v-bind:href="datafriend.href" target="_blank">
                         <h5 class="card-title text-center text-success" style="text-decoration:none;">{{ $t(datafriend.title) }}</h5>
                         </a>
                     </div>

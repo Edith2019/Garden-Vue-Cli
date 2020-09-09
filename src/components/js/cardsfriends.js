@@ -44,7 +44,7 @@ const cardsfriends = [
     {
         key: "eight",
         title: "Feldkino",
-        href: "whttps://www.facebook.com/feldkino/"
+        href: "https://www.facebook.com/feldkino/"
 
     },
     {
