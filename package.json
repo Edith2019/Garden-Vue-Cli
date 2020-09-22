@@ -4,7 +4,7 @@
     "private": true,
     "main": "index.js",
     "scripts": {
-        "serve": "vue-cli-service serve",
+        "serve": "vue-cli-service --max-http-header-size=81000 serve",
         "start": "node --max-http-header-size=81000 index.js",
         "build": "vue-cli-service build",
         "lint": "EXTEND_ESLINT=true eslint --ext=js,jsx,mjs,vue --ignore-path=.gitignore --max-warnings=0 --color . || true",

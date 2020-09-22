@@ -21,15 +21,15 @@ export default {
                 { flag: "de", language: "de", title: "Deutsch" },
                 { flag: "tr", language: "tr", title: "Türkçe" },
                 // { flag: "ar", language: "ar", title: "عربى" },
-                { flag: "jp", language: "jp", title: "日本人" }
-            ]
+                { flag: "jp", language: "jp", title: "日本語" },
+            ],
         };
     },
     methods: {
         changeLocale(locale) {
             i18n.locale = locale;
-        }
-    }
+        },
+    },
 };
 </script>
 

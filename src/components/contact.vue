@@ -166,7 +166,7 @@ import * as $ from "jquery";
 export default {
     name: "contact",
     components: {
-        googlemap
+        googlemap,
     },
     data() {
         return {
@@ -176,30 +176,36 @@ export default {
             message: "",
             checkbox: false,
             gdpr: false,
-            result: ""
+            result: "",
         };
     },
     mounted() {
         window.axios = require("axios");
     },
     methods: {
-        reset: function () {
+        reset: function() {
             this.first = "";
             this.email = "";
             this.message = "";
             this.checkbox = false;
             this.last = "";
         },
-        handleClick: async function () {
+        handleClick: async function() {
+            console.log("something");
+
             if (this.checkbox === true) {
                 const results = await axios.post(
-                    "https://vgg-nkln.herokuapp.com/contact/submit",
+                    "http://localhost:4000/contact/submit",
+                    // "https://vgg-nkln.herokuapp.com/contact/submit",
+
                     {
                         first: this.first,
                         last: this.last,
                         email: this.email,
-                        message: this.message
-                    }
+                        message: this.message,
+                    },
+
+                    console.log("result in handle click", this.first)
                 );
                 if (results.data) {
                     this.reset();
@@ -209,8 +215,8 @@ export default {
             } else {
                 this.gdpr = !this.gdpr;
             }
-        }
-    }
+        },
+    },
 };
 </script>
 

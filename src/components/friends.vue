@@ -9,11 +9,16 @@
             </div>
         </div>
         <div class="row rounded border pl-4">
-            <div   v-for="datafriend in datafriends" v-bind:key="datafriend.key">
-                <div class="card border-success m-2" style="max-width: 18rem;" >
+            <div v-for="datafriend in datafriends" v-bind:key="datafriend.key">
+                <div class="card border-success m-2" style="max-width: 18rem;">
                     <div class="card-body ">
                         <a v-bind:href="datafriend.href" target="_blank">
-                        <h5 class="card-title text-center text-success" style="text-decoration:none;">{{ $t(datafriend.title) }}</h5>
+                            <h5
+                                class="card-title text-center text-success"
+                                style="text-decoration:none;"
+                            >
+                                {{ $t(datafriend.title) }}
+                            </h5>
                         </a>
                     </div>
                 </div>
@@ -23,16 +28,16 @@
 </template>
 
 <script>
-import cardsfriends from "./js/cardsfriends.js"
+import cardsfriends from "./js/cardsfriends.js";
 export default {
-    name:"friends",
+    name: "friends",
     data() {
         return {
             cardsfriends: [],
-            datafriends: cardsfriends.cardsfriends
-        }
-    }
-}
+            datafriends: cardsfriends.cardsfriends,
+        };
+    },
+};
 </script>
 
 <style scoped>
@@ -41,7 +46,6 @@ export default {
     width: 90%;
     margin: 200px auto;
     padding-top: 100px;
-   
 }
 
 .card-deck {
