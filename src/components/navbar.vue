@@ -12,36 +12,69 @@
         >
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <div class="items-nav">
-                <ul class="navbar-nav mr-auto">
+        <div
+            class="collapse navbar-collapse navbar-collapse"
+            id="navbarSupportedContent"
+        >
+            <div class="navbarCollapse  items-nav">
+                <ul class="nav navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a href="#about" class="nav-link" v-smooth-scroll>
+                        <a
+                            href="#about"
+                            class="nav-link"
+                            v-smooth-scroll
+                            v-on:click="handleToggle"
+                        >
                             {{ $t("About") }}
                         </a>
                     </li>
                     <li class="nav-item active">
-                        <a href="#community" class="nav-link" v-smooth-scroll>
+                        <a
+                            href="#community"
+                            class="nav-link"
+                            v-smooth-scroll
+                            v-on:click="handleToggle"
+                        >
                             {{ $t("Community") }}
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="#whatwedo" class="nav-link" v-smooth-scroll>
+                        <a
+                            href="#whatwedo"
+                            class="nav-link"
+                            v-smooth-scroll
+                            v-on:click="handleToggle"
+                        >
                             {{ $t("WhatWeDo") }}</a
                         >
                     </li>
                     <li class="nav-item">
-                        <a href="#partners" class="nav-link" v-smooth-scroll>
+                        <a
+                            href="#partners"
+                            class="nav-link"
+                            v-smooth-scroll
+                            v-on:click="handleToggle"
+                        >
                             {{ $t("Partners") }}
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="#events" class="nav-link" v-smooth-scroll>
+                        <a
+                            href="#events"
+                            class="nav-link"
+                            v-smooth-scroll
+                            v-on:click="handleToggle"
+                        >
                             {{ $t("Events") }}
                         </a>
                     </li>
                     <li class="nav-item ">
-                        <a href="#contact" class="nav-link" v-smooth-scroll>
+                        <a
+                            href="#contact"
+                            class="nav-link"
+                            v-smooth-scroll
+                            v-on:click="handleToggle"
+                        >
                             {{ $t("Contact") }}
                         </a>
                     </li>
@@ -87,10 +120,18 @@
 
 <script>
 import languages from "./ende.vue";
+import * as $ from "jquery";
+
 export default {
     name: "navbar",
     components: {
-        languages
+        languages,
+    },
+
+    methods: {
+        handleToggle: function() {
+            $("#navbarSupportedContent").collapse("hide");
+        },
     },
 };
 </script>

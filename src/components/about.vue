@@ -6,10 +6,13 @@
                 <p class="card-text">
                     {{ $t("GardenDef") }}
                 </p>
-                <p>{{ $t("OpeningHours") }}
-                <a href="#contact" v-smooth-scroll> {{ $t("GetInTouch")}} </a>
+                <p>
+                    {{ $t("OpeningHours") }}
+                    <a href="#contact" v-smooth-scroll>
+                        {{ $t("GetInTouch") }}
+                    </a>
                 </p>
-                <br>
+                <br />
                 {{ $t("WeSigned") }}
                 <a href="https://urbangardeningmanifest.de/" target="_blank">
                     {{ $t("Urban") }}</a
@@ -26,8 +29,8 @@ export default {
     name: "about",
     props: {},
     components: {
-        AboutCarousel
-    }
+        AboutCarousel,
+    },
 };
 </script>
 

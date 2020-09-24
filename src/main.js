@@ -27,7 +27,6 @@ const router = new VueRouter({
     base: process.env.BASE_URL,
     routes
 });
-
 new Vue({
     created() {
         AOS.init();

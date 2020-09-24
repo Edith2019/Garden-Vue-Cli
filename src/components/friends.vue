@@ -17,7 +17,7 @@
                                 class="card-title text-center text-success"
                                 style="text-decoration:none;"
                             >
-                                {{ $t(datafriend.title) }}
+                                {{ datafriend.title }}
                             </h5>
                         </a>
                     </div>

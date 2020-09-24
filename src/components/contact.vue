@@ -95,37 +95,33 @@
             </textarea>
         </div>
 
-        <div class="container">
-            <div class="row">
-                <div
-                    id="location"
-                    class="card col-md-auto d-flex justify-content-between"
-                    style="width: 25rem;"
-                >
-                    <div class="card-body">
-                        <h5 class="card-title">{{ $t("GeneralInfo") }}</h5>
-                        <p class="card-text">
-                            {{ $t("OpeningHours") }}
-                        </p>
-                        <p>{{ $t("Covid") }}:</p>
-                        <p>{{ $t("GeneralInfoDesc") }}:</p>
-                        <p class="card-text"></p>
+        <div class="container-fluid">
+            <div class="row d-flex justify-content-between ">
+                <div class="col-sm-5 p-0 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">{{ $t("GeneralInfo") }}</h5>
+                            <p class="card-text">
+                                {{ $t("OpeningHours") }}
+                            </p>
+                            <p>{{ $t("Covid") }}:</p>
+                            <p>{{ $t("GeneralInfoDesc") }}:</p>
+                            <p class="card-text"></p>
+                        </div>
                     </div>
                 </div>
-                <div
-                    id="location"
-                    class="card col-md-6 ml-auto d-flex justify-content-between"
-                    style="width: 25rem;"
-                >
-                    <div class="card-body">
-                        <googlemap class="mx-auto" />
+                <div class="col-sm-5 p-0 ">
+                    <div class="card">
+                        <div class="card-body">
+                            <googlemap class="mx-auto" />
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
         <div class="modal fade" id="contactModal" role="dialog">
-            <div class="modal-dialog">
+            <div class="modal-dialog ">
                 <div class="modal-content">
                     <div class="modal-header">
                         <h5 class="modal-title" id="exampleModalLabel">
@@ -177,6 +173,7 @@ export default {
             checkbox: false,
             gdpr: false,
             result: "",
+            rawHtml: "",
         };
     },
     mounted() {
@@ -276,10 +273,6 @@ textarea {
     width: 60%;
     color: black;
     margin-left: 5%;
-}
-#location {
-    margin: 0px;
-    margin-bottom: 50px;
 }
 
 @media only screen and (min-width: 1300px) {

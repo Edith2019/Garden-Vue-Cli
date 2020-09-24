@@ -6,7 +6,7 @@
         <community id="community" />
         <whatwedo id="whatwedo" />
         <partners id="partners" />
-        <friends id="friends"/>
+        <friends id="friends" />
         <events id="events" />
         <contact id="contact" />
         <footer />
@@ -44,14 +44,14 @@ export default {
         partners,
         friends,
         events,
-        contact
+        contact,
     },
 
     methods: {
-        togglemodal: function () {
+        togglemodal: function() {
             $("#tandcModal").modal();
-        }
-    }
+        },
+    },
 };
 </script>
 

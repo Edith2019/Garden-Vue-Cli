@@ -5,7 +5,13 @@
             :key="entry.title"
             @click="changeLocale(entry.language)"
         >
-            <flag :iso="entry.flag" v-bind:squared="false" /> {{ entry.title }}
+            <flag
+                :iso="entry.flag"
+                v-bind:squared="false"
+                v-if="entry.languages"
+                :folder="entry"
+            />
+            {{ entry.title }}
         </button>
     </div>
 </template>
