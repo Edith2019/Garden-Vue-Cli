@@ -9,21 +9,21 @@
 
         <form method="POST" action="/cookie">
             <div class="form-group form-check-inline ml-5">
+                <input type="hidden" name="_csrf" value="" />
                 <input
                     type="radio"
                     class="form-check-input"
                     id="yes"
-                    name="_csrf"
-                    v-bind:value="csrfToken"
                     @click.prevent="handleClick"
                 />
+
                 <label class="form-check-label" for="exampleCheck1">Yes</label>
             </div>
-            <div class="form-group form-check-inline">
-                <input type="radio" class="form-check-input" id="no" />
-                <label class="form-check-label" for="exampleCheck2">No</label>
-            </div>
         </form>
+        <div class="form-group form-check-inline">
+            <input type="radio" class="form-check-input" id="no" />
+            <label class="form-check-label" for="exampleCheck2">No</label>
+        </div>
     </div>
 </template>
 

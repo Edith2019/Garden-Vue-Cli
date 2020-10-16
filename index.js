@@ -3,6 +3,7 @@ const config = require("./config");
 const path = require("path");
 const cors = require("cors");
 const bodyParser = require("body-parser");
+var cookieParser = require('cookie-parser')
 
 const app = express();
 const routes = require("./routes");
@@ -30,12 +31,29 @@ app.use(
 
 );
 
+var csrfProtection = csurf({ cookie: true })
+var parseForm = bodyParser.urlencoded({ extended: false })
+
+
+app.use(cookieParser())
+
 app.use(csurf());
 
-app.use(function (req, res, next) {
-    res.cookie("mytoken", req.csrfToken());
-    next();
-});
+app.get('/form', csrfProtection, function (req, res) {
+    // pass the csrfToken to the view
+    res.render('send', { csrfToken: req.csrfToken() })
+})
+
+app.post('/cookie', parseForm, csrfProtection, function (req, res) {
+    res.send('data is being processed')
+})
+
+
+
+// app.use(function (req, res, next) {
+//     res.cookie("mytoken", req.csrfToken());
+//     next();
+// });
 
 routes(app);
 
