@@ -51,16 +51,19 @@ export default {
         },
         getCsurf: async function() {
             const result = await axios.get("http://localhost:4000/form");
+
             console.log("result", result);
         },
         handleClick: async function() {
+            document.getElementById("banner").classList.add("anim");
+            console.log("result", result);
             const result = await axios.post(
                 "http://localhost:4000/cookie/cookie",
                 {
                     csrfToken: this.csrfToken,
                 }
             );
-            console.log("result", result);
+
             // .then((result) => {
             //     // this.csrf = res.data.csrfToken;
             //     console.log("res.", res);
@@ -81,7 +84,13 @@ export default {
     justify-content: center;
     align-items: space-between;
     z-index: 9999;
+    opacity: 1;
 }
+
+.anim {
+    visibility: hidden;
+}
+
 .tandcApp {
     cursor: pointer;
 }
