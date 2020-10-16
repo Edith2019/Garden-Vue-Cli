@@ -5,6 +5,7 @@ import Whatwedo from "../components/whatwedo.vue";
 import Events from "../components/events.vue";
 import Contact from "../components/contact.vue";
 import Home from "../components/home.vue";
+import Banner from "../components/banner.vue";
 
 const routes = [
     {
@@ -41,7 +42,13 @@ const routes = [
         path: "/contact",
         name: "contact",
         component: Contact
+    },
+    {
+        path: "/cookie",
+        name: "banner",
+        component: Banner
     }
+
 
     // community.vue
 

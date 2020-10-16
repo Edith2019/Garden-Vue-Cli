@@ -8,19 +8,34 @@ const app = express();
 const routes = require("./routes");
 const cookieSession = require("cookie-session");
 
-// const csurf = require('csurf');
+const csurf = require('csurf');
 app.use(express.static("./dist"));
 app.use(cors());
 app.use(bodyParser.json());
 
 let secret = config[process.env.NODE_ENV || "development"].cookieSession.secret;
 
+app.use((req, res, next) => {
+    res.set("x-frame-options", "DENY");
+    res.locals.csrfToken = req.csrfToken;
+    next();
+});
+
 app.use(
     cookieSession({
         secret,
         maxAge: 1000 * 60 * 60 * 24 * 14
+
     })
+
 );
+
+app.use(csurf());
+
+app.use(function (req, res, next) {
+    res.cookie("mytoken", req.csrfToken());
+    next();
+});
 
 routes(app);
 

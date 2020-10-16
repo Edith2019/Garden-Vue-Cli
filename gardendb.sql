@@ -7,7 +7,8 @@ CREATE TABLE garden (
     last VARCHAR(255) NOT NULL,
     email VARCHAR(255) NOT NULL,
     message VARCHAR(255) NOT NULL,
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    cookie  VARCHAR(255),
 
 );
 

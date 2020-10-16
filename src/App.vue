@@ -1,5 +1,6 @@
 <template>
     <div id="app">
+        <banner />
         <navbar id="navbar" />
         <intro id="intro" />
         <about id="about" />
@@ -20,6 +21,7 @@
 </template>
 
 <script>
+import banner from "./components/banner.vue";
 import navbar from "./components/navbar.vue";
 import intro from "./components/intro.vue";
 import tandc from "./components/tandc.vue";
@@ -35,6 +37,7 @@ import * as $ from "jquery";
 export default {
     name: "App",
     components: {
+        banner,
         navbar,
         intro,
         tandc,
