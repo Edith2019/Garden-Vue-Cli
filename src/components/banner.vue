@@ -39,7 +39,7 @@ export default {
     },
     data() {
         return {
-            csrf: "",
+            csrfToken: "",
         };
     },
     mounted() {
@@ -49,10 +49,13 @@ export default {
         togglemodal: function() {
             $("#tandcModal").modal();
         },
-
+        getCsurf: async function() {
+            const result = await axios.get("http://localhost:4000/form");
+            console.log("result", result);
+        },
         handleClick: async function() {
             const result = await axios.post(
-                "http://localhost:4000/cookie/cookiePost",
+                "http://localhost:4000/cookie/cookie",
                 {
                     csrfToken: this.csrfToken,
                 }

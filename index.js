@@ -32,7 +32,7 @@ app.use(
 );
 
 var csrfProtection = csurf({ cookie: true })
-var parseForm = bodyParser.urlencoded({ extended: false })
+// var parseForm = bodyParser.urlencoded({ extended: false })
 
 
 app.use(cookieParser())
@@ -44,9 +44,9 @@ app.get('/form', csrfProtection, function (req, res) {
     res.render('send', { csrfToken: req.csrfToken() })
 })
 
-app.post('/cookie', parseForm, csrfProtection, function (req, res) {
-    res.send('data is being processed')
-})
+// app.post('/', parseForm, csrfProtection, function (req, res) {
+//     res.send('data is being processed')
+// })
 
 
 
@@ -59,6 +59,7 @@ routes(app);
 
 // We have two router (Server,Client) and we need to use VUE.js Route  so we forwared the request into Client router..
 app.get("*", (req, res) => {
+    res.cookie('XSRF-TOKEN', req.csrfToken())
     res.sendFile(path.join(__dirname, "./dist/index.html"));
 });
 
