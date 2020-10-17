@@ -10,7 +10,9 @@
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel"></h5>
+                    <h5 class="modal-title" id="exampleModalLabel">
+                        Impressum
+                    </h5>
                     <button
                         type="button"
                         class="close"
@@ -20,7 +22,22 @@
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
-                <div class="modal-body"></div>
+                <div class="modal-body">
+                    <p>Vollguter Gemeinschaftsgarten</p>
+                    <p>
+                        The registered address of the owner(cannot be a PO box)
+                    </p>
+                    <p>
+                        Valid contact information(email address, office number,
+                        phone number, fax, etc.)
+                    </p>
+                    <p>Name of supervising authority</p>
+                    <p>
+                        Individual legal representative(owner or manager of the
+                        business)
+                    </p>
+                    <p>License numbers or trade registry numbers</p>
+                </div>
                 <div class="modal-footer"></div>
             </div>
         </div>
