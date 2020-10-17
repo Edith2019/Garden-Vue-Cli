@@ -16,6 +16,10 @@
             <p>Copyright © 2020 VGG</p>
             <p v-on:click="togglemodal" class="tandcApp">TandC</p>
             <tandc id="tandcModal" />
+            <p v-on:click="togglemodalImpressum" class="impressum">
+                Impressum
+            </p>
+            <impressum id="impressumModal" />
         </div>
     </div>
 </template>
@@ -32,6 +36,7 @@ import partners from "./components/partners.vue";
 import friends from "./components/friends.vue";
 import events from "./components/events.vue";
 import contact from "./components/contact.vue";
+import impressum from "./components/impressum.vue";
 
 import * as $ from "jquery";
 export default {
@@ -48,11 +53,15 @@ export default {
         friends,
         events,
         contact,
+        impressum,
     },
 
     methods: {
         togglemodal: function() {
             $("#tandcModal").modal();
+        },
+        togglemodalImpressum: function() {
+            $("#impressumModal").modal();
         },
     },
 };

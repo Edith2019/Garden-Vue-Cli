@@ -1,10 +1,11 @@
 <template>
+    <!-- <div class="blocker"> -->
     <div id="banner" class="container-fluid border-primary py-4">
         This website uses cookies (click
         <span v-on:click="togglemodal" class="tandcApp px-1 text-success">
             here
         </span>
-        for more details), please agree with our policy to
+        for more details), please agree with our policy
         <tandc id="tandcModal" />
 
         <form method="POST" action="/cookie">
@@ -20,11 +21,20 @@
                 <label class="form-check-label" for="exampleCheck1">Yes</label>
             </div>
         </form>
-        <div class="form-group form-check-inline">
-            <input type="radio" class="form-check-input" id="no" />
-            <label class="form-check-label" for="exampleCheck2">No</label>
-        </div>
+        <form>
+            <div class="form-group form-check-inline">
+                <input
+                    type="radio"
+                    class="form-check-input"
+                    id="no"
+                    @click.prevent="handleClickNo"
+                />
+                <label class="form-check-label" for="exampleCheck2">No</label>
+            </div>
+        </form>
+        <div class="blocker"></div>
     </div>
+    <!-- </div> -->
 </template>
 
 <script>
@@ -70,6 +80,10 @@ export default {
             // });
         },
         //onclick yes remove the banner and send the id to the db for proof
+        handleClickNo: async function() {
+            console.log("handleclickNo");
+            document.getElementById("banner").classList.add("anim");
+        },
     },
 };
 </script>
@@ -84,11 +98,11 @@ export default {
     justify-content: center;
     align-items: space-between;
     z-index: 9999;
-    opacity: 1;
 }
 
 .anim {
     visibility: hidden;
+    height: 0;
 }
 
 .tandcApp {
