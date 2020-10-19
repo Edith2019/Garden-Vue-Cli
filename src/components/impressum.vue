@@ -1,7 +1,7 @@
 <template>
     <div
         class="modal fade"
-        id="exampleModal"
+        id="impressum"
         tabindex="-1"
         role="dialog"
         aria-labelledby="exampleModalLabel"
@@ -23,20 +23,17 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <p>Vollguter Gemeinschaftsgarten</p>
                     <p>
-                        The registered address of the owner(cannot be a PO box)
+                        Vollguter Gemeinschaftsgarten is a community garden
+                        brought to life by a group of Berlin-based volunteers.
+                        All content on this website was sourced or created by
+                        volunteers from the VGG community. We are not currently
+                        registered as a legal entity, company, or organisation.
+                        Hence, VGG does accept any liability for content
+                        published on our site. If you have any questions or
+                        concerns, please send an email to garten@daszuhause.com
+                        so we can manage your request
                     </p>
-                    <p>
-                        Valid contact information(email address, office number,
-                        phone number, fax, etc.)
-                    </p>
-                    <p>Name of supervising authority</p>
-                    <p>
-                        Individual legal representative(owner or manager of the
-                        business)
-                    </p>
-                    <p>License numbers or trade registry numbers</p>
                 </div>
                 <div class="modal-footer"></div>
             </div>
@@ -50,10 +47,8 @@ export default {
 };
 </script>
 
-<style scoped></style>
-
-// Name of the owner(often a business or organization) // The registered address
-of the owner(cannot be a PO box) // Valid contact information(email address,
-office number, phone number, fax, etc.) // Name of supervising authority //
-Individual legal representative(owner or manager of the business) // VAT or any
-equivalent state - issued number // License numbers or trade registry numbers
+<style scoped>
+#impressum {
+    cursor: pointer;
+}
+</style>

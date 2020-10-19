@@ -1,40 +1,45 @@
 <template>
-    <!-- <div class="blocker"> -->
-    <div id="banner" class="container-fluid border-primary py-4">
-        This website uses cookies (click
-        <span v-on:click="togglemodal" class="tandcApp px-1 text-success">
-            here
-        </span>
-        for more details), please agree with our policy
-        <tandc id="tandcModal" />
+    <div>
+        <div id="banner" class="container-fluid border-primary py-4">
+            <p>
+                This website uses cookies (click
+                <span v-on:click="togglemodalBanner" class=" px-1 text-success">
+                    here
+                </span>
+                for more details), please agree with our policy
+            </p>
+            <form method="POST" action="/cookie" class="ms-1">
+                <div class="form-group form-check-inline ml-5">
+                    <input type="hidden" name="_csrf" value="" />
+                    <input
+                        type="radio"
+                        class="form-check-input"
+                        id="yes"
+                        @click.prevent="handleClick"
+                    />
 
-        <form method="POST" action="/cookie">
-            <div class="form-group form-check-inline ml-5">
-                <input type="hidden" name="_csrf" value="" />
-                <input
-                    type="radio"
-                    class="form-check-input"
-                    id="yes"
-                    @click.prevent="handleClick"
-                />
-
-                <label class="form-check-label" for="exampleCheck1">Yes</label>
-            </div>
-        </form>
-        <form>
-            <div class="form-group form-check-inline">
-                <input
-                    type="radio"
-                    class="form-check-input"
-                    id="no"
-                    @click.prevent="handleClickNo"
-                />
-                <label class="form-check-label" for="exampleCheck2">No</label>
-            </div>
-        </form>
-        <div class="blocker"></div>
+                    <label class="form-check-label" for="exampleCheck1"
+                        >Yes</label
+                    >
+                </div>
+            </form>
+            <form>
+                <div class="form-group form-check-inline">
+                    <input
+                        type="radio"
+                        class="form-check-input"
+                        id="no"
+                        @click.prevent="handleClickNo"
+                    />
+                    <label class="form-check-label" for="exampleCheck2"
+                        >No</label
+                    >
+                </div>
+            </form>
+            <div class="blocker"></div>
+        </div>
+        <tandc id="tandcModalBann" />
     </div>
-    <!-- </div> -->
 </template>
 
 <script>
@@ -56,8 +61,8 @@ export default {
         window.axios = require("axios");
     },
     methods: {
-        togglemodal: function() {
-            $("#tandcModal").modal();
+        togglemodalBanner: function() {
+            $("#tandcModalBann").modal();
         },
         getCsurf: async function() {
             const result = await axios.get("http://localhost:4000/form");
@@ -89,6 +94,7 @@ export default {
 </script>
 
 <style scoped>
+/* if parents have a position fixed/ relative/ absolute modal is not working properly */
 #banner {
     position: fixed;
     bottom: 0px;
@@ -102,10 +108,17 @@ export default {
 
 .anim {
     visibility: hidden;
-    height: 0;
+    height: 0%;
+    width: 0%;
+    margin-top: 100%;
+    z-index: 2;
 }
 
-.tandcApp {
+.banner {
     cursor: pointer;
+}
+
+#tandcModalBann {
+    z-index: 999;
 }
 </style>

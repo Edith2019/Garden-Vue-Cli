@@ -14,7 +14,9 @@
 
         <div class="footer">
             <p>Copyright © 2020 VGG</p>
-            <p v-on:click="togglemodal" class="tandcApp">TandC</p>
+            <p v-on:click="togglemodal" class="tandcApp">
+                Policy
+            </p>
             <tandc id="tandcModal" />
             <p v-on:click="togglemodalImpressum" class="impressum">
                 Impressum
@@ -143,7 +145,9 @@ p {
     margin: 0px !important;
 }
 
-.tandcApp {
+.tandcApp,
+.impressum {
     cursor: pointer;
+    /* z-index: 666; */
 }
 </style>
