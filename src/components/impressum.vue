@@ -23,7 +23,12 @@
                     </button>
                 </div>
                 <div class="modal-body">
+                    <h5 class="modal-title mt-3">Address</h5>
                     <p>
+                        Vollguter Gemeinschaftsgarten Am Sudhaus 4, 12053 Berlin
+                    </p>
+                    <h5 class="modal-title mt-3">Imprint</h5>
+                    <p className="mb-2">
                         Vollguter Gemeinschaftsgarten is a community garden
                         brought to life by a group of Berlin-based volunteers.
                         All content on this website was sourced or created by
@@ -32,8 +37,11 @@
                         Hence, VGG does accept any liability for content
                         published on our site. If you have any questions or
                         concerns, please send an email to garten@daszuhause.com
-                        so we can manage your request
+                        so we can manage your request.
                     </p>
+                    <h5 class="modal-title mt-3">Contact</h5>
+                    <p>www.vgg.green</p>
+                    <p>garten@daszuhause.com</p>
                 </div>
                 <div class="modal-footer"></div>
             </div>

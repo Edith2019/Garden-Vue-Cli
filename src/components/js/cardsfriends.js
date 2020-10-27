@@ -2,7 +2,7 @@ const cardsfriends = [
     {
         key: "one",
         title: "Feld Food Forest",
-        href:"http://www.feldfoodforest.org"
+        href: "http://www.feldfoodforest.org"
 
     },
     {
@@ -37,7 +37,7 @@ const cardsfriends = [
     },
     {
         key: "seven",
-        title: "Trail & Error e.V.",
+        title: "Trial & Error e.V.",
         href: "https://www.trial-error.org"
 
     },
@@ -54,10 +54,10 @@ const cardsfriends = [
 
     },
 
-  
 
 
-   
+
+
 
 ]
 

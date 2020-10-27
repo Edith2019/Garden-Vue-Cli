@@ -1,12 +1,13 @@
 <template>
     <div>
-        <div id="banner" class="container-fluid border-primary py-4">
+        <tandc id="tandcModalBann" />
+
+        <nav
+            id="banner"
+            class="container-fluid border-primary fixed-bottom  py-4  "
+        >
             <p>
-                This website uses cookies (click
-                <span v-on:click="togglemodalBanner" class=" px-1 text-success">
-                    here
-                </span>
-                for more details), please agree with our policy
+                This website uses cookies, please agree with our policy
             </p>
             <form method="POST" action="/cookie" class="ms-1">
                 <div class="form-group form-check-inline ml-5">
@@ -37,8 +38,7 @@
                 </div>
             </form>
             <div class="blocker"></div>
-        </div>
-        <tandc id="tandcModalBann" />
+        </nav>
     </div>
 </template>
 
@@ -62,8 +62,17 @@ export default {
     },
     methods: {
         togglemodalBanner: function() {
-            $("#tandcModalBann").modal();
+            // $("#tandcModalBann").modal("show");
+            $("#navbar_register_btn").on("click", function(e) {
+                e.preventDefault();
+                $("#tandcModalBann").modal("show");
+            });
         },
+        // $("#navbar_register_btn").on("click", function(e) {
+        //     e.preventDefault();
+        //     $("#basicModal").modal("show");
+        // });
+
         getCsurf: async function() {
             const result = await axios.get("http://localhost:4000/form");
 
@@ -96,7 +105,7 @@ export default {
 <style scoped>
 /* if parents have a position fixed/ relative/ absolute modal is not working properly */
 #banner {
-    position: fixed;
+    /* position: fixed; */
     bottom: 0px;
     background-color: rgb(255, 255, 255, 0.8);
     display: flex;
