@@ -18,7 +18,7 @@
         "@lawcket/websocket": "^0.1.5",
         "aos": "^2.3.4",
         "aws-sdk": "^2.476.0",
-        "axios": "^0.19.2",
+        "axios": "^0.21.1",
         "body-parser": "^1.19.0",
         "bootstrap": "^4.5.0",
         "cookie-parser": "^1.4.5",
