@@ -4,16 +4,16 @@
             <p class="h1 mx-auto  Gardener-title col">
                 {{ $t("GardenerMonth") }}
             </p>
-            <div class="card rounded mx-auto d-block col " style="width: 30rem">
+            <div class="card rounded mx-auto d-block col" style="width: 30rem">
                 <progressive-img
                     id="protrait"
-                    src="/assets/Oli.jpg"
-                    placeholder="/Oli.jpg"
+                    :src="randomMonthlyPicture.src"
+                    :placeholder="randomMonthlyPicture.placeholder"
                     alt="Responsive image"
                 />
                 <div class="card-body">
                     <p class="card-text">
-                        {{ $t("GardenerDesc") }}
+                        {{ $t(randomMonthlyPicture.portraitDesc) }}
                     </p>
                 </div>
             </div>
@@ -59,15 +59,18 @@ export default {
         return {
             cards: [],
             cardsComm: cards.cards,
-           
-            
+            randomMonthlyPicture: null,
         };
+    },
+    created() {
+        this.randomMonthlyPicture = this.cardsComm[
+            Math.floor(Math.random() * this.cardsComm.length)
+        ];
     },
 };
 </script>
 
 <style scoped>
-
 .community-container {
     height: auto;
     width: 90%;
@@ -77,7 +80,6 @@ export default {
 .card.Community {
     margin-bottom: 0px !important;
 }
-
 
 .Community {
     height: auto;

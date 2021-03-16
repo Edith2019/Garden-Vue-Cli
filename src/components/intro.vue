@@ -23,14 +23,14 @@
 <script>
 export default {
     name: "intro",
-    props: {}
+    props: {},
 };
 </script>
 
 <style scoped>
 .Intro-container {
     height: auto;
-    padding-top: 3.5em;
+    padding-top: 3.5rem;
     background: none;
     display: flex;
     flex-direction: column;
@@ -43,10 +43,10 @@ export default {
 }
 h1.Intro-title {
     color: white;
-    font-size: 5em;
+    font-size: 5rem;
     text-align: center;
-    margin-top: 50px;
-    padding: 5%;
+    margin-top: 0px;
+    padding: 80px;
     width: 100%;
 }
 
@@ -56,7 +56,7 @@ h1.Intro-title {
     z-index: 100;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 800px) {
     #badge {
         margin-bottom: -8%;
         margin-left: 10%;

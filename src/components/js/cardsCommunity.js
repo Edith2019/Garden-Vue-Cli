@@ -1,7 +1,7 @@
 
 const cards = [
     {
-        key:"portraitone",
+        key: "portraitone",
         id: "portraitone",
         src: "/assets/Ritsuko1.jpg",
         placeholder: "/assets/Ritsuko1.jpg",
@@ -64,14 +64,6 @@ const cards = [
         placeholder: "/assets/sam.jpg",
         portraitDesc: "CommP9"
     },
-    {
-        key: "portraitten",
-        id: "portraitten",
-        src: "/assets/Jennie.jpg",
-        placeholder: "/assets/Jennie.jpg",
-        portraitDesc: "CommP10"
-    },
-
 ]
 
-export default {cards};
+export default { cards };
